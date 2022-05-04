@@ -5,15 +5,15 @@
     outline: none !important;
   }
   
-  /*Disabling drag on all buttons*/
-  button{
-    -webkit-app-region: no-drag;
-  }
-  
-  /*Disabling highlighting/copying across panel*/
-  *, *::after, *::before{
-    -webkit-user-select: none;
-    -webkit-user-drag: none;
-    cursor: default;
-  }
-  
+/*Disabling drag on all buttons*/
+button{
+  -webkit-app-region: no-drag;
+}
+
+/*Disabling highlighting/copying across panel*/
+*, *::after, *::before{
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  cursor: default;
+}
+
