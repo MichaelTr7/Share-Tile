@@ -9,7 +9,7 @@
   top: var(--Margin);
   --Constraining_Dimension: 100vw;  
   --Minimum_Length: max(var(--Constraining_Dimension),var(--Absolute_Minimum_Size));
-  --Size: calc(var(--Minimum_Length) - 2 * var(--Margin));
+  --Size: min(calc(var(--Minimum_Length) - 2 * var(--Margin)),700px);
   height: var(--Size);
   width: var(--Size);
   background-color: black;
@@ -39,7 +39,7 @@
   height: 100%;
   width: 100%;
   /* border: 0.1px solid black; */
-  font-size: 3vw;
+  font-size: calc(0.03*var(--Size));
   color: rgba(255,255,255,0.9);
   text-align: center;
   justify-content: center;

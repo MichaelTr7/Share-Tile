@@ -29,7 +29,7 @@ body{
   background-color: none;
   --Constraining_Dimension: 100vw;  
   --Minimum_Length: max(var(--Constraining_Dimension),200px);
-  --Size: calc(var(--Minimum_Length) - 2 * var(--Margin));
+  --Size: min(calc(var(--Minimum_Length) - 2 * var(--Margin)),700px);
   height: calc(var(--Size) + 2 * var(--Margin));
   width: calc(var(--Size) + 2 * var(--Margin));
   z-index: 2;
