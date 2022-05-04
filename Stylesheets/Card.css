@@ -1,0 +1,87 @@
+
+:root{
+  --Margin: 5vw;
+  --Absolute_Minimum_Size: 200px;
+}
+
+#Main_Card{
+  position: absolute;
+  top: var(--Margin);
+  --Constraining_Dimension: 100vw;  
+  --Minimum_Length: max(var(--Constraining_Dimension),var(--Absolute_Minimum_Size));
+  --Size: calc(var(--Minimum_Length) - 2 * var(--Margin));
+  height: var(--Size);
+  width: var(--Size);
+  background-color: black;
+  top: max(calc(50% - var(--Size)/2),var(--Margin));
+  left: max(calc(50% - var(--Size)/2),var(--Margin));
+  border-radius: calc(0.02*var(--Size));
+  background-color: rgba(255,255,255,0.1);
+  box-shadow: inset 0 1px 1px 0 rgba(255,255,255,0.18), 0 5px 30px 0 rgba(0,0,0,0.2);
+
+  /* grid-gap: calc(var(--Size)*0.01); */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 0.5fr 0.5fr 0.2fr 1fr 1fr 1fr 1fr;
+  z-index: 5;
+}
+
+#Bio{
+  font-weight: lighter;
+  color: rgba(255,255,255,0.4);
+}
+
+.Containers{
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  /* border: 0.1px solid black; */
+  font-size: 3vw;
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.Containers:nth-child(2){
+  align-items: flex-end;
+}
+
+.Links{
+  display: flex;
+  height: calc(100% - 0.02*var(--Size));
+  width: calc(100% - 0.2*var(--Size));
+  border-radius: calc(0.012*var(--Size));
+  background-color: rgba(0,0,0,0.1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(255,255,255,0.9);
+}
+
+#Profile_Image{
+  --Scaling_Factor: 0.27;
+  --Diameter: calc(var(--Size)*var(--Scaling_Factor));
+  position: relative;
+  height: var(--Diameter);
+  width: var(--Diameter);
+  top: calc(50% - var(--Diameter)/2 + var(--Margin)/2);
+  background-color: white;
+  border-radius: 100%;
+  
+  background-image: url("../Assets/Starry Starlight.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  filter: opacity(1);
+  box-shadow: inset 0 calc(var(--Size)*0.005) calc(var(--Size)*0.005) calc(var(--Size)*0.003) rgba(0,0,0,0.35);
+  border: calc(var(--Size)*0.014) solid #244992;
+}
+
+
+
+
+
