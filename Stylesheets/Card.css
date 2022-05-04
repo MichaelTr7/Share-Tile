@@ -24,6 +24,10 @@
   grid-template-columns: 1fr;
   grid-template-rows: 3fr 0.5fr 0.5fr 0.2fr 1fr 1fr 1fr 1fr;
   z-index: 5;
+  filter: opacity(0);
+  transform: translateY(100vh) scale(0.5);
+  animation: Fade_In_Keyframes 0.5s linear forwards;
+  animation-delay: 0.2s;
 }
 
 #Bio{
@@ -80,6 +84,8 @@
   box-shadow: inset 0 calc(var(--Size)*0.005) calc(var(--Size)*0.005) calc(var(--Size)*0.003) rgba(0,0,0,0.35);
   border: calc(var(--Size)*0.014) solid #244992;
 }
+
+
 
 
 
