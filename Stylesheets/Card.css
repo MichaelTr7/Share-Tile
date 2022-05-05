@@ -80,16 +80,19 @@
 #Link_1{
   animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
   animation-delay: 1.2s;
+  transform: scale(1);
 }
 
 #Link_2{
   animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
   animation-delay: 1.4s;
+  transform: scale(1);
 }
 
 #Link_3{
   animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
   animation-delay: 1.6s;
+  transform: scale(1);
 }
 
 
@@ -115,8 +118,6 @@
   filter: opacity(0);
   transform: rotate(380deg) scale(0.8);
 }
-
-
 
 
 
