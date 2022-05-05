@@ -19,7 +19,7 @@ body{
   background-size: cover;
   background-position: center;
   margin: 0;
-  filter: opacity(0);
+  opacity: 0;
   animation: Simple_Fade_In_Page 5s ease forwards;
   /* animation: Transition_Background_Color 3s ease forwards; */
 

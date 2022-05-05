@@ -18,11 +18,11 @@
 }
 
 @keyframes Simple_Fade_In_Page {
-  0%{filter: opacity(0);}
-  100%{filter: opacity(1);}  
+  0%{opacity:0;}
+  100%{opacity:1;}  
 }
 
 @keyframes Transition_Background_Color {
-  0%{  background-color: #FFFFFF;}
-  100%{  background-color: #244992;}  
+  0%{background-color: #FFFFFF;}
+  100%{background-color: #244992;}  
 }
