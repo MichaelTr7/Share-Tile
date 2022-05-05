@@ -26,14 +26,14 @@
   filter: opacity(0);
   transform: translateY(100vh) scale(0.5);
   animation: Fade_In_Keyframes 0.5s ease forwards;
-  animation-delay: 0.6s;
+  animation-delay: 0.2s;
 }
 
 #Username_Handle{
   filter: opacity(0);
   transform: scale(0.7);
   animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
-  animation-delay: 1.2s;
+  animation-delay: 0.8s;
 }
 
 #Bio{
@@ -42,7 +42,7 @@
   filter: opacity(0);
   transform: scale(0.7);
   animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
-  animation-delay: 1.2s;
+  animation-delay: 0.8s;
 }
 
 .Containers{
