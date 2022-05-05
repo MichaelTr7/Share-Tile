@@ -8,7 +8,7 @@
 @keyframes Twist_Fade_In_Keyframes {
   0%{transform: rotate(380deg) scale(0.9); filter: opacity(0);}
   50%{transform: rotate(0deg) scale(0.9);}
-  60%{transform: rotate(0deg) scale(1);}
+  70%{transform: rotate(0deg) scale(1.02);}
   100%{transform: rotate(0deg) scale(1); filter: opacity(1);}  
 }
 
