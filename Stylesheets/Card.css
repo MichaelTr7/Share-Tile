@@ -8,7 +8,7 @@
 #Main_Card{
   position: absolute;
   top: var(--Margin);
-  --Constraining_Dimension: 100vw;  
+  --Constraining_Dimension: 100vw;
   --Minimum_Length: max(var(--Constraining_Dimension),var(--Absolute_Minimum_Size));
   --Size: min(calc(var(--Minimum_Length) - 2 * var(--Margin)),var(--Absolute_Maximum_Size));
   height: var(--Size);
@@ -56,6 +56,8 @@
   text-align: center;
   justify-content: center;
   align-items: flex-start;
+  transform: scale(1);
+  transition: 0.2s;
 }
 
 .Containers:nth-child(2){
@@ -81,20 +83,32 @@
   animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
   animation-delay: 1.2s;
   transform: scale(1);
+  cursor: pointer;
 }
 
 #Link_2{
   animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
   animation-delay: 1.4s;
   transform: scale(1);
+  cursor: pointer;
 }
 
 #Link_3{
   animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
   animation-delay: 1.6s;
   transform: scale(1);
+  cursor: pointer;
 }
 
+.Containers:nth-child(5):hover{
+  transform: scale(1.03);
+}
+.Containers:nth-child(6):hover{
+  transform: scale(1.03);
+}
+.Containers:nth-child(7):hover{
+  transform: scale(1.03);
+}
 
 #Profile_Image{
   --Scaling_Factor: 0.27;
@@ -118,8 +132,3 @@
   filter: opacity(0);
   transform: rotate(380deg) scale(0.8);
 }
-
-
-
-
-
