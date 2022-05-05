@@ -8,9 +8,10 @@ html{
 }
 
 body{
-  margin: 0px;  
-  /* background-color: #244992; */
-  /* background-color: #244992; */
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background: linear-gradient(180deg, #244992 0%, #00E1E1 97.4%);
   background-repeat: no-repeat;
   background-size: cover;
