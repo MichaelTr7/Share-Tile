@@ -6,7 +6,7 @@ html{
   color: white;
   font-weight: bold;
   background-color: #244992;
-  animation: Transition_Background_Color 2s ease forwards;
+  /* animation: Transition_Background_Color 2s ease forwards; */
 }
 
 body{
