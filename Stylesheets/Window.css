@@ -20,7 +20,6 @@ body{
   background-position: center;
   margin: 0;
   filter: opacity(0);
-  animation-delay: 2s;
   animation: Simple_Fade_In_Page 5s ease forwards;
   /* animation: Transition_Background_Color 3s ease forwards; */
 
