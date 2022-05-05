@@ -2,6 +2,7 @@
 :root{
   --Margin: 3vw;
   --Absolute_Minimum_Size: 200px;
+  --Absolute_Maximum_Size: calc(100vh - 2*var(--Margin));
 }
 
 #Main_Card{
@@ -9,7 +10,7 @@
   top: var(--Margin);
   --Constraining_Dimension: 100vw;  
   --Minimum_Length: max(var(--Constraining_Dimension),var(--Absolute_Minimum_Size));
-  --Size: min(calc(var(--Minimum_Length) - 2 * var(--Margin)),700px);
+  --Size: min(calc(var(--Minimum_Length) - 2 * var(--Margin)),var(--Absolute_Maximum_Size));
   height: var(--Size);
   width: var(--Size);
   background-color: black;
