@@ -16,3 +16,13 @@
   0%{transform: scale(0.7); filter: opacity(0);}
   100%{transform: scale(1); filter: opacity(1);}  
 }
+
+@keyframes Simple_Fade_In_Page {
+  0%{filter: opacity(0);}
+  100%{filter: opacity(1);}  
+}
+
+@keyframes Transition_Background_Color {
+  0%{  background-color: #FFFFFF;}
+  100%{  background-color: #244992;}  
+}
