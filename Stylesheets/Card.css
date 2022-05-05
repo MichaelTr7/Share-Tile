@@ -20,17 +20,28 @@
   box-shadow: inset 0 1px 1px 0 rgba(255,255,255,0.18), 0 5px 30px 0 rgba(0,0,0,0.2);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 3fr 0.5fr 0.5fr 0.2fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 3fr 0.5fr 0.5fr 0.4fr 1fr 1fr 1fr 1fr;
   z-index: 5;
   filter: opacity(0);
   transform: translateY(100vh) scale(0.5);
-  animation: Fade_In_Keyframes 0.5s linear forwards;
-  animation-delay: 0.4s;
+  animation: Fade_In_Keyframes 0.5s ease forwards;
+  animation-delay: 0.6s;
+}
+
+#Username_Handle{
+  filter: opacity(0);
+  transform: scale(0.7);
+  animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
+  animation-delay: 1.2s;
 }
 
 #Bio{
   font-weight: lighter;
   color: rgba(255,255,255,0.4);
+  filter: opacity(0);
+  transform: scale(0.7);
+  animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
+  animation-delay: 1.2s;
 }
 
 .Containers{
@@ -61,7 +72,25 @@
   align-items: center;
   text-decoration: none;
   color: rgba(255,255,255,0.9);
+  filter: opacity(0);
+  transform: scale(0.7);
 }
+
+#Link_1{
+  animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
+  animation-delay: 1.2s;
+}
+
+#Link_2{
+  animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
+  animation-delay: 1.4s;
+}
+
+#Link_3{
+  animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
+  animation-delay: 1.6s;
+}
+
 
 #Profile_Image{
   --Scaling_Factor: 0.27;
@@ -80,6 +109,10 @@
   filter: opacity(1);
   box-shadow: inset 0 calc(var(--Size)*0.005) calc(var(--Size)*0.005) calc(var(--Size)*0.003) rgba(0,0,0,0.35);
   border: calc(var(--Size)*0.014) solid #244992;
+  animation: Twist_Fade_In_Keyframes 0.8s ease-in forwards;
+  animation-delay: 1s;
+  filter: opacity(0);
+  transform: rotate(380deg) scale(0.8);
 }
 
 

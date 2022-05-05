@@ -4,3 +4,16 @@
   50%{transform: translateY(0vh) scale(0.5); filter: opacity(0.5);}
   100%{transform: translateY(0vh) scale(1); filter: opacity(1);}
 }
+
+@keyframes Twist_Fade_In_Keyframes {
+  0%{transform: rotate(380deg) scale(0.9); filter: opacity(0);}
+  50%{transform: rotate(0deg) scale(0.9);}
+  60%{transform: rotate(0deg) scale(1);}
+  100%{transform: rotate(0deg) scale(1); filter: opacity(1);}  
+}
+
+
+@keyframes Simple_Fade_In_Keyframes {
+  0%{transform: scale(0.7); filter: opacity(0);}
+  100%{transform: scale(1); filter: opacity(1);}  
+}
