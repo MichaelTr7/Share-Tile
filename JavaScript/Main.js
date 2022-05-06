@@ -25,20 +25,14 @@ function Pressed(event){
   
     console.log(event.type)
 
-    if(event.type == "touchstart"){
+    if(event.type == "touchstart"||event.type == "mousedown"){
         this.parentElement.style.transform = "scale(1.05)";
     }
-    if(event.type == "touchend"){
+    if(event.type == "touchend"||event.type == "mouseup"){
         this.parentElement.style.transform = "scale(1)";
         window.location.href = Target_Link;
     }
-    if(event.type == "mousedown"){
-      this.parentElement.classList.remove('Button_Pressed');
-      void this.parentElement.offsetWidth;
-      this.parentElement.classList.add('Button_Pressed');
-      window.location.href = Target_Link;
-    }
-    
+
   
     
 }
