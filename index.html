@@ -55,13 +55,33 @@
     <a id="Link_3" class="Links" href="https://open.spotify.com/playlist/1sHTvHLJuF3mtRILaiSmki?si=6abbb4a832f34eb2">Community Spotify Playlist</a>
   </div>
 
+<button id="Share_Button" type="button" name="button">
 
+</button>
   <!-- <div class="Containers">
     <button type="button" name="button"></button>
   </div> -->
 
 </div>
 
-
+<script type="text/javascript">
+let Share_Button = document.getElementById('Share_Button');
+Share_Button.addEventListener('click', event => {
+           if (navigator.share) {
+               navigator.share({
+                   title: 'Drawing My Compass ♡',
+                    url: 'https://www.drawingmycompass.com'
+               }).then(() => {
+                   console.log('Shared');
+               }).catch(err => {
+                    console.log(
+                   "Error");
+                   console.log(err);
+               });
+           } else {
+                alert("Not supported by browser.");
+           }
+       })
+</script>
   </body>
 </html>

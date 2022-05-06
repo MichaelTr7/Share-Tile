@@ -5,6 +5,10 @@ window.onload = function(){
   for(Index=3; Index < Links.length; Index++){
     Links[Index].addEventListener("click",Clicked);
   }
+  
+  // let Share_Button = document.getElementById('Share_Button');
+  // Share_Button.addEventListener('Share');
+  // console.log(Share_Button);
 }
 
 function Clicked(){
@@ -13,3 +17,4 @@ function Clicked(){
     void this.offsetWidth
     this.classList.add('Button_Pressed');
 }
+

@@ -8,17 +8,19 @@
 #Main_Card{
   position: absolute;
   top: var(--Margin);
-  --Constraining_Dimension: 100vw;
+  --Constraining_Dimension: min(100vw,100vh);
   --Minimum_Length: max(var(--Constraining_Dimension),var(--Absolute_Minimum_Size));
   --Size: min(calc(var(--Minimum_Length) - 2 * var(--Margin)),var(--Absolute_Maximum_Size));
   height: var(--Size);
   width: var(--Size);
+  min-height: var(--Absolute_Minimum_Size)
   background-color: black;
   top: max(calc(50% - var(--Size)/2),var(--Margin));
   left: max(calc(50% - var(--Size)/2),var(--Margin));
-  border-radius: calc(0.02*var(--Size));
+  border-radius: calc(0.028*var(--Size));
   background-color: rgba(255,255,255,0.1);
-  box-shadow: inset 0 1px 1px 0 rgba(255,255,255,0.18), 0 5px 30px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 calc(var(--Size)*0.005) calc(var(--Size)*0.1) calc(var(--Size)*0.003) rgba(0,0,0,0.2), 
+              inset 0 calc(var(--Size)*0.001) calc(var(--Size)*0.001) calc(var(--Size)*0.002) rgba(255,255,255,0.1);;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 3fr 0.5fr 0.5fr 0.4fr 1fr 1fr 1fr 1fr;
@@ -27,6 +29,7 @@
   transform: translateY(100vh) scale(0.5);
   animation: Fade_In_Keyframes 0.5s ease forwards;
   animation-delay: 0.2s;
+  overflow: hidden;
 }
 
 #Username_Handle{
@@ -68,7 +71,7 @@
   display: flex;
   height: calc(100% - 0.02*var(--Size));
   width: calc(100% - 0.2*var(--Size));
-  border-radius: calc(0.012*var(--Size));
+  border-radius: calc(0.015*var(--Size));
   background-color: rgba(0,0,0,0.1);
   text-align: center;
   justify-content: center;
@@ -131,4 +134,24 @@
   animation-delay: 1.2s;
   filter: opacity(0);
   transform: rotate(380deg) scale(0.8);
+}
+
+#Share_Button{
+  --Share_Button_Margin: calc(0.02*var(--Size));
+  --Diameter: calc(var(--Scaler)*var(--Size));
+  top: var(--Share_Button_Margin);
+  left: calc(100% - var(--Share_Button_Margin) - var(--Diameter));
+  background-color: rgba(0,0,0,0.1);
+  --Scaler: 0.1;
+  position: absolute;
+  height: var(--Diameter);
+  width: var(--Diameter);
+  border: none;
+  outline: none;
+  border-radius: calc(0.02*var(--Size));
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  background-image: url("../Assets/Share_Icon.svg");
+  
 }
