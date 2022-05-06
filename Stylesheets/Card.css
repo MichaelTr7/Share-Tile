@@ -64,6 +64,7 @@
   outline: none; 
   -webkit-touch-callout: none;
   border: none;
+  transition: 0.2s;
 }
 
 .Containers:nth-child(2){
@@ -90,6 +91,7 @@
   /* background-color: rgba(42, 89, 181, 0.5); */
   font-size: calc(0.03*var(--Size));
   -webkit-touch-callout: none;
+  transition: 0.2s;
 }
 
 .Links:focus {
@@ -169,4 +171,5 @@
   background-position: center;
   background-image: url("../Assets/Share_Icon.svg");
   cursor: pointer;
+  transition: 0.2s;
 }
