@@ -118,7 +118,7 @@
   cursor: pointer;
 }
 
-.Containers:nth-child(5):hover{
+/* .Containers:nth-child(5):hover{
   transform: scale(1.03);
 }
 .Containers:nth-child(6):hover{
@@ -126,7 +126,7 @@
 }
 .Containers:nth-child(7):hover{
   transform: scale(1.03);
-}
+} */
 
 #Profile_Image{
   --Scaling_Factor: 0.27;
@@ -168,5 +168,5 @@
   background-size: 80%;
   background-position: center;
   background-image: url("../Assets/Share_Icon.svg");
-  
+  cursor: pointer;
 }

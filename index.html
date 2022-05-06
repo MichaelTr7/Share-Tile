@@ -68,9 +68,21 @@
 <script type="text/javascript">
 let Share_Button = document.getElementById('Share_Button');
 Share_Button.addEventListener('click', event => {
-  Share_Button.classList.remove('Button_Pressed');
-  void Share_Button.offsetWidth;
-  Share_Button.classList.add('Button_Pressed');
+  
+  console.log(event.type)
+
+  if(event.type == "touchstart"){
+      Share_Button.style.transform = "scale(1.05)";
+  }
+  if(event.type == "touchend"){
+      Share_Button.style.transform = "scale(1)";
+  }
+  if(event.type == "click"){
+    Share_Button.classList.remove('Button_Pressed');
+    void Share_Button.offsetWidth;
+    Share_Button.classList.add('Button_Pressed');
+  }
+  
            if (navigator.share) {
                navigator.share({
                    title: 'Drawing My Compass ♡',
