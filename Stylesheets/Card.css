@@ -81,6 +81,7 @@
   color: rgba(255,255,255,0.9);
   filter: opacity(0);
   transform: scale(0.7);
+  outline: none; 
 }
 
 #Link_1{
