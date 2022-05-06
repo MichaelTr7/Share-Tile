@@ -22,20 +22,21 @@ function Pressed(event){
   };
   Target_Link = Links[String(this.innerHTML)];
 
-  
-    console.log(event.type)
-
+ 
     if(event.type == "touchstart"||event.type == "mousedown"){
         this.parentElement.style.transform = "scale(1.05)";
     }
     if(event.type == "touchend"||event.type == "mouseup"){
         this.parentElement.style.transform = "scale(1)";
         window.location.href = Target_Link;
+        console.log("Go to link")
     }
 
   
     
 }
+
+
 
 
 
