@@ -55,7 +55,7 @@
     <a id="Link_3" class="Links" href="https://open.spotify.com/playlist/1sHTvHLJuF3mtRILaiSmki?si=6abbb4a832f34eb2">Community Spotify Playlist</a>
   </div>
 
-<button id="Share_Button" type="button" name="button">
+<button class="Share_Button" type="button" name="button">
 
 </button>
   <!-- <div class="Containers">
@@ -65,8 +65,11 @@
 </div>
 
 <script type="text/javascript">
-let Share_Button = document.getElementById('Share_Button');
+let Share_Button = document.getElementsByClassName('Share_Button')[0];
 Share_Button.addEventListener('click', event => {
+  Share_Button.classList.remove('Button_Pressed');
+  void Share_Button.offsetWidth;
+  Share_Button.classList.add('Button_Pressed');
            if (navigator.share) {
                navigator.share({
                    title: 'Drawing My Compass ♡',

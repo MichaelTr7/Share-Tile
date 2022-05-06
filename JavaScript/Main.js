@@ -6,15 +6,12 @@ window.onload = function(){
     Links[Index].addEventListener("click",Clicked);
   }
   
-  // let Share_Button = document.getElementById('Share_Button');
-  // Share_Button.addEventListener('Share');
-  // console.log(Share_Button);
 }
 
 function Clicked(){
     console.log("Clicked");
     this.classList.remove('Button_Pressed');
-    void this.offsetWidth
+    void this.offsetWidth;
     this.classList.add('Button_Pressed');
 }
 
