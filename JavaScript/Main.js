@@ -14,6 +14,15 @@ window.onload = function(){
 }
 
 function Pressed(event){
+  
+  Links = {
+    "Instagram":"https://www.instagram.com/drawingmycompass/",
+    "DeviantArt":"https://www.deviantart.com/drawingmycompass",
+    "Community Spotify Playlist":"https://open.spotify.com/playlist/1sHTvHLJuF3mtRILaiSmki?si=6abbb4a832f34eb2"
+  };
+  Target_Link = Links[String(this.innerHTML)];
+
+  
     console.log(event.type)
 
     if(event.type == "touchstart"){
@@ -21,23 +30,16 @@ function Pressed(event){
     }
     if(event.type == "touchend"){
         this.parentElement.style.transform = "scale(1)";
+        window.location.href = Target_Link;
     }
     if(event.type == "mousedown"){
       this.parentElement.classList.remove('Button_Pressed');
       void this.parentElement.offsetWidth;
       this.parentElement.classList.add('Button_Pressed');
+      window.location.href = Target_Link;
     }
     
-    
-    
-    //     Links = {
-//       "Instagram":"https://www.instagram.com/drawingmycompass/",
-//       "DeviantArt":"https://www.deviantart.com/drawingmycompass",
-//       "Community Spotify Playlist":"https://open.spotify.com/playlist/1sHTvHLJuF3mtRILaiSmki?si=6abbb4a832f34eb2"
-//     };
   
-//     Target_Link = Links[String(this.innerHTML)];
-//     window.location.href = Target_Link;
     
 }
 
