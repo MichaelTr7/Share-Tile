@@ -7,8 +7,6 @@ html{
   font-weight: bold;
   background-color: #244992;
   font-size: calc(0.03*var(--Size));
-
-  /* animation: Transition_Background_Color 2s ease forwards; */
 }
 
 body{
@@ -20,10 +18,6 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 1;
-  /* animation: Simple_Fade_In_Page 2s ease forwards; */
-  /* animation: Transition_Background_Color 3s ease forwards; */
-
 }
 
 #Background{
