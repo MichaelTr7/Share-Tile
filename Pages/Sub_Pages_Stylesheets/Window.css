@@ -1,0 +1,15 @@
+*{
+  font-size: 1em;
+}
+
+:root{
+  font-size: 1em;  
+  font-family: Arial;
+}
+
+html,body{
+  background-color: var(--System_Grey);
+  margin: 0;
+  background-color: rgba(225,225,232,1);
+}
+
