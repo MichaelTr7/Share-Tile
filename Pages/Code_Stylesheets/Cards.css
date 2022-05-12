@@ -1,0 +1,136 @@
+
+.Notification_Center_Card{
+  position: absolute;
+  color: black;
+  height: 20em;
+  width: 18em;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 0.8em;
+  top: 2.3em;
+  right: 0.3em;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(1em);
+  backdrop-filter: blur(1em);
+  box-shadow: 0em 0.1em 0.5em 0.01em rgba(0,0,0,0.1);
+  transform: translateX(18em);
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.Show_Notification_Center_Card{
+  transform: translateX(0);
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.About_Card{
+  position: absolute;
+  color: black;
+  --Height: 20em;
+  --Width: 28em;
+  height: var(--Height);
+  width: var(--Width);
+  top: calc(50% - var(--Height)/2 - 1.5em);
+  left: calc(50% - var(--Width)/2);
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 0.8em;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(1em);
+  backdrop-filter: blur(1em);
+  box-shadow: 0em 0.1em 0.5em 0.01em rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.2s;
+}
+
+.Show_About_Card{
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.2s;
+}
+
+
+.Network_Card{
+  position: absolute;
+  color: black;
+  height: 9em;
+  width: 13em;
+  background-color: rgba(255,255,255,0.4);
+  /* background-color: red; */
+  border-radius: 0.8em;
+  top: 2.3em;
+  right: 2.3em;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(1em);
+  backdrop-filter: blur(1em);
+  box-shadow: 0em 0.1em 0.5em 0.01em rgba(0,0,0,0.1);
+  transform: translateX(18em);
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.Show_Network_Card{
+  transform: translateX(0);
+  opacity: 1;
+  transition: 0.2s;
+}
+
+
+.Battery_Card{
+  position: absolute;
+  color: black;
+  height: 9em;
+  width: 13em;
+  background-color: rgba(255,255,255,0.4);
+  /* background-color: red; */
+  border-radius: 0.8em;
+  top: 2.3em;
+  right: 0.3em;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(1em);
+  backdrop-filter: blur(1em);
+  backdrop-filter: blur(1em);
+  box-shadow: 0em 0.1em 0.5em 0.01em rgba(0,0,0,0.1);
+  transform: translateX(18em);
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.Show_Battery_Card{
+  transform: translateX(0);
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.Date_Card{
+  position: absolute;
+  color: black;
+  height: calc(100vh - 2em);
+  width: 22em;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 0em;
+  top: 2em;
+  right: 0em;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(300em);
+  backdrop-filter: blur(300em);
+  box-shadow: 0em 0.1em 0.5em 0.01em rgba(0,0,0,0.1);
+  transform: translateX(20em);
+  opacity: 0;
+  transition: 0.2s ease-out;
+  -webkit-mask: -webkit-gradient(
+   linear,
+   right 5%,
+   left 5%,
+   from(rgba(255, 255, 255, 1)),
+   to(rgba(255, 255, 255, 0))
+ );
+
+}
+
+.Show_Date_Card{
+  transform: translateX(0);
+  opacity: 1;
+  transition: 0.2s;
+}
+
