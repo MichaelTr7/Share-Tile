@@ -15,13 +15,7 @@ function Icon_Hovered(){
   let Label_Width = Label_Boundaries.width + "px";
   Icon_Label.style.left = "calc(" + X_Position + "px - " + Label_Width + "/2)";
   Icon_Label.style.top = "-3em";
-  
-  
-  
 }
-
-
-
 
 function Icon_Left(){
   let Icon_Label = document.getElementById('Icon_Label');
@@ -29,9 +23,6 @@ function Icon_Left(){
   
   
 }
-
-
-
 
 // 
 // function Add_Field(){
