@@ -9,14 +9,14 @@
   height: 2em;
   width: 100vw;
   background-color: rgba(225,225,232,0.5);
-  -webkit-backdrop-filter: blur(30em), saturate(500%);
-  font-family: Arial;
+  -webkit-backdrop-filter: blur(30em);
   font-weight: bold;
   z-index: 5;
   -webkit-backdrop-filter: blur(2em);
   padding-left: 0.3em;
   padding-right: 0.3em;
   box-sizing: border-box;
+  backdrop-filter: blur(30em);
 }
 
 .Menu_Bar_Buttons{
