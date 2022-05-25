@@ -1,34 +1,49 @@
 
-  .About_Card{
-    display: grid;
-    grid-template-columns: 1.7fr 1fr 1fr;
-    grid-template-rows: 4fr repeat(10,1fr) 2fr;
-  }
+.About_Card{
+  display: grid;
+  grid-template-columns: 2.2fr 1fr 1fr 0.5fr;
+  grid-template-rows: 4fr repeat(10,1fr) 2fr;
+  color: rgb(45,45,45);
+}
 
-  .About_Details{
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.7em;
-      grid-column: 2 / span 2;
-  }
-
-  #About_Card_Title{
-    display: flex;
-    align-items: flex-end;
-    grid-column: 2 / span 2;
-    font-size: 1.3em;
-  }
-
-  #Image_Container{
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 12;
-  }
-
-.Detail_Buttons{
-    position: relative;
+.About_Details{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.7em;
-    border: 0.1em solid gray;
-    border-radius: 0.2em;
-    margin-right: 2em;
-    left: 0;
+    grid-column: 2 / span 3;
 }
+
+#About_Card_Title{
+  display: flex;
+  align-items: flex-end;
+  grid-column: 2 / span 3;
+  font-size: 1.3em;
+}
+
+#Image_Container{
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 12;
+}
+
+.Detail_Buttons{
+  display: flex;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7em;
+  border-radius: 0.35em;
+  margin-right: 1em;
+  left: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(60,60,60);
+  background-color: rgba(255,255,255,0.35);
+  box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,0.05);
+}
+
+
+
+
+
+
+
+
