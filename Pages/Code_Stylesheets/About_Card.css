@@ -1,8 +1,8 @@
 
 .About_Card{
   display: grid;
-  grid-template-columns: 2.2fr 1fr 1fr 0.5fr;
-  grid-template-rows: 4fr repeat(10,1fr) 2fr;
+  grid-template-columns: 2.2fr 1fr 1fr 0.2fr;
+  grid-template-rows: 3fr repeat(10,1fr) 4fr;
   color: rgb(45,45,45);
 }
 
@@ -38,6 +38,7 @@
   color: rgb(60,60,60);
   background-color: rgba(255,255,255,0.35);
   box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,0.05);
+
 }
 
 
