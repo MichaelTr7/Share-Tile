@@ -24,10 +24,11 @@
 }
 
 .About_Card{
+  /* font-size: 0.2em; */
   position: absolute;
   color: black;
-  --Height: 20em;
-  --Width: 34em;
+  --Height: 18em;
+  --Width: 32em;
   height: var(--Height);
   width: var(--Width);  
   
@@ -43,9 +44,7 @@
   transform: scale(0);
   transition: 0.2s;
   color:red;
-  opacity: 1;
-  transform: scale(1);
-  transition: 0.2s;
+
   font-size: min(2vw,20px);
 }
 
