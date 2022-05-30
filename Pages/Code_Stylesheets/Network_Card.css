@@ -1,10 +1,8 @@
 
-
-#Wifi_Label{
+#Wifi_Label,#Preferred_Networks_Label,#Other_Networks_Label,#Network_Preferences_Label{
   display: flex;
   font-size: 0.8em;
   grid-column: 1 / span 7;
-  /* border: 1px solid white; */
   align-items: center;
   box-sizing: border-box;
   padding-left: 1em;
@@ -13,23 +11,76 @@
   color: rgb(65,65,65);
 }
 
-#Wifi_Toggle_Switch{
-  /* height: 50%; */
-}
-
 .Station_Toggle_Buttons{
   grid-column: 8 / span 3;
   height: 100%;
-  width: 120%;
-  /* border: 1px solid white; */
+  width: 110%;
 }
 
 .Wifi_Card_Spacers{
+  display: flex;
   grid-column: 1 / span 10;
-  border: 1px solid white;
-
-  
+  justify-content: center;
+  align-items: center;
 }
+
+.Horizontal_Rules{
+  height: 0.05em;
+  width: 90%;
+  background-color: rgba(0,0,0,0.1);
+}
+
+#Preferred_Networks_Label,#Other_Networks_Label{
+  font-size: 0.78em;
+  color: rgba(0,0,0,0.4);
+}
+
+#Network_Preferences_Label{
+  font-size: 0.78em;
+  color: rgb(65,65,65);
+  font-weight: normal;
+}
+
+.WIFI_Symbols{
+  position: relative;
+  --Diameter: 1.6em;
+  background-color: #2075FB;
+  grid-column: 1 / span 3;
+  height: var(--Diameter);
+  width: var(--Diameter);
+  top: calc(50% - var(--Diameter)/2);
+  left: calc(50% - var(--Diameter)/2);
+  border-radius: 100%;
+  margin-left: -0.4em;
+  background-image: url("../../Assets/WIFI.svg");
+  background-size: 60% 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#WIFI_Symbol_2{
+  background-color: rgba(0,0,0,0.1);
+}
+
+.Network_Names{
+  display: flex;
+  grid-column: 4 / span 6;
+  box-sizing: border-box;
+  padding-left: 1em;
+  font-family: Arial;
+  color: rgb(65,65,65);
+  align-items: center;
+  font-size: 0.78em;
+  width: 100%;
+  height: 100%;
+  margin-left: -2.3em;
+}
+
+
+
+
+
+
 
 
 

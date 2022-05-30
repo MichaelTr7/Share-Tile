@@ -15,6 +15,7 @@
   transform: translateX(18em);
   opacity: 0;
   transition: 0.2s;
+  
 }
 
 .Show_Notification_Center_Card{
@@ -52,16 +53,16 @@
 
 .Network_Card{
   display: grid;
-  grid-template-rows: 1.5fr 0.1fr 0.8fr 1fr 0.1fr 0.9fr 0.1fr 0.9fr;
+  grid-template-rows: 1.5fr 0.535em 1fr 1.2fr 1.2fr 0.535em 1.5em 0.535em 1.5em;
   grid-template-columns: repeat(10,1fr);
   position: absolute;
   color: black;
-  height: 9em;
-  width: 13em;
+  height: 12em;
+  width: 14em;
   background-color: rgba(255,255,255,0.4);
   border-radius: 0.8em;
   top: 2.3em;
-  right: 2.3em;
+  right: 1.3em;
   z-index: 1;
   -webkit-backdrop-filter: blur(1em);
   backdrop-filter: blur(1em);
@@ -69,6 +70,7 @@
   transform: translateX(18em);
   opacity: 0;
   transition: 0.2s;
+  padding-bottom: 0.3em;
   
   transform: translateX(0);
   opacity: 1;
