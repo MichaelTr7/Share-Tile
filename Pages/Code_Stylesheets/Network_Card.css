@@ -1,0 +1,40 @@
+
+
+#Wifi_Label{
+  display: flex;
+  font-size: 0.8em;
+  grid-column: 1 / span 7;
+  /* border: 1px solid white; */
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 1em;
+  font-weight: bold;
+  font-family: Arial;
+  color: rgb(65,65,65);
+}
+
+#Wifi_Toggle_Switch{
+  /* height: 50%; */
+}
+
+.Station_Toggle_Buttons{
+  grid-column: 8 / span 3;
+  height: 100%;
+  width: 120%;
+  /* border: 1px solid white; */
+}
+
+.Wifi_Card_Spacers{
+  grid-column: 1 / span 10;
+  border: 1px solid white;
+
+  
+}
+
+
+
+
+
+
+
+

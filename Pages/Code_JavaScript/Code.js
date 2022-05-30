@@ -15,4 +15,7 @@ window.onload = function(){
 
   let Background = document.getElementById('Background');
   Background.addEventListener("mousedown",Unfocus_Cards);
+
+  // let About_Card = document.getElementsByClassName('About_Card')[0];
+  // About_Card.classList.toggle("Show_About_Card");
 }

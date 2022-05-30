@@ -2,8 +2,8 @@
 .About_Card{
   display: grid;
   grid-template-columns: 2.2fr 1fr 1fr 0.25fr;
-  grid-template-rows: 4fr repeat(10,1fr) 4fr;
-  color: rgb(45,45,45);
+  grid-template-rows: 2fr 0.5fr repeat(10,1fr) 4fr;
+  color: rgb(65,65,65);
 }
 
 .About_Details{
@@ -25,6 +25,7 @@
   justify-content: center;
   align-items: flex-start;
   text-align: center;
+  opacity: 0;
 }
 
 .Tab_Bar_Items{
@@ -50,24 +51,25 @@
 #Image_Container{
   display: flex;
   grid-column: 1 / span 1;
-  grid-row: 3 / span 12;
+  grid-row: 3 / span 13;
   justify-content: center;
   align-items: flex-start;
   text-align: center;
 }
 
 #Circle_Mask{
-  margin-top: -0.5em;
-  margin-left: 0.5em;
   display: flex;
   position: relative;
   background-color: gray;
-  height: 10em;
-  width: 10em; 
+  height: min(20vw,10em);
+  width: min(20vw,10em); 
   border-radius: 100%;
-  border: 0.32em solid rgba(250,250,250,1);
+  border: 0.32em solid rgba(220,220,220,1);
   box-sizing: border-box;
-  box-shadow: 0 0.1em 0.2em 0.1em rgba(0,0,0,0.15);  
+  box-shadow: 0 0.1em 0.2em 0.1em rgba(0,0,0,0.15); 
+  background-image: url("../../Assets/Circle_Image.svg");
+  background-position: center;
+  background-size: cover;
 }
 
 .Detail_Buttons{
@@ -85,6 +87,7 @@
   background-color: rgba(255,255,255,0.35);
   box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,0.05);
   padding: 0.3em;
+  white-space: nowrap;
 }
 
 
