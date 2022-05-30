@@ -71,10 +71,6 @@
   opacity: 0;
   transition: 0.2s;
   padding-bottom: 0.3em;
-  
-  transform: translateX(0);
-  opacity: 1;
-  transition: 0.2s;
 }
 
 .Show_Network_Card{
