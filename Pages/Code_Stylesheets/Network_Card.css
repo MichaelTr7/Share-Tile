@@ -14,7 +14,7 @@
 .Station_Toggle_Buttons{
   grid-column: 8 / span 3;
   height: 100%;
-  width: 110%;
+  width: 135%;
 }
 
 .Wifi_Card_Spacers{
@@ -42,8 +42,9 @@
 }
 
 .WIFI_Symbols{
+  display: flex;
   position: relative;
-  --Diameter: 1.6em;
+  --Diameter: 1.5em;
   background-color: #2075FB;
   grid-column: 1 / span 3;
   height: var(--Diameter);
@@ -52,13 +53,16 @@
   left: calc(50% - var(--Diameter)/2);
   border-radius: 100%;
   margin-left: -0.4em;
-  background-image: url("../../Assets/WIFI.svg");
+  /* background-image: url("../../Assets/WIFI_2.svg"); */
   background-size: 60% 65%;
   background-position: center;
   background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
 }
 
 #WIFI_Symbol_2{
+  /* background-image: url("../../Assets/WIFI_3.svg"); */
   background-color: rgba(0,0,0,0.1);
 }
 
@@ -73,10 +77,48 @@
   font-size: 0.78em;
   width: 100%;
   height: 100%;
-  margin-left: -2.3em;
+  margin-left: -2.5em;
 }
 
+.Hover_Highlights{
+  position: absolute;
+  --Height: 1.9em;
+  --Width: 96%;
+  height: var(--Height);
+  width: var(--Width); 
+  /* border: 1px solid white; */
+  top: calc(4.535em + (2em - var(--Height))/2);
+  left: calc((100% - var(--Width))/2);
+  box-sizing: border-box;
+  border-radius: 0.2em;
+}
 
+#Select_Element_2{
+  top: 6.535em;
+  top: calc(4.535em + (2em - var(--Height))/2 + 2em);
+}
+
+#Select_Element_3{
+  top: 6.535em;
+  height: 1.5em;
+  top: calc(4.535em + (2em - var(--Height))/2 + 4.5em);  
+}
+  
+#Select_Element_4{
+  top: 6.535em;
+  height: 1.5em;
+  top: calc(4.535em + (2em - var(--Height))/2 + 6.535em);  
+}
+
+.Hover_Highlights:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+
+.Toggle_White_WIFI_Symbol{
+  opacity: 1;
+  
+  
+}
 
 
 

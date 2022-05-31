@@ -16,6 +16,29 @@ window.onload = function(){
   let Background = document.getElementById('Background');
   Background.addEventListener("mousedown",Unfocus_Cards);
 
-  // let About_Card = document.getElementsByClassName('About_Card')[0];
-  // About_Card.classList.toggle("Show_About_Card");
+  WIFI_Toggle_Switch = document.getElementById('WIFI_Toggle_Switch');
+  let Network_Card = document.getElementsByClassName('Network_Card')[0];
+  Network_Card.classList.toggle("Network_Card_Collapsed");
+  console.log(WIFI_Toggle_Switch);
+  WIFI_Toggle_Switch.addEventListener("click",Toggle_Network_Card);
+    
 }
+
+function Toggle_Network_Card(){
+  console.log(this.checked);
+  let Network_Card = document.getElementsByClassName('Network_Card')[0];
+  Network_Card.classList.toggle("Network_Card_Collapsed");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
