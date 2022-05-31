@@ -15,7 +15,6 @@
   transform: translateX(18em);
   opacity: 0;
   transition: 0.2s;
-  
 }
 
 .Show_Notification_Center_Card{
@@ -71,9 +70,6 @@
   opacity: 0;
   transition: 0.2s;
   overflow: hidden;
-  
-  transform: translateX(0);
-  opacity: 1;
   transition: 0.2s;
 }
 

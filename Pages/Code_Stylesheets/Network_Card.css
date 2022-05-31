@@ -53,18 +53,24 @@
   left: calc(50% - var(--Diameter)/2);
   border-radius: 100%;
   margin-left: -0.4em;
-  /* background-image: url("../../Assets/WIFI_2.svg"); */
   background-size: 60% 65%;
   background-position: center;
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
+  transition: 0.2s;
 }
 
-#WIFI_Symbol_2{
-  /* background-image: url("../../Assets/WIFI_3.svg"); */
+.Network_Card_Collapsed{
+  height: 2.5em;
+}
+
+
+
+.Off_Wifi_Toggle{
   background-color: rgba(0,0,0,0.1);
 }
+
 
 .Network_Names{
   display: flex;
@@ -86,7 +92,6 @@
   --Width: 96%;
   height: var(--Height);
   width: var(--Width); 
-  /* border: 1px solid white; */
   top: calc(4.535em + (2em - var(--Height))/2);
   left: calc((100% - var(--Width))/2);
   box-sizing: border-box;
@@ -116,8 +121,6 @@
 
 .Toggle_White_WIFI_Symbol{
   opacity: 1;
-  
-  
 }
 
 
