@@ -35,9 +35,6 @@ window.onload = function(){
   
   let WIFI_Symbol_2 = document.getElementsByClassName('WIFI_Symbols')[1];
   WIFI_Symbol_2.classList.add("Off_Wifi_Toggle");
-
-
-
 }
 
 

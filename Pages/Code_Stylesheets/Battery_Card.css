@@ -1,0 +1,32 @@
+
+#Battery_Card_Title,#Power_Source_Heading,#Energy_Heading{
+  display: flex;
+  font-size: 0.8em;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 1em;
+  font-weight: bold;
+  font-family: Arial;
+  color: rgb(65,65,65);
+  border: 1px solid white;
+}
+
+#Power_Source_Heading,#Energy_Heading{
+  font-size: 0.78em;
+  color: rgba(0,0,0,0.4);
+  font-weight: normal;
+}
+
+.Battery_Card_Spacers{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+
+}
+
+.Horizontal_Rules_2{
+  height: 0.05em;
+  width: 90%;
+  background-color: rgba(0,0,0,0.1);
+}
