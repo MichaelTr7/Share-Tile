@@ -10,8 +10,6 @@
   grid-template-columns: repeat(8,calc(1em * var(--Scaler)));
   position: absolute;
   color: black;
-  /* height: calc(11.5 * var(--Width) / 8 );
-  width: var(--Width); */
   background-color: rgba(255,255,255,0.4);
   border-radius: 1em;
   top: 2.3em;
@@ -46,10 +44,37 @@
   grid-row: 1 / span 4;
   grid-column: 1 / span 4;
   display: grid;
-  grid-template-rows: ;
-  grid-template-columns: ;
-  
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: 1fr 3fr;
+  overflow: hidden;
+  grid-gap: 0.2em;
+  padding: 0.6em;
+  box-sizing: border-box;
+  align-items: center;
 }
+
+.Circle_Control_Center_Toggles{
+  background-color: blue; 
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.Main_Toggle_Heading{
+  display: flex;
+  /* background-color: rgba(0,0,0,0.1);  */
+  font-size: 0.5em;
+  font-weight: bolder;
+  padding-left: 0.7em;
+  align-items: center;
+  color: rgb(0,0,0,0.7);
+}
+
+.Main_Toggle_Subheadings > span{
+  font-weight: normal;
+  color: rgb(0,0,0,0.5);
+}
+
 
 #Do_Not_Disturb_Container{
   grid-row: 1 / span 2;
@@ -91,11 +116,6 @@
   grid-column: 4 / span 2;
   width: calc(1.8em * 1.4);
 }
-
-
-
-
-
 
 
 
