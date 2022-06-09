@@ -1,0 +1,33 @@
+
+.Date_Card{
+  position: absolute;
+  color: black;
+  height: calc(100vh - 2em);
+  width: 22em;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 0em;
+  top: 2em;
+  right: 0em;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(300em);
+  backdrop-filter: blur(300em);
+  box-shadow: 0em 0.1em 0.5em 0.01em rgba(0,0,0,0.1);
+  transform: translateX(20em);
+  opacity: 0;
+  transition: 0.2s ease-out;
+  -webkit-mask: -webkit-gradient(linear,right 5%,left 5%,from(rgba(255, 255, 255, 1)),to(rgba(255, 255, 255, 0)));
+}
+
+.Show_Date_Card{
+  transform: translateX(0);
+  opacity: 1;
+  transition: 0.2s;
+}
+
+
+
+
+
+
+
+
