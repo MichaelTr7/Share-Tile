@@ -35,6 +35,12 @@ window.onload = function(){
   
   let WIFI_Symbol_2 = document.getElementsByClassName('WIFI_Symbols')[1];
   WIFI_Symbol_2.classList.add("Off_Wifi_Toggle");
+  
+  let Display_Slider = document.getElementById('Display_Slider'); 
+  let Sound_Slider = document.getElementById('Sound_Slider')
+  
+  Display_Slider.addEventListener('input',Adjust_Slider_Background);
+  Sound_Slider.addEventListener('input',Adjust_Slider_Background);
 }
 
 
