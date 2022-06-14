@@ -92,4 +92,37 @@
   background-color: rgba(0,0,0,0.1);
 }
 
+#Battery_Card_Select_Element_1,#Battery_Card_Select_Element_2{
+  position: absolute;
+  height: 1.5em;
+  width: calc(100% - 0.5em);
+}
+
+#Battery_Card_Select_Element_1{
+  top: 5.535em;
+  left: 0.25em;  
+}
+
+#Battery_Card_Select_Element_2{
+  top: 7.57em;
+  left: 0.25em;  
+}
+
+#Battery_Card_Select_Element_1:hover,#Battery_Card_Select_Element_2:hover{
+  background-color: rgba(0,0,0,0.1);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 

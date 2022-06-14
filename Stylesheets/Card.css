@@ -3,7 +3,7 @@
   --Margin: 3vw;
   --Absolute_Minimum_Size: 200px;
   --Absolute_Maximum_Size: calc(100vh - 2*var(--Margin));
-  --Animation_Delay: 1s;
+  --Animation_Delay: 0.3s;
 }
 
 #Main_Card{
