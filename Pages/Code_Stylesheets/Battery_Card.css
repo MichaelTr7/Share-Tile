@@ -61,10 +61,14 @@
 }
 
 #Significant_App_Energy_Logo{
-  height: 80%;
+  height: 70%;
   aspect-ratio: 1 / 1;
   background-color: rgba(0,0,0,0.1);
   border-radius: 0.4em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../Assets/Robotic_Arm_Icon.png');
 }
 
 #Significant_App_Energy_Label{

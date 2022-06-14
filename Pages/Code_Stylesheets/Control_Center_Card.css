@@ -9,7 +9,7 @@
   display: grid;
   grid-gap: var(--Spacing);
   padding: var(--Spacing);
-  grid-template-rows: repeat(10,calc(1em * var(--Control_Center_Scaling_Factor))) calc(1.8em * var(--Control_Center_Scaling_Factor));
+  grid-template-rows: repeat(10,calc(1em * var(--Control_Center_Scaling_Factor))) calc(1.6em * var(--Control_Center_Scaling_Factor));
   grid-template-columns: repeat(8,calc(1em * var(--Control_Center_Scaling_Factor)));
   position: absolute;
   color: black;
@@ -25,8 +25,8 @@
   opacity: 0;
   transition: 0.2s;
   box-sizing: border-box;
-  transform: translateX(0);
-  opacity: 1;
+  /* transform: translateX(0);
+  opacity: 1; */
 }
 
 .Show_Control_Center_Card{
@@ -57,11 +57,39 @@
 }
 
 .Circle_Control_Center_Toggles{
+  position: relative;
   background-color: blue; 
   aspect-ratio: 1 / 1;
   height: 1.6em;
   border-radius: 100%;
   background-color: rgba(0,0,0,0.1);
+}
+
+#Control_Center_FileDrop_Icon{
+  position: absolute;
+  --Diameter: 60%;
+  height: var(--Diameter);
+  width: var(--Diameter);
+  top: calc(50% - var(--Diameter)/2);
+  left: calc(50% - var(--Diameter)/2);
+}
+
+#Control_Center_Bluetooth_Icon{
+  position: absolute;
+  --Diameter: 60%;
+  height: var(--Diameter);
+  width: var(--Diameter);
+  top: calc(50% - var(--Diameter)/2);
+  left: calc(50% - var(--Diameter)/2);
+}
+
+#Control_Center_Do_Not_Disturb_Icon{
+  position: absolute;
+  --Diameter: 110%;
+  height: var(--Diameter);
+  width: var(--Diameter);
+  top: calc(50% - var(--Diameter)/2);
+  left: calc(50% - var(--Diameter)/2);
 }
 
 .Main_Toggle_Heading{
@@ -91,26 +119,50 @@
   align-items: center;
 }
 
+#Do_Not_Disturb_Circle{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  /* background-image: url("../../Assets/Moon.svg"); */
+}
+
 #Keyboard_Brightness_Container{
+  position: relative;
   grid-row: 3 / span 2;
   grid-column: 5 / span 2;
   overflow: hidden;
 }
 
+#Control_Center_Keyboard_Brightness_Icon{
+  position: absolute;
+  --Size: 38%;
+  height: var(--Size);
+  width: var(--Size);
+  top: calc(29% - var(--Size)/2);
+  left: calc(50% - var(--Size)/2);
+}
+
 #Screen_Mirroring_Container{
+  position: relative;
   grid-row: 3 / span 2;
   grid-column: 7 / span 2;
   overflow: hidden;
 }
 
-#Keyboard_Brightness_Symbol,#Screen_Mirroring_Symbol{
-  /* background-color: red; */
-  height: 40%;
+#Control_Center_Screen_Mirroring_Icon{
+  position: absolute;
+  --Size: 38%;
+  height: var(--Size);
+  width: var(--Size);
+  top: calc(30% - var(--Size)/2);
+  left: calc(50% - var(--Size)/2);
 }
 
 .Function_Labels{
+  position: absolute;
   display: flex;
-  height: 60%;
+  height: 50%;
+  top: 45%;
   font-size: 0.6em;
   justify-content: center;
   align-items: center;
@@ -128,6 +180,7 @@
 }
 
 #Sound_Container{
+  position: relative;
   grid-row: 7 / span 2;
   grid-column: 1 / span 8;
   padding: 0.4em;
@@ -200,6 +253,26 @@ input::-webkit-inner-spin-button {
   width: calc(100% - 1.6em - 0.6em - 0.6em);
 }
 
+#Audio_Selector{
+  position: absolute;
+  background-color: blue; 
+  bottom: 0;
+  right: 0.35em;
+  aspect-ratio: 1 / 1;
+  height: 1.6em;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,0.1);  
+}
+
+#Control_Center_Audio_Selector_Icon{
+  position: absolute;
+  --Diameter: 65%;
+  height: var(--Diameter);
+  width: var(--Diameter);
+  top: calc(55% - var(--Diameter)/2);
+  left: calc(50% - var(--Diameter)/2);
+}
+
 #Music_Player_Container{
   justify-content: center;
   align-items: center;
@@ -208,10 +281,35 @@ input::-webkit-inner-spin-button {
   overflow: hidden;
   display: grid;
   grid-gap: 0.6em;
-  grid-template-columns: 1fr 4fr 1fr 1fr;
+  grid-template-columns: 1fr 4fr 0.6fr 0.6fr;
   padding: 0.6em;
+  padding-right: 1em;
   box-sizing: border-box;
 }
+
+#Play_Button,#Fast_Forward_Button{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+#Play_Button{
+  background-size: 60% 50%;
+  background-image: url('../../Assets/Play.svg');
+}
+
+.Toggle_Pause{
+  background-size: 50% 50%;
+  background-image: url('../../Assets/Pause.svg');
+}
+
+#Fast_Forward_Button{
+  background-size: 100% 50%;
+  background-image: url('../../Assets/Fast_Forward.svg');
+}
+
 
 #Album_Art{
   background-color: rgba(0,0,0,0.1);
@@ -221,17 +319,46 @@ input::-webkit-inner-spin-button {
 }
 
 #Battery_Percentage_Container{
+  position: relative;
   grid-row: 11 / span 1;
   grid-column: 1 / span 3;
 }
 
-#Accessibility_Container{
-  grid-row: 11 / span 1;
-  grid-column: 4 / span 2;
-  width: calc(1.8em * 1.6);
+#Control_Center_Battery_Percentage_Icon{
+  position: absolute;
+  --Size: 75%;
+  height: var(--Size);
+  width: var(--Size);
+  top: calc(50% - var(--Size)/2);
+  left: calc(48.5% - var(--Size)/2);
 }
 
 
+#Accessibility_Container{
+  position: relative;
+  grid-row: 11 / span 1;
+  grid-column: 4 / span 2;
+  width: calc(1.6em * 1.6);
+}
+
+#Control_Center_Accessibility_Icon{
+  position: absolute;
+  --Diameter: 57%;
+  height: var(--Diameter);
+  width: var(--Diameter);
+  top: calc(50% - var(--Diameter)/2);
+  left: calc(50% - var(--Diameter)/2);
+  
+}
+
+#Control_Center_WIFI_Icon{
+  position: relative;
+  --Size: 60%;
+  height: var(--Size);
+  width: var(--Size);
+  top: calc(50% - var(--Size)/2);
+  left: calc(50% - var(--Size)/2);  
+}
 
 
 

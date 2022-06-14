@@ -1,32 +1,50 @@
 
-.Date_Card{
+.Widgets_Card{
+  display: grid;
+  --Spacing: 0.9em;
+  grid-gap: var(--Spacing);
+  padding: var(--Spacing);
+  box-sizing: border-box;
+  grid-template-rows: repeat(5,10em);
+  grid-template-columns: repeat(2,10em);
   position: absolute;
   color: black;
   height: calc(100vh - 2em);
-  width: 22em;
-  background-color: rgba(255,255,255,0.3);
+  /* width: 22em; */
+  /* background-color: rgba(255,255,255,0.3); */
+  /* border: 2px solid white; */
   border-radius: 0em;
   top: 2em;
   right: 0em;
   z-index: 1;
-  -webkit-backdrop-filter: blur(300em);
-  backdrop-filter: blur(300em);
-  box-shadow: 0em 0.1em 0.5em 0.01em rgba(0,0,0,0.1);
+  /* -webkit-backdrop-filter: blur(300em); */
+  /* backdrop-filter: blur(300em); */
+  /* box-shadow: 0em 0.1em 0.5em 0.01em rgba(0,0,0,0.1); */
   transform: translateX(20em);
   opacity: 0;
   transition: 0.2s ease-out;
-  -webkit-mask: -webkit-gradient(linear,right 5%,left 5%,from(rgba(255, 255, 255, 1)),to(rgba(255, 255, 255, 0)));
+  z-index: 20;
+  /* -webkit-mask: -webkit-gradient(linear,right 5%,left 5%,from(rgba(255, 255, 255, 1)),to(rgba(255, 255, 255, 0))); */
+  /* transform: translateX(0);
+  opacity: 1; */
+  overflow: scroll;
 }
 
-.Show_Date_Card{
+.Show_Widgets_Card{
   transform: translateX(0);
   opacity: 1;
   transition: 0.2s;
 }
 
+.Widget_Blocks{
+  background-color: rgba(255,255,255,1);
+  border-radius: 1em;  
+}
 
-
-
+#Activity_Bands_Widget{
+    grid-column: 1 / span 2;
+  
+}
 
 
 

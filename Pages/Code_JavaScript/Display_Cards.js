@@ -5,7 +5,7 @@ function Display_Card(){
   let Network_Card = document.getElementsByClassName('Network_Card')[0];
   let Battery_Card = document.getElementsByClassName('Battery_Card')[0];
   let Control_Center_Card = document.getElementsByClassName('Control_Center_Card')[0];
-  let Date_Card = document.getElementsByClassName('Date_Card')[0];
+  let Widgets_Card = document.getElementsByClassName('Widgets_Card')[0];
   
   if(Button_Identifier == "About_Button"){
     console.log("About button pressed");
@@ -13,7 +13,7 @@ function Display_Card(){
     Network_Card.classList.remove("Show_Network_Card");
     Battery_Card.classList.remove("Show_Battery_Card");
     Control_Center_Card.classList.remove("Show_Control_Center_Card");
-    Date_Card.classList.remove("Show_Date_Card");
+    Widgets_Card.classList.remove("Show_Widgets_Card");
     About_Card.classList.toggle("Show_About_Card");
   }
   else if(Button_Identifier == "Network_Button"){
@@ -22,7 +22,7 @@ function Display_Card(){
     // Network_Card.classList.remove("Show_Network_Card");
     Battery_Card.classList.remove("Show_Battery_Card");
     Control_Center_Card.classList.remove("Show_Control_Center_Card");
-    Date_Card.classList.remove("Show_Date_Card");
+    Widgets_Card.classList.remove("Show_Widgets_Card");
     Network_Card.classList.toggle("Show_Network_Card");
   }
   else if(Button_Identifier == "Battery_Button"){
@@ -31,7 +31,7 @@ function Display_Card(){
     Network_Card.classList.remove("Show_Network_Card");
     // Battery_Card.classList.remove("Show_Battery_Card");
     Control_Center_Card.classList.remove("Show_Control_Center_Card");
-    Date_Card.classList.remove("Show_Date_Card");
+    Widgets_Card.classList.remove("Show_Widgets_Card");
     Battery_Card.classList.toggle("Show_Battery_Card");
   }
   else if(Button_Identifier == "Notification_Button"){
@@ -40,7 +40,7 @@ function Display_Card(){
     Network_Card.classList.remove("Show_Network_Card");
     Battery_Card.classList.remove("Show_Battery_Card");
     // Control_Center_Card.classList.remove("Show_Control_Center_Card");
-    Date_Card.classList.remove("Show_Date_Card");
+    Widgets_Card.classList.remove("Show_Widgets_Card");
     Control_Center_Card.classList.toggle("Show_Control_Center_Card");
   }
   else if(Button_Identifier == "Date_Button"){
@@ -49,8 +49,8 @@ function Display_Card(){
     Network_Card.classList.remove("Show_Network_Card");
     Battery_Card.classList.remove("Show_Battery_Card");
     Control_Center_Card.classList.remove("Show_Control_Center_Card");
-    // Date_Card.classList.remove("Show_Date_Card");
-    Date_Card.classList.toggle("Show_Date_Card");
+    // Widgets_Card.classList.remove("Show_Widgets_Card");
+    Widgets_Card.classList.toggle("Show_Widgets_Card");
   }    
 }
 
@@ -59,12 +59,12 @@ function Unfocus_Cards(){
   let Network_Card = document.getElementsByClassName('Network_Card')[0];
   let Battery_Card = document.getElementsByClassName('Battery_Card')[0];
   let Control_Center_Card = document.getElementsByClassName('Control_Center_Card')[0];
-  let Date_Card = document.getElementsByClassName('Date_Card')[0];
+  let Widgets_Card = document.getElementsByClassName('Widgets_Card')[0];
   About_Card.classList.remove("Show_About_Card");
   Network_Card.classList.remove("Show_Network_Card");
   Battery_Card.classList.remove("Show_Battery_Card");
   Control_Center_Card.classList.remove("Show_Control_Center_Card");
-  Date_Card.classList.remove("Show_Date_Card");
+  Widgets_Card.classList.remove("Show_Widgets_Card");
 }
 
 
