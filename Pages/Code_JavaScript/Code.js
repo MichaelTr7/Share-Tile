@@ -43,14 +43,10 @@ window.onload = function(){
   Sound_Slider.addEventListener('input',Adjust_Slider_Background);
   document.getElementById('WIFI_Toggle_Switch').click();
   
-  
-  
-  
-  
-  
-  
-  
-  
+  let Main_Control_Toggles = document.getElementsByClassName('Control_Centre_Main_Toggle_Touch_Zones');
+  for(Index=0; Index < Main_Control_Toggles.length; Index++){
+    Main_Control_Toggles[Index].addEventListener('click',Toggle_Main_Control);
+  }
   
 }
 

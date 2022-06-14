@@ -68,11 +68,12 @@
 
 #Control_Center_FileDrop_Icon{
   position: absolute;
-  --Diameter: 60%;
+  --Diameter: 50%;
   height: var(--Diameter);
   width: var(--Diameter);
   top: calc(50% - var(--Diameter)/2);
   left: calc(50% - var(--Diameter)/2);
+  transform: scale(1.3);
 }
 
 #Control_Center_Bluetooth_Icon{
@@ -364,7 +365,6 @@ input::-webkit-inner-spin-button {
 
 .Control_Centre_Main_Toggle_Touch_Zones{
   position: absolute;
-  /* background-color: rgba(0,0,0,0.1); */
   height: calc(100%/3);
   width: 100%; 
   left: 0;
@@ -382,17 +382,19 @@ input::-webkit-inner-spin-button {
   top: calc(100% * 2/3);
 }
 
-.Control_Centre_Main_Toggle_Touch_Zones:hover{
-  background-color: rgba(0,0,0,0.1);
+.White_Fill_Toggle{
+  fill-opacity: 1;
+  fill: white;
+}
 
+.Main_Toggle_Symbols{
+  transition: 0.15s;
+}
+
+.Main_Toggle_Background{
   
   
 }
-
-
-
-
-
 
 
 
