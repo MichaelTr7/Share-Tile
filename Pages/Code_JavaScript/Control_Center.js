@@ -1,10 +1,8 @@
 
-
 function Toggle_Main_Control(){
   let Lookup_Table = {"Main_Toggle_Touch_Zone_1":"Control_Center_WIFI_Symbol",
                       "Main_Toggle_Touch_Zone_2":"Control_Center_Bluetooth_Symbol",
-                      "Main_Toggle_Touch_Zone_3":"Control_Center_FileDrop_Symbol"
-};
+                      "Main_Toggle_Touch_Zone_3":"Control_Center_FileDrop_Symbol"};
   
   let Target_Element = document.getElementById(Lookup_Table[String(this.id)]);
   Target_Element.classList.toggle("White_Fill_Toggle");
@@ -54,21 +52,20 @@ function Toggle_Main_Control(){
         let Bluetooth_Toggle = document.getElementById('Main_Toggle_Touch_Zone_2');
         Bluetooth_Toggle.click();
       }
-  
-    }
-    
-
-
-    
-  }
-  
-  
-  
-  
-  
-  
-
-  
+    }  
+  }  
 }
+
+function Do_Not_Disturb_Toggled(){
+  let Moon_Symbol = document.getElementById('Moon_Symbol');
+  Moon_Symbol.classList.toggle("White_Fill_Toggle");
+  let Moon_Symbol_Container = document.getElementById('Do_Not_Disturb_Circle');
+  Moon_Symbol_Container.classList.toggle('Toggle_Purple_Background');
+
+}
+
+
+
+
 
 

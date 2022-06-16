@@ -32,12 +32,3 @@ function Mars_Base_Station_Clicked(){
   WIFI_Label.innerHTML = "Wi-Fi<br><span>Mars Base Station</span>";
 }
 
-function Other_Networks_Clicked(){
-  console.log("Clicked 3");
-}
-
-function Other_Networks_Clicked(){
-  console.log("Clicked 3");
-}
-
-

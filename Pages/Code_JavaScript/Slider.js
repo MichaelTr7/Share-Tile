@@ -9,4 +9,10 @@ function Adjust_Slider_Background(){
   let Slider_Name = String(this.id);
   let Background_Property_String = "linear-gradient(to right, rgba(250,250,250,1) 0%, rgba(250,250,250,1)" + Percentage + "% , rgba(0,0,0,0.1)" +  Percentage + "%, rgba(0,0,0,0.1) 100%)";
   this.style.background = Background_Property_String;
+
+  if(String(this.id).includes("Display_Slider")){
+    let Brightness_Factor = parseInt(this.value)/100 + 0.2;
+    document.body.style.filter = "brightness(" + String(Brightness_Factor) + ")";    
+  }
 }
+

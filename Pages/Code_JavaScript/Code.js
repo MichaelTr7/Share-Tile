@@ -63,7 +63,8 @@ window.onload = function(){
   let Main_Toggle_Container_3 = Symbol_3.parentElement.parentElement;
   Main_Toggle_Container_3.classList.toggle('Main_Toggle_Background');
   
-  
+  let Do_Not_Disturb_Container = document.getElementById('Do_Not_Disturb_Container');
+  Do_Not_Disturb_Container.addEventListener('click',Do_Not_Disturb_Toggled);
   
   
   

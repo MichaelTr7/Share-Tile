@@ -8,7 +8,6 @@ function Display_Card(){
   let Widgets_Card = document.getElementsByClassName('Widgets_Card')[0];
   
   if(Button_Identifier == "About_Button"){
-    console.log("About button pressed");
     // About_Card.classList.remove("Show_About_Card");
     Network_Card.classList.remove("Show_Network_Card");
     Battery_Card.classList.remove("Show_Battery_Card");
@@ -17,7 +16,6 @@ function Display_Card(){
     About_Card.classList.toggle("Show_About_Card");
   }
   else if(Button_Identifier == "Network_Button"){
-    console.log("Network button pressed");
     About_Card.classList.remove("Show_About_Card");
     // Network_Card.classList.remove("Show_Network_Card");
     Battery_Card.classList.remove("Show_Battery_Card");
@@ -26,7 +24,6 @@ function Display_Card(){
     Network_Card.classList.toggle("Show_Network_Card");
   }
   else if(Button_Identifier == "Battery_Button"){
-    console.log("Battery button pressed");
     About_Card.classList.remove("Show_About_Card");
     Network_Card.classList.remove("Show_Network_Card");
     // Battery_Card.classList.remove("Show_Battery_Card");
@@ -35,7 +32,6 @@ function Display_Card(){
     Battery_Card.classList.toggle("Show_Battery_Card");
   }
   else if(Button_Identifier == "Notification_Button"){
-    console.log("Notification button pressed");
     About_Card.classList.remove("Show_About_Card");
     Network_Card.classList.remove("Show_Network_Card");
     Battery_Card.classList.remove("Show_Battery_Card");
@@ -44,7 +40,6 @@ function Display_Card(){
     Control_Center_Card.classList.toggle("Show_Control_Center_Card");
   }
   else if(Button_Identifier == "Date_Button"){
-    console.log("Date button pressed");
     About_Card.classList.remove("Show_About_Card");
     Network_Card.classList.remove("Show_Network_Card");
     Battery_Card.classList.remove("Show_Battery_Card");
