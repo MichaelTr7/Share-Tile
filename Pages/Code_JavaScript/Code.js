@@ -47,6 +47,27 @@ window.onload = function(){
   for(Index=0; Index < Main_Control_Toggles.length; Index++){
     Main_Control_Toggles[Index].addEventListener('click',Toggle_Main_Control);
   }
+    
+  let Symbol_1 = document.getElementById('Control_Center_WIFI_Symbol');
+  Symbol_1.classList.toggle("White_Fill_Toggle");
+  let Main_Toggle_Container_1 = Symbol_1.parentElement.parentElement;
+  Main_Toggle_Container_1.classList.toggle('Main_Toggle_Background');
+  
+  let Symbol_2 = document.getElementById('Control_Center_Bluetooth_Symbol');
+  Symbol_2.classList.toggle("White_Fill_Toggle");
+  let Main_Toggle_Container_2 = Symbol_2.parentElement.parentElement;
+  Main_Toggle_Container_2.classList.toggle('Main_Toggle_Background');
+  
+  let Symbol_3 = document.getElementById('Control_Center_FileDrop_Symbol');
+  Symbol_3.classList.toggle("White_Fill_Toggle");
+  let Main_Toggle_Container_3 = Symbol_3.parentElement.parentElement;
+  Main_Toggle_Container_3.classList.toggle('Main_Toggle_Background');
+  
+  
+  
+  
+  
+  
   
 }
 

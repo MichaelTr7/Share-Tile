@@ -1,8 +1,9 @@
 
 function Toggle_Network_Card(){
-  console.log(this.checked);
   let Network_Card = document.getElementsByClassName('Network_Card')[0];
   Network_Card.classList.toggle("Network_Card_Collapsed");
+  document.getElementById('Main_Toggle_Touch_Zone_1').click()
+  
 }
 
 function Starlink_Wifi_Clicked(){
@@ -14,6 +15,8 @@ function Starlink_Wifi_Clicked(){
   WIFI_Symbol_1.classList.remove("Off_Wifi_Toggle");
   let WIFI_Symbol_2 = document.getElementsByClassName('WIFI_Symbols')[1];
   WIFI_Symbol_2.classList.add("Off_Wifi_Toggle");
+  let WIFI_Label = document.getElementById('WIFI_Label');
+  WIFI_Label.innerHTML = "Wi-Fi<br><span>Starlink</span>";
 }
 
 function Mars_Base_Station_Clicked(){
@@ -25,6 +28,8 @@ function Mars_Base_Station_Clicked(){
   WIFI_Symbol_1.classList.add("Off_Wifi_Toggle");
   let WIFI_Symbol_2 = document.getElementsByClassName('WIFI_Symbols')[1];
   WIFI_Symbol_2.classList.remove("Off_Wifi_Toggle");
+  let WIFI_Label = document.getElementById('WIFI_Label');
+  WIFI_Label.innerHTML = "Wi-Fi<br><span>Mars Base Station</span>";
 }
 
 function Other_Networks_Clicked(){
