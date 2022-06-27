@@ -16,3 +16,24 @@ function Adjust_Slider_Background(){
   }
 }
 
+function Get_Current_Volume(){
+  let Volume_Level = parseInt(document.getElementById('Sound_Slider').value);
+  return Volume_Level;
+}
+
+function Play_Button_Pressed(){
+  console.log("Play button pressed");
+  
+}
+
+
+var Song_Index = 0;
+function Fast_Forward_Button_Pressed(){
+  let Song_Title = document.getElementById('Song_Title');
+  let Song_Array = ["The Transformers<br><span>Robots in Disguise</span>","Super Mario Bros<br><span>Coin Run</span>","Pac-Man<br><span>Eat em All</span>"];
+  Song_Index = Song_Index + 1;
+  Song_Index = Song_Index % Song_Array.length;
+  let Next_Song_Title = String(Song_Array[Song_Index]);
+  Song_Title.innerHTML = Next_Song_Title;
+  return Song_Index;
+}

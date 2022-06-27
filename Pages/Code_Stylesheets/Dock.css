@@ -59,8 +59,7 @@
   -webkit-backdrop-filter: blur(1em);
   backdrop-filter: blur(1em);
   box-shadow: 0em 0.1em 0.5em 0.01em rgba(0,0,0,0.1);
-  background-color: rgba(255,255,255,0.4);
-  background-color: rgba(225,225,232,0.5);
+  background-color: rgba(255,255,255,0.3);
   z-index: 20;
 }
 
@@ -76,10 +75,12 @@
   align-items: center;
   outline: none;
   border: none;
-  border: 1px solid rgba(0,0,0,0.2);
-  border-radius: calc(0.018*var(--Dock_Width));
-  box-shadow: 0 calc(0.003*var(--Dock_Width)) calc(0.005*var(--Dock_Width)) 0 rgba(0,0,0,0.1);
+  border-radius: calc(0.0175*var(--Dock_Width));
+  box-shadow: 0 calc(0.001*var(--Dock_Width)) calc(0.003*var(--Dock_Width)) calc(0.0005*var(--Dock_Width)) rgba(0,0,0,0.2);
   box-sizing: border-box;
+  background-size: 105%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #Background{
@@ -91,6 +92,47 @@
   background-position: center;
   background-color: rgba(205,205,217,1);
   filter: saturate(0.97);
+}
+
+#Certifications_Icon{
+  background-image: url("../../Assets/Education_Icon.svg");
+  -webkit-transform: translate3d(0,0,0);
+}
+
+#Courses_Icon{
+  background-image: url("../../Assets/Courses_Icon.svg");
+  -webkit-transform: translate3d(0,0,0);
+}
+
+#Volunteer_Work_Icon{
+  background-image: url("../../Assets/Volunteer_Icon.svg");
+  -webkit-transform: translate3d(0,0,0);
+}
+
+#Toybox_Icon{
+  background-image: url("../../Assets/Toybox_Icon_V2.svg");
+  -webkit-transform: translate3d(0,0,0);
+  filter: hue-rotate(230deg);
+}
+
+#Academic_Projects_Icon{
+  background-image: url("../../Assets/Projects_Icon.svg");
+  -webkit-transform: translate3d(0,0,0);
+  background-size: 100%;
+}
+
+#Skills_Icon{
+  background-image: url("../../Assets/Skills_Icon_2.svg");
+  -webkit-transform: translate3d(0,0,0);
+  background-size: 100%;
+}
+
+
+#Messages_Icon{
+  background-image: url("../../Assets/Messages_Icon.svg");
+  -webkit-transform: translate3d(0,0,0);
+  background-size: 100%;
+  filter: saturate(0.8);
 }
 
 

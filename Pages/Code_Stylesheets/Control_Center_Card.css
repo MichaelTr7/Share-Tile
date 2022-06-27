@@ -25,6 +25,7 @@
   opacity: 0;
   transition: 0.2s;
   box-sizing: border-box;
+  z-index: 50;
 }
 
 .Show_Control_Center_Card{
@@ -399,14 +400,16 @@ input::-webkit-inner-spin-button {
   animation: Moon_Spin_Frames 0.15s linear forwards;
 }
 
-
 @keyframes Moon_Spin_Frames {
   from{transform: rotate(0deg);}
   to{transform: rotate(360deg);}
 }
 
 
-
+@keyframes Cover_Flow_Keyframes {
+  0%{}
+  100%{}
+}
 
 
 

@@ -66,6 +66,7 @@ window.onload = function(){
   let Do_Not_Disturb_Container = document.getElementById('Do_Not_Disturb_Container');
   Do_Not_Disturb_Container.addEventListener('click',Do_Not_Disturb_Toggled);
   
+  document.getElementById('Fast_Forward_Button').addEventListener('click',Fast_Forward_Button_Pressed);
   
   
   
