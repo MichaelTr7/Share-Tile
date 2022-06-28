@@ -34,7 +34,6 @@
   transition: 0.2s ease-out;
 }
 
-
 .Show_Widgets_Card{
   transform: translateX(0);
   opacity: 1;

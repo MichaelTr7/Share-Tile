@@ -4,7 +4,6 @@ window.onload = function(){
   for(Index=0; Index < Menu_Bar_Icons.length; Index++){
     Menu_Bar_Icons[Index].addEventListener('mousedown',Display_Card); 
   }
-  
 
   
   let Dock = document.getElementById('Dock');
@@ -71,7 +70,12 @@ window.onload = function(){
     App_Icons[Index].addEventListener("mouseover",Icon_Hovered);
   }
 
+  
+  let About_Button = document.getElementById('About_Button');
+  console.log(About_Button);
+  About_Button.dispatchEvent(new Event('mousedown'));
 
+  
 }
 
 
