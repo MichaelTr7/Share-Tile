@@ -5,10 +5,7 @@ window.onload = function(){
     Menu_Bar_Icons[Index].addEventListener('mousedown',Display_Card); 
   }
   
-  let App_Icons = document.getElementsByClassName('App_Icons');
-  for(Index=0; Index < App_Icons.length; Index++){
-    App_Icons[Index].addEventListener("mouseover",Icon_Hovered);
-  }
+
   
   let Dock = document.getElementById('Dock');
   Dock.addEventListener("mouseleave",Icon_Left);
@@ -68,9 +65,13 @@ window.onload = function(){
   
   document.getElementById('Fast_Forward_Button').addEventListener('click',Fast_Forward_Button_Pressed);
   
-  
-  
-  
+  let App_Icons = document.getElementsByClassName('App_Icons');
+  for(Index=0; Index < App_Icons.length; Index++){
+    App_Icons[Index].addEventListener("click",Launch_Application);
+    App_Icons[Index].addEventListener("mouseover",Icon_Hovered);
+  }
+
+
 }
 
 

@@ -28,7 +28,7 @@ function Icon_Left(){
 
 
 function Magnify_Focussed_Icons(Target_Icon){
-  console.log("Magnify focussed items...");
+  // console.log("Magnify focussed items...");
   let Icons_Class = document.getElementsByClassName('App_Icons');
   let Central_Index = parseInt(Target_Icon.dataset.index);
   let Immediate_Neighbouring_Indices = [Central_Index-1, Central_Index+1];
@@ -39,7 +39,7 @@ function Magnify_Focussed_Icons(Target_Icon){
   
   // Central Icon
   Target_Icon.classList.add('Scale_Level_0');
-  console.log(Target_Icon);
+  // console.log(Target_Icon);
 
   
   // Magnify - Level 1
