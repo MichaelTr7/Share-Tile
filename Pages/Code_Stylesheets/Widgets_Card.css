@@ -45,10 +45,17 @@
   border-radius: 1em;  
 }
 
-#Activity_Bands_Widget{
+#Spectrum_Analyzer_Widget{
     grid-column: 1 / span 2;
+    background: linear-gradient(180deg, #434343 -30.4%, #2B2B2B 105.99%);
 }
 
+#Weather_Widget{
+  grid-column: 1 / span 2;
+}
 
+#Notes_Widget{
+  grid-column: 2 / span 1;
+}
 
 

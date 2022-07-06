@@ -26,6 +26,8 @@
   transition: 0.2s;
   box-sizing: border-box;
   z-index: 50;
+  /* transform: translateX(0);
+  opacity: 1; */
 }
 
 .Show_Control_Center_Card{
@@ -287,6 +289,7 @@ input::-webkit-inner-spin-button {
   padding: 0.6em;
   padding-right: 1em;
   box-sizing: border-box;
+  overflow: visible;
 }
 
 #Play_Button,#Fast_Forward_Button{
@@ -314,10 +317,12 @@ input::-webkit-inner-spin-button {
 
 
 #Album_Art{
+  position: relative;
   background-color: rgba(0,0,0,0.1);
   height: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 0.2em;
+  overflow: hidden;
 }
 
 #Battery_Percentage_Container{

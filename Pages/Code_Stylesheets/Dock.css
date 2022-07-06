@@ -98,6 +98,7 @@
 #Certifications_Icon{
   background-image: url("../../Assets/Certifications_Icon.svg");
   -webkit-transform: translate3d(0,0,0);
+  background-size: 105%;
 }
 
 #Education_Icon{
@@ -115,6 +116,7 @@
 #Volunteer_Work_Icon{
   background-image: url("../../Assets/Volunteer_Icon.svg");
   -webkit-transform: translate3d(0,0,0);
+  background-size: 105%;
 }
 
 #Toybox_Icon{

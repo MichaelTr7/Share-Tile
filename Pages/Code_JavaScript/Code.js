@@ -5,6 +5,21 @@ window.onload = function(){
     Menu_Bar_Icons[Index].addEventListener('mousedown',Display_Card); 
   }
 
+  let Album_1 = document.getElementById('Album_1');
+  Album_1.classList.add('State_1');
+
+  let Album_2 = document.getElementById('Album_2');
+  Album_2.classList.add('State_2');
+  
+  let Album_3 = document.getElementById('Album_3');
+  Album_3.classList.add('State_3');
+  
+  let Album_4 = document.getElementById('Album_4');
+  Album_4.classList.add('State_4');
+  
+  let Album_5 = document.getElementById('Album_5');
+  Album_5.classList.add('State_5');
+  
   
   let Dock = document.getElementById('Dock');
   Dock.addEventListener("mouseleave",Icon_Left);
@@ -69,12 +84,15 @@ window.onload = function(){
     App_Icons[Index].addEventListener("click",Launch_Application);
     App_Icons[Index].addEventListener("mouseover",Icon_Hovered);
   }
-
   
   let About_Button = document.getElementById('About_Button');
-  console.log(About_Button);
   About_Button.dispatchEvent(new Event('mousedown'));
-
+  
+  let Play_Button = document.getElementById('Play_Button');
+  // Play_Button.addEventListener('click',);
+  
+  
+  
   
 }
 
