@@ -1,4 +1,5 @@
 
+var Song_Position = 0;
 var Song_Index = 0;
 let State_Machine_Array = ["State_0","State_1","State_2","State_3","State_4","State_5"];
 
@@ -30,6 +31,13 @@ function Fast_Forward_Button_Pressed(){
 }
 
 function Play_Pause_Song(){
+  console.log("Play and pause song");
+  let Sound_Slider = document.getElementById('Sound_Slider');
+  let Volume_Percentage = parseInt(Sound_Slider.value);
+  let Normalization_Factor = 1;
+  let Input_Volume = (Volume_Percentage/100)*Normalization_Factor;
+  console.log(Input_Volume);
+  
   
   
   

@@ -12,13 +12,20 @@
   background-size: 102%;
   background-repeat: no-repeat;
   background-position: center;
-  /* border: 0.1px solid rgba(250,250,250,1); */
   box-sizing: border-box;
 }
 
 #Album_0,#Album_3{
-  /* background-color: green; */
   background-image: url("../../Assets/Pac-Man.png");
+}
+
+#Album_1,#Album_4{
+  position: absolute;
+  background-image: url("../../Assets/Autobots Icon.png");
+}
+
+#Album_2,#Album_5{
+  background-image: url("../../Assets/Mario Coin.png");
 }
 
 .State_0{
@@ -27,19 +34,19 @@
   animation: Expand_Keyframes 0.5s ease forwards;
 }
 
-#Album_1,#Album_4{
-  position: absolute;
-  background-image: url("../../Assets/Autobots Icon.png");
-}
-
-.State_5{
-  left: 100%;
+.State_1{
+  left: -100%;
   top: 0%;
 }
 
-#Album_2,#Album_5{
-  /* background-color: blue; */
-  background-image: url("../../Assets/Mario Coin.png");
+.State_2{
+  left: -100%;
+  top: -100%;
+}
+
+.State_3{
+  left: 0%;
+  top: -100%;
 }
 
 .State_4{
@@ -47,20 +54,8 @@
   top: -100%;
 }
 
-
-.State_3{
-  left: 0%;
-  top: -100%;
-}
-
-
-.State_2{
-  left: -100%;
-  top: -100%;
-}
-
-.State_1{
-  left: -100%;
+.State_5{
+  left: 100%;
   top: 0%;
 }
 
@@ -78,16 +73,10 @@
   background-repeat: no-repeat;
 }
 
-/* .Expand_Animation{
-  animation: Expand_Keyframes 0.2s ease forwards;
-} */
-
 @keyframes Expand_Keyframes {
-  from{transform: scale(0.5)}
-  to{transform: scale(1)}
+  from{transform: scale(0.5);}
+  to{transform: scale(1);}
 }
-
-
 
 .Slide_Album_Animation{
   animation: Slide_Album_Keyframes 1s ease forwards; 
@@ -101,16 +90,6 @@
   80%{transform: translateX(-100%)  translateY(0%);}
   100%{transform: translateX(0%) translateY(0%); opacity: 1;}
 }
-
-/* .Queue_Animation{
-  animation: Queue_Keyframes 0.5s ease forwards;   
-}
-
-@keyframes Queue_Keyframes {
-  0%{}
-  100%{transform: translateX(200%) translateY(0%); opacity: 1;}
-}
- */
 
 
 

@@ -19,6 +19,8 @@
   z-index: 20;
   overflow: scroll;
   z-index: 20;
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .Widgets_Glass_Background{
@@ -42,20 +44,18 @@
 
 .Widget_Blocks{
   background-color: rgba(255,255,255,1);
-  border-radius: 1em;  
-}
-
-#Spectrum_Analyzer_Widget{
-    grid-column: 1 / span 2;
-    background: linear-gradient(180deg, #434343 -30.4%, #2B2B2B 105.99%);
+  border-radius: 1em;
+  overflow: hidden;
 }
 
 #Weather_Widget{
+  position: relative;
   grid-column: 1 / span 2;
+  background: linear-gradient(180deg, rgb(0,185,230) -30.4%, rgb(0,170,248) 105.99%);
 }
 
-#Notes_Widget{
+#Clock_Widget{
+  position: relative;
   grid-column: 2 / span 1;
+  background: linear-gradient(180deg, #434343 -30.4%, #2B2B2B 105.99%);
 }
-
-

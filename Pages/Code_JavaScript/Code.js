@@ -89,7 +89,7 @@ window.onload = function(){
   About_Button.dispatchEvent(new Event('mousedown'));
   
   let Play_Button = document.getElementById('Play_Button');
-  // Play_Button.addEventListener('click',);
+  Play_Button.addEventListener('click',Play_Pause_Song);
   
   
   

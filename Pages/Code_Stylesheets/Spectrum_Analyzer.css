@@ -1,0 +1,87 @@
+
+#Spectrum_Analyzer_Widget{
+  position: relative;
+  grid-column: 1 / span 2;
+  background: linear-gradient(180deg, #434343 -30.4%, #2B2B2B 105.99%);
+}
+
+#Spectrum_Analyzer_Inset{
+  display: flex;
+  position: absolute;
+  --Border_Margin: 0.4rem;
+  background-color: rgba(255,255,255,0.04);
+  height: calc(100% - 2*var(--Border_Margin));
+  width: calc(100% - 2*var(--Border_Margin));
+  top: var(--Border_Margin);
+  left: var(--Border_Margin);
+  border-radius: 0.65rem;
+  font-size: 1em;
+  box-shadow: 0 0.1rem 0.12rem 0.1rem rgba(0,0,0,0.1), 
+  inset 0 0.05rem 0rem 0.02rem rgba(255,255,255,0.05);
+  justify-content: center;
+  align-items: center;
+}
+
+#Spectrum_Bars_Container{
+  --Spacing: 0.5em;
+  display: grid;
+  grid-template-rows: 8fr 1fr;
+  grid-template-columns: repeat(7,1fr);
+  --Border_Margin: 0.3rem;
+  height: calc(100% - 2*var(--Border_Margin));
+  width: calc(100% - 2*var(--Border_Margin));
+  grid-gap: var(--Spacing);
+  padding: var(--Spacing);
+  box-sizing: border-box;
+}
+
+.Frequency_Labels{
+  display: flex;
+  font-size: 0.5em;
+  color: rgba(100,100,100,1);
+  text-align: center;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+.Bar_Containers{
+  display: grid;
+  grid-gap: 0.15rem;
+}
+
+.LED_Bars{
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 0.1rem;
+}
+
+.Bars_7{
+  background-color: rgba();
+}
+.Bars_6{
+  background-color: rgba();
+}
+.Bars_5{
+  background-color: rgba();
+}
+.Bars_4{
+  background-color: rgba();
+}
+.Bars_3{
+  background-color: rgba();
+}
+.Bars_2{
+  background-color: rgba();
+}
+.Bars_1{
+  background-color: rgba();
+}
+
+
+
+
+
+
+
+
+
