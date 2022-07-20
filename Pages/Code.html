@@ -28,6 +28,7 @@
     <script src="./Code_JavaScript/Control_Center.js" type="text/javascript"></script>
     <script src="./Code_JavaScript/Open_Application.js" type="text/javascript"></script>
     <script src="./Code_JavaScript/Album_Flow.js" type="text/javascript"></script>
+    <script src="./Code_JavaScript/Spectrum_Analyzer.js" type="text/javascript"></script>
 
 
     <meta name="viewport" 
@@ -365,15 +366,15 @@
                 <div class="LED_Bars Bars_1"></div>
 
             </div>
-            <div class="Bar_Containers">
-                <div class="LED_Bars Bars_7"></div>
-                <div class="LED_Bars Bars_6"></div>
-                <div class="LED_Bars Bars_5"></div>
-                <div class="LED_Bars Bars_4"></div>
-                <div class="LED_Bars Bars_3"></div>
-                <div class="LED_Bars Bars_2"></div>
-                <div class="LED_Bars Bars_1"></div>
-
+            <div id="Controls_Container">
+                <div id="Green_LED" class="Power_LEDs"></div>
+                <div id="Red_LED" class="Power_LEDs"></div>
+                <div id="Power_Knob" class="Control_Knobs"></div>
+                <label id="Power_Label" class="Control_Knob_Labels">Power</label>
+                <div id="Gain_Knob" class="Control_Knobs"> </div>
+                <label id="Gain_Label" class="Control_Knob_Labels">Gain</label>
+                
+                
             </div>
 
 
@@ -383,7 +384,7 @@
             <div class="Frequency_Labels">5KHz</div>
             <div class="Frequency_Labels">12KHz</div>
             <div class="Frequency_Labels">22Khz</div>
-            <div class="Frequency_Labels">44KHz</div>
+            <div class="Frequency_Labels">Controls</div>
 
             
             
