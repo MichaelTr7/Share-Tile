@@ -45,6 +45,11 @@
   align-items: center;
 }
 
+.Frequency_Labels:nth-last-child(1){
+  padding-left: 0.5rem;
+}
+
+
 .Bar_Containers{
   display: grid;
   grid-gap: 0.15rem;
@@ -78,26 +83,61 @@
 }
 
 #Controls_Container{
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  grid-template-rows: 0.5fr 0.5fr repeat(6,1fr);
+  grid-template-rows: 0.5fr repeat(7,1fr);
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.5rem;
 }
 
+
 .Power_LEDs{
-  --Diameter: 1rem;
+  position: relative;
+  --Diameter: 0.7rem;
   grid-row: 1 / span 2;
   height: var(--Diameter);
   width: var(--Diameter);
   background-color: grey;
   border-radius: 100%;
+  top: -0.2rem;
+  left: calc(50% - var(--Diameter)/2);
 }
 
+#Green_LED{
+  --Diameter: 1rem;
+  height: var(--Diameter);
+  width: var(--Diameter);
+  background-color: rgba(230,60,60,1);
+  border: 0.1rem solid rgba(0,0,0,0.5);
+  box-sizing: border-box;
+}
+
+#Red_LED{
+  --Diameter: 1rem;
+  height: var(--Diameter);
+  width: var(--Diameter);
+  background-color: rgba(230,60,60,1);
+  border: 0.1rem solid rgba(0,0,0,0.5);
+  box-sizing: border-box;
+}
+
+#Green_LED{
+  background-color: cyan;
+  border: 0.1rem solid rgba(0,0,0,0.5);
+}
+
+
 .Control_Knobs{
-  --Diameter: 1.5rem;
+  position: absolute;
+  --Diameter: 1.6rem;
+  grid-column: 1 / span 2;
   height: var(--Diameter);
   width: var(--Diameter);
   background-color: grey;
   border-radius: 100%;
+  left: calc(50% - var(--Diameter)/2);
 }
 
 .Control_Knob_Labels{  
