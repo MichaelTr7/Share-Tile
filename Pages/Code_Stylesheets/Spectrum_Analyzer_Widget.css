@@ -49,7 +49,6 @@
   padding-left: 0.5rem;
 }
 
-
 .Bar_Containers{
   display: grid;
   grid-gap: 0.15rem;
@@ -57,29 +56,37 @@
 
 .LED_Bars{
   background-color: rgba(255,255,255,0.2);
-  border-radius: 0.1rem;
+  border-radius: 0.18rem;
+  box-shadow: inset 0 0.1rem 0.1rem 0.02rem rgba(0,0,0,0.3);
 }
 
 .Bars_7{
   background-color: rgba(255,70,70,1);
+  background-color: rgba(0,200,195);
 }
 .Bars_6{
   background-color: rgba(255,90,30,1);
+  background-color: rgba(0,200,195);
 }
 .Bars_5{
   background-color: rgba(0,180,50,1);
+  background-color: rgba(0,200,195);
 }
 .Bars_4{
   background-color: rgba();
+  background-color: rgba(0,200,195);
 }
 .Bars_3{
   background-color: rgba(170,210,70,1);
+  background-color: rgba(0,200,195);
 }
 .Bars_2{
   background-color: rgba(170,210,70,1);
+  background-color: rgba(0,200,195);
 }
 .Bars_1{
   background-color: rgba(0,220,50,1);
+  background-color: rgba(0,200,195);
 }
 
 #Controls_Container{
@@ -94,6 +101,7 @@
 
 
 .Power_LEDs{
+  display: flex;
   position: relative;
   --Diameter: 0.7rem;
   grid-row: 1 / span 2;
@@ -103,6 +111,8 @@
   border-radius: 100%;
   top: -0.2rem;
   left: calc(50% - var(--Diameter)/2);
+  justify-content: center;
+  align-items: center;
 }
 
 #Green_LED{
@@ -110,8 +120,8 @@
   height: var(--Diameter);
   width: var(--Diameter);
   background-color: rgba(230,60,60,1);
-  border: 0.1rem solid rgba(0,0,0,0.5);
   box-sizing: border-box;
+  background-color: green;
 }
 
 #Red_LED{
@@ -119,17 +129,20 @@
   height: var(--Diameter);
   width: var(--Diameter);
   background-color: rgba(230,60,60,1);
-  border: 0.1rem solid rgba(0,0,0,0.5);
   box-sizing: border-box;
 }
 
-#Green_LED{
-  background-color: cyan;
-  border: 0.1rem solid rgba(0,0,0,0.5);
+.LED_Knubs{  
+  --Diameter: 80%;
+  height: var(--Diameter);
+  width: var(--Diameter);
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 100%;
+  box-shadow: 0 0.05rem 0.1rem 0.1rem rgba(0,0,0,0.38);
 }
 
-
 .Control_Knobs{
+  display: flex;
   position: absolute;
   --Diameter: 1.6rem;
   grid-column: 1 / span 2;
@@ -138,6 +151,17 @@
   background-color: grey;
   border-radius: 100%;
   left: calc(50% - var(--Diameter)/2);
+  justify-content: center;
+  align-items: center;
+}
+
+.Knob_Nubs{
+  --Diameter: 70%;
+  height: var(--Diameter);
+  width: var(--Diameter);
+  background-color: rgb(110,110,110);
+  border-radius: 100%;
+  box-shadow: 0 0.05rem 0.2rem 0.1rem rgba(0,0,0,0.38);
 }
 
 .Control_Knob_Labels{  

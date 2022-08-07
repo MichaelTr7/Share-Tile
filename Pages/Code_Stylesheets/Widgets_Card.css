@@ -1,4 +1,13 @@
 
+.Widgets_Card::-webkit-scrollbar {
+  display: none;
+}
+
+.Widgets_Card {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .Widgets_Card,.Widgets_Glass_Background{
   display: grid;
   --Spacing: 0.9em;
@@ -59,3 +68,10 @@
   grid-column: 2 / span 1;
   background: linear-gradient(180deg, #434343 -30.4%, #2B2B2B 105.99%);
 }
+
+#Activity_Rings_Widget{
+  position: relative;
+  grid-column: 2 / span 1;
+}
+  
+

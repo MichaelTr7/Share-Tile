@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="./Code_Stylesheets/Widgets_Card.css">
     <link rel="stylesheet" href="./Code_Stylesheets/Flowing_Covers.css">
     <link rel="stylesheet" href="./Code_Stylesheets/Notes_Widget.css">
-    <link rel="stylesheet" href="./Code_Stylesheets/Spectrum_Analyzer.css">
+    <link rel="stylesheet" href="./Code_Stylesheets/Spectrum_Analyzer_Widget.css">
+    <link rel="stylesheet" href="./Code_Stylesheets/Activity_Rings_Widget.css">
 
 
 
@@ -31,12 +32,12 @@
     <script src="./Code_JavaScript/Spectrum_Analyzer.js" type="text/javascript"></script>
 
 
-    <meta name="viewport" 
+    <meta name="viewport"
           content="width=device-width, initial-scale=0.5, maximum-scale=1 user-scalable=0">
   </head>
   <body>
-    
-    
+
+
 <!-- *********************************************************************** -->
 <!-- BACKGROUND/WALLPAPER -->
 <!-- *********************************************************************** -->
@@ -52,8 +53,8 @@
   <div id="Battery_Button" class="Menu_Bar_Buttons"></div>
   <div id="Notification_Button" class="Menu_Bar_Buttons"></div>
   <div id="Date_Button" class="Menu_Bar_Buttons">Mon May 9 4:21 PM</div>
-</div>    
-    
+</div>
+
 <!-- *********************************************************************** -->
 <!-- APPLICATION DOCK -->
 <!-- *********************************************************************** -->
@@ -81,7 +82,7 @@
     <!-- Hovering Label -->
     <div id="Icon_Label">Education</div>
   </div>
-  
+
 <!-- *********************************************************************** -->
 <!-- SYSTEM ABOUT CARD -->
 <!-- *********************************************************************** -->
@@ -149,12 +150,12 @@
       <div id="Select_Element_1" class="Hover_Highlights"></div>
       <div id="Select_Element_2" class="Hover_Highlights"></div>
       <div id="Select_Element_3" class="Hover_Highlights"></div>
-      <div id="Select_Element_4" class="Hover_Highlights"></div>    
+      <div id="Select_Element_4" class="Hover_Highlights"></div>
     </div>
-    
+
 <!-- *********************************************************************** -->
 <!-- BATTERY/ENERGY CARD -->
-<!-- *********************************************************************** -->    
+<!-- *********************************************************************** -->
     <div class="Battery_Card Cards">
       <div id="Battery_Card_Title">Battery</div>
       <div id="Power_Source_Heading">Power Source: Battery</div>
@@ -164,19 +165,19 @@
       <div id="Energy_Heading"><b>Using Significant Energy: </b></div>
       <div id="Using_Significant_Energy_Application">
         <div id="Significant_App_Energy_Logo"></div>
-        <div id="Significant_App_Energy_Label">Robotic Arm Dashboard</div>      
+        <div id="Significant_App_Energy_Label">Robotic Arm Dashboard</div>
       </div>
       <div class="Battery_Card_Spacers">
         <div class="Horizontal_Rules_2"></div>
       </div>
       <div id="Battery_Preferences_Label">Battery Preferences...</div>
-      
+
       <div id="Battery_Card_Select_Element_1" class="Hover_Highlights"></div>
       <div id="Battery_Card_Select_Element_2" class="Hover_Highlights"></div>
 
-      
+
     </div>
-    
+
 <!-- *********************************************************************** -->
 <!-- CONTROL CENTER CARD -->
 <!-- *********************************************************************** -->
@@ -190,7 +191,7 @@
           <div class="Main_Toggle_Heading">
             <div id="WIFI_Label" class="Main_Toggle_Subheadings">Wi-Fi<br><span>Starlink</span></div>
           </div>
-        <div class="Circle_Control_Center_Toggles">  
+        <div class="Circle_Control_Center_Toggles">
             <svg id="Control_Center_Bluetooth_Icon" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path id="Control_Center_Bluetooth_Symbol" class="Main_Toggle_Symbols" fill-rule="evenodd" clip-rule="evenodd" d="M4.69412 2.44598L6.95823 4.50012L4.69412 6.55426L4.69412 2.44598ZM8.33596 4.12981C8.55468 4.32824 8.55468 4.672 8.33596 4.87043L4.88637 8.00012L8.33596 11.1298C8.55468 11.3282 8.55468 11.672 8.33596 11.8704L4.33009 15.5048C4.00878 15.7963 3.49412 15.5683 3.49412 15.1345L3.49412 9.52971L1.37954 11.4337C1.13328 11.6554 0.7539 11.6355 0.53217 11.3893C0.31044 11.143 0.330322 10.7637 0.576579 10.5419L3.18081 8.19706L0.68253 5.9476C0.436274 5.72587 0.416391 5.34649 0.638122 5.10023C0.859852 4.85398 1.23923 4.8341 1.48549 5.05583L3.49412 6.86441V0.86573C3.49412 0.431896 4.00878 0.203916 4.33009 0.495423L8.33596 4.12981ZM4.69412 9.44598L6.95823 11.5001L4.69412 13.5543L4.69412 9.44598Z" fill="black" fill-opacity="0.4"/>
             </svg>
@@ -202,29 +203,29 @@
           <svg id="Control_Center_FileDrop_Icon" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path id="Control_Center_FileDrop_Symbol" class="Main_Toggle_Symbols" fill-rule="evenodd" clip-rule="evenodd" d="M36.0074 43.3987C35.2224 43.8932 34.2007 43.5786 33.7643 42.7598C33.3284 41.942 33.6423 40.9314 34.4206 40.4283C39.9699 36.841 43.6428 30.5993 43.6428 23.4998C43.6428 12.3752 34.6246 3.35696 23.5 3.35696C12.3754 3.35696 3.35712 12.3752 3.35712 23.4998C3.35712 30.5993 7.03006 36.841 12.5794 40.4283C13.3577 40.9314 13.6715 41.942 13.2357 42.7598C12.7993 43.5786 11.7776 43.8932 10.9925 43.3987C4.3882 39.2388 0 31.8818 0 23.5C0 10.5213 10.5213 0 23.5 0C36.4787 0 47 10.5213 47 23.5C47 31.8818 42.6118 39.2388 36.0074 43.3987ZM32.8364 37.4519C32.0658 37.9687 31.0423 37.6523 30.6059 36.8336C30.1701 36.0158 30.4869 35.0076 31.2436 34.4726C34.6829 32.0409 36.9285 28.0329 36.9285 23.5003C36.9285 16.0839 30.9163 10.0717 23.4999 10.0717C16.0835 10.0717 10.0714 16.0839 10.0714 23.5003C10.0714 28.0329 12.317 32.041 15.7564 34.4727C16.513 35.0076 16.8298 36.0158 16.394 36.8336C15.9576 37.6524 14.9341 37.9687 14.1635 37.452C9.6712 34.4398 6.71424 29.3153 6.71424 23.5003C6.71424 14.2298 14.2295 6.71456 23.5 6.71456C32.7704 6.71456 40.2857 14.2298 40.2857 23.5003C40.2857 29.3153 37.3287 34.4397 32.8364 37.4519ZM29.6473 31.4783C28.9127 32.0452 27.8837 31.7256 27.4473 30.9067C27.0114 30.0888 27.3402 29.085 28.0248 28.4603C29.3702 27.2324 30.2144 25.4645 30.2144 23.4995C30.2144 19.7913 27.2083 16.7852 23.5001 16.7852C19.7919 16.7852 16.7858 19.7913 16.7858 23.4995C16.7858 25.4645 17.6299 27.2323 18.9753 28.4602C19.6598 29.0849 19.9886 30.0887 19.5527 30.9066C19.1163 31.7255 18.0873 32.0451 17.3527 31.4782C14.966 29.6365 13.4286 26.7477 13.4286 23.4999C13.4286 17.9376 17.9378 13.4285 23.5001 13.4285C29.0624 13.4285 33.5715 17.9376 33.5715 23.4999C33.5715 26.7478 32.0341 29.6366 29.6473 31.4783ZM23.5 26.8573C25.3541 26.8573 26.8572 25.3543 26.8572 23.5002C26.8572 21.6461 25.3541 20.143 23.5 20.143C21.6459 20.143 20.1429 21.6461 20.1429 23.5002C20.1429 25.3543 21.6459 26.8573 23.5 26.8573Z" fill="black" fill-opacity="0.4"/>
           </svg>
-        </div>        
+        </div>
           <div class="Main_Toggle_Heading">
             <div id="FileDrop_Label" class="Main_Toggle_Subheadings">FileDrop<br><span>Contacts Only</span></div>
           </div>
-          
-          
+
+
           <div id="Main_Toggle_Touch_Zone_1" class="Control_Centre_Main_Toggle_Touch_Zones"></div>
           <div id="Main_Toggle_Touch_Zone_2" class="Control_Centre_Main_Toggle_Touch_Zones"></div>
           <div id="Main_Toggle_Touch_Zone_3" class="Control_Centre_Main_Toggle_Touch_Zones"></div>
-          
+
       </div>
-      
+
       <div id="Do_Not_Disturb_Container" class="Control_Centre_Divisions">
         <div id="Do_Not_Disturb_Circle" class="Circle_Control_Center_Toggles">
           <svg id="Control_Center_Do_Not_Disturb_Icon" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path id="Moon_Symbol" fill-rule="evenodd" clip-rule="evenodd" d="M56.4054 42.1119C55.8717 42.3943 55.3151 42.6475 54.7369 42.8689C47.0003 45.831 38.3272 41.9605 35.3652 34.2239C33.6562 29.7602 34.2216 24.9849 36.4916 21.1745C35.6143 21.3581 34.7401 21.6137 33.8762 21.9445C25.108 25.3015 20.7214 35.1309 24.0784 43.8991C27.4355 52.6673 37.2649 57.0539 46.0331 53.6968C51.3562 51.6588 55.0644 47.2352 56.4054 42.1119Z" fill="black" fill-opacity="0.4"/>
-          </svg>        
-        </div>        
+          </svg>
+        </div>
           <div class="Main_Toggle_Heading">
             <div class="Main_Toggle_Subheadings">Do Not<br>Disturb</div>
-          </div> 
+          </div>
       </div>
-      
+
       <div id="Keyboard_Brightness_Container" class="Control_Centre_Divisions">
         <div id="Keyboard_Brightness_Symbol" class="Function_Symbols">
           <svg id="Control_Center_Keyboard_Brightness_Icon" viewBox="0 0 42 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -232,25 +233,25 @@
           </svg>
 
         </div>
-        <div id="Keyboard_Brightness_Label" class="Function_Labels">Keyboard Brightness</div>        
+        <div id="Keyboard_Brightness_Label" class="Function_Labels">Keyboard Brightness</div>
       </div>
-      
+
       <div id="Screen_Mirroring_Container" class="Control_Centre_Divisions">
         <div id="Screen_Mirroring_Symbol" class="Function_Symbols">
           <svg id="Control_Center_Screen_Mirroring_Icon" width="100" height="100" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895429 0 2V16.9474C0 18.0519 0.895431 18.9474 2 18.9474H6.31579V23.2632C6.31579 24.3677 7.21122 25.2632 8.31579 25.2632H28C29.1046 25.2632 30 24.3677 30 23.2632V8.31579C30 7.21122 29.1046 6.31579 28 6.31579H23.6842V2C23.6842 0.895431 22.7888 0 21.6842 0H2ZM21.3158 6.31579V3.36842C21.3158 2.81614 20.8681 2.36842 20.3158 2.36842H3.36842C2.81614 2.36842 2.36842 2.81614 2.36842 3.36842V15.5789C2.36842 16.1312 2.81613 16.5789 3.36842 16.5789H6.31579V8.31579C6.31579 7.21122 7.21122 6.31579 8.31579 6.31579H21.3158ZM8.6842 9.68408C8.6842 9.1318 9.13192 8.68408 9.6842 8.68408H26.6316C27.1839 8.68408 27.6316 9.1318 27.6316 9.68408V21.8946C27.6316 22.4469 27.1839 22.8946 26.6316 22.8946H9.6842C9.13192 22.8946 8.6842 22.4469 8.6842 21.8946V9.68408Z" fill="black" fill-opacity="0.4"/>
           </svg>
         </div>
-        <div id="Screen_Mirroring_Label" class="Function_Labels">Screen Mirroring</div>      
+        <div id="Screen_Mirroring_Label" class="Function_Labels">Screen Mirroring</div>
       </div>
-      
+
       <div id="Display_Container" class="Control_Centre_Divisions">
         <div id="Display_Slider_Container" class="Slider_Containers">
               <div class="Slider_Labels">Display</div>
               <input id="Display_Slider" type="range" min="0" max="100" value="80">
             </div>
       </div>
-      
+
       <div id="Sound_Container" class="Control_Centre_Divisions">
         <div id="Sound_Slider_Container" class="Slider_Containers">
               <div class="Slider_Labels">Sound</div>
@@ -261,9 +262,9 @@
                   <path d="M21.2685 24.8519C21.3885 24.7064 21.6114 24.7064 21.7314 24.8519L34.3948 40.2054C34.5562 40.4011 34.417 40.6963 34.1633 40.6963H8.8366C8.58296 40.6963 8.44378 40.4011 8.60516 40.2054L21.2685 24.8519Z" fill="black" fill-opacity="0.4"/>
                   </svg>
               </div>
-            </div>          
+            </div>
       </div>
-      
+
       <div id="Music_Player_Container" class="Control_Centre_Divisions">
         <div id="Album_Art">
           <div id="Album_0" class="Album_Covers"></div>
@@ -280,7 +281,7 @@
       <div id="Play_Button"></div>
       <div id="Fast_Forward_Button"></div>
       </div>
-  
+
       <div id="Battery_Percentage_Container" class="Control_Centre_Divisions">
         <svg id="Control_Center_Battery_Percentage_Icon" viewBox="0 0 117 47" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M108.218 21H107.782C107.35 21 107 21.3173 107 21.7088V25.2912C107 25.6827 107.35 26 107.782 26H108.218C108.65 26 109 25.6827 109 25.2912V21.7088C109 21.3173 108.65 21 108.218 21Z" fill="black" fill-opacity="0.4"/>
@@ -288,7 +289,7 @@
         <path fill-rule="evenodd" clip-rule="evenodd" d="M77.6455 22.6012L76.8803 22.3467L77.4847 21.8197L86.4367 14.0143L94.4814 7L90.3628 14.0143L87.3999 19.0603L87.0423 19.6694L87.7198 19.8947L98.2541 23.3988L99.0193 23.6533L98.4155 24.1803L88.5215 32.8067L81.4185 39L85.055 32.8067L88.4999 26.9397L88.8576 26.3306L88.18 26.1053L77.6455 22.6012ZM75.5107 22.6191L76.6555 22.9999L87.8223 26.7144L84.2451 32.8067H70.1041C68.9421 32.8067 68 31.8805 68 30.7378V16.0831C68 14.9406 68.9421 14.0143 70.1041 14.0143H85.3796L76.415 21.8307L75.5107 22.6191ZM103.896 32.8067H89.5786L99.485 24.1693L100.389 23.3809L99.2445 23.0001L88.0774 19.2857L91.1726 14.0143H103.896C105.058 14.0143 106 14.9406 106 16.0831V30.7378C106 31.8805 105.058 32.8067 103.896 32.8067Z" fill="black" fill-opacity="0.4"/>
         </svg>
       </div>
-      
+
       <div id="Accessibility_Container" class="Control_Centre_Divisions">
         <svg id="Control_Center_Accessibility_Icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
   <circle cx="10.0571" cy="10.3989" r="8.43013" stroke="black" stroke-opacity="0.4" stroke-width="2"/>
@@ -304,7 +305,7 @@
     <div class="Widgets_Card Cards">
       <div id="Spectrum_Analyzer_Widget" class="Widget_Blocks">
         <div id="Spectrum_Analyzer_Inset">
-        
+
           <div id="Spectrum_Bars_Container">
             <div class="Bar_Containers">
                 <div class="LED_Bars Bars_7"></div>
@@ -367,14 +368,22 @@
 
             </div>
             <div id="Controls_Container">
-                <div id="Red_LED" class="Power_LEDs"></div>
-                <div id="Green_LED" class="Power_LEDs"></div>
-                <div id="Power_Knob" class="Control_Knobs"></div>
+                <div id="Red_LED" class="Power_LEDs">
+                  <div class="LED_Knubs"></div>
+                </div>
+                <div id="Green_LED" class="Power_LEDs">
+                  <div class="LED_Knubs"></div>
+                </div>
+                <div id="Power_Knob" class="Control_Knobs">
+                  <div class="Knob_Nubs"></div>
+                </div>
                 <label id="Power_Label" class="Control_Knob_Labels">Power</label>
-                <div id="Gain_Knob" class="Control_Knobs"> </div>
+                <div id="Gain_Knob" class="Control_Knobs">
+                  <div class="Knob_Nubs"></div>
+                </div>
                 <label id="Gain_Label" class="Control_Knob_Labels">Gain</label>
-                
-                
+
+
             </div>
 
 
@@ -386,20 +395,10 @@
             <div class="Frequency_Labels">22Khz</div>
             <div class="Frequency_Labels">Controls</div>
 
-            
-            
-            
-            
-            
           </div>
-          <!-- <div id="Frequency_Labels">
-            
-            
-            
-            
-          </div> -->
-          
-          
+
+
+
         </div>
       </div>
       <div id="Notes_Widget" class="Widget_Blocks">
@@ -408,15 +407,31 @@
           <div id="Notes_Title">
           <label>Notes</label>
           </div>
+
         </div>
-      
+
       <div id="Notes_Body">
-        
+        <div id="Notes_Dotted_Break">.............................................</div>
+        <div id="Notes_Content_Preview">
+          To-Do List<br><br>
+          • Code website<br>
+          • Finish schematics<br>
+          • Tidy up desk
+        </div>
       </div>
+      </div>
+      
+      <div id="Activity_Rings_Widget" class="Widget_Blocks">
+        <div id="Red_Ring"></div>
+        <div id="Green_Ring"></div>
+        <div id="Blue_Ring"></div>
+        <div id="Black_Centre"></div>
       
       
       </div>
-      <div id="Battery_Status_Widget" class="Widget_Blocks"></div>
+      
+      
+      
       <div id="Weather_Widget" class="Widget_Blocks"></div>
       <div id="Clock_Widget" class="Widget_Blocks"></div>
 

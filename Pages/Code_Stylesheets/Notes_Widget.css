@@ -1,4 +1,8 @@
 
+:root{
+  --Notes_Top: 2rem;
+}
+
 #Notes_Widget{
   position: relative;
   grid-column: 1 / span 1;
@@ -17,27 +21,23 @@
   padding: 0.3em 0.3em 0.3em 1em;
 }
 
-#Notes_Body{
-  
-  
-  
-}
-
-
-
 #Notes_Folder_Symbol{
   display: flex;
   float: left;
   height: 2em;
   aspect-ratio: 1 / 1;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   box-sizing: border-box;
+  background-image: url("../../Assets/Folder.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #Notes_Title{
   display: flex;
   float: right;
-  height: 2rem;
+  height: var(--Notes_Top);
   width: calc(100% - 2em);
   color: white;
   align-items: center;
@@ -50,5 +50,43 @@
   font-size: 0.7em;
   font-family: Arial;
 }
+
+#Notes_Body{
+  position: relative;
+  height: calc(100% - var(--Notes_Top));
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(240,240,240);
+}
+
+#Notes_Dotted_Break{
+  position: relative;
+  top: 0;
+  left: 0;
+  --Margin: -0.6rem;
+  margin-top: var(--Margin);
+  height: calc(100% - var(--Margin));
+  width: 100%;
+  background-color: transparent;
+  color: var(--System_Grey);
+}
+
+#Notes_Content_Preview{
+  --Margin: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial;
+  font-size: 0.7em;
+  margin-top: var(--Margin);
+  margin-left: var(--Margin);
+  color: rgb(65,65,65);
+}
+
+
+
+
 
 
