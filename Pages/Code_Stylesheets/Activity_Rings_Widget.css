@@ -1,6 +1,263 @@
 
 #Activity_Rings_Widget{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2.5fr 1fr;
   background-color: rgb(30,30,30);
+}
+
+#Activity_Rings_Container,#Activity_Rings_Holder{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#Activity_Rings_Labels{
+  margin-top: -0.22rem;
+}
+
+.Activity_Rings{
+  position: absolute;
+  height: var(--Diameter);
+  width: var(--Diameter);
+  top: calc(50% - var(--Diameter)/2);
+  left: calc(50% - var(--Diameter)/2);
+  border-radius: 100%;
+  box-sizing: border-box;
+  border: 0.2rem solid rgb(30,30,30);
+  overflow: hidden;
+}
+
+.Activity_Movements{
+  position: absolute;
+  height: var(--Diameter);
+  width: var(--Diameter);
+  top: calc(50% - var(--Diameter)/2);
+  left: calc(50% - var(--Diameter)/2);
+  border-radius: 100%;
+  box-sizing: border-box;
+  border: 0.2rem solid rgb(30,30,30);
+  overflow: hidden;
+}
+
+.Activity_Movements{
+  position: absolute;
+  transform: rotate(145deg);
+  transform-origin: center;
+}
+
+#Black_Centre{
+  --Diameter: 1.5rem;
+  background-color: rgb(30,30,30);
+}
+
+.Activity_Labels{
+  display: flex;
+  width: 100%;
+  text-align: left;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 0.7rem;
+  font-family: Arial;
+  margin-bottom: 0.05rem;
+  margin-left: 0.8rem;
+}
+
+#Red_Ring{
+  --Diameter: calc(3 * 1.5rem + 1.5rem);
+  background: conic-gradient(#FA124F 0%, rgb(30,30,30) 0);
+  animation: Red_Ring_Animation 0.5s forwards;
+  animation-delay: 0.9s;
+}
+
+#Green_Ring{
+  --Diameter: calc(2 * 1.5rem + 1.5rem);
+  background: conic-gradient(#6ED940 0%, rgb(30,30,30) 0);
+  animation: Green_Ring_Animation 0.5s forwards;
+  animation-delay: 0.7s;
+}
+
+#Blue_Ring{
+  position: absolute;
+  --Diameter: calc(1 * 1.5rem + 1.5rem);
+  background: conic-gradient(#56BFDB 0%, rgb(30,30,30) 0);
+  animation: Blue_Ring_Animation 0.5s forwards;
+  animation-delay: 0.5s;
+}
+
+
+@keyframes Red_Ring_Animation {
+  0%{background: conic-gradient(#FA124F 0%, rgb(30,30,30) 0);}
+  5%{background: conic-gradient(#FA124F 5%, rgb(30,30,30) 0);}
+  10%{background: conic-gradient(#FA124F 10%, rgb(30,30,30) 0);}
+  15%{background: conic-gradient(#FA124F 15%, rgb(30,30,30) 0);}
+  20%{background: conic-gradient(#FA124F 20%, rgb(30,30,30) 0);}
+  25%{background: conic-gradient(#FA124F 25%, rgb(30,30,30) 0);}
+  30%{background: conic-gradient(#FA124F 30%, rgb(30,30,30) 0);}
+  35%{background: conic-gradient(#FA124F 35%, rgb(30,30,30) 0);}
+  40%{background: conic-gradient(#FA124F 40%, rgb(30,30,30) 0);}
+  45%{background: conic-gradient(#FA124F 45%, rgb(30,30,30) 0);}
+  50%{background: conic-gradient(#FA124F 50%, rgb(30,30,30) 0);}
+  55%{background: conic-gradient(#FA124F 55%, rgb(30,30,30) 0);}
+  60%{background: conic-gradient(#FA124F 60%, rgb(30,30,30) 0);}
+  65%{background: conic-gradient(#FA124F 65%, rgb(30,30,30) 0);}
+  70%{background: conic-gradient(#FA124F 70%, rgb(30,30,30) 0);}
+  75%{background: conic-gradient(#FA124F 75%, rgb(30,30,30) 0);}
+  80%{background: conic-gradient(#FA124F 80%, rgb(30,30,30) 0);}
+  85%{background: conic-gradient(#FA124F 85%, rgb(30,30,30) 0);}
+  90%{background: conic-gradient(#FA124F 85%, rgb(30,30,30) 0);}
+  95%{background: conic-gradient(#FA124F 85%, rgb(30,30,30) 0);}
+  100%{background: conic-gradient(#FA124F 85%, rgb(30,30,30) 0);}
+}
+
+@keyframes Green_Ring_Animation {
+  0%{background: conic-gradient(#6ED940 0%, rgb(30,30,30) 0);}
+  5%{background: conic-gradient(#6ED940 5%, rgb(30,30,30) 0);}
+  10%{background: conic-gradient(#6ED940 10%, rgb(30,30,30) 0);}
+  15%{background: conic-gradient(#6ED940 15%, rgb(30,30,30) 0);}
+  20%{background: conic-gradient(#6ED940 20%, rgb(30,30,30) 0);}
+  25%{background: conic-gradient(#6ED940 25%, rgb(30,30,30) 0);}
+  30%{background: conic-gradient(#6ED940 30%, rgb(30,30,30) 0);}
+  35%{background: conic-gradient(#6ED940 35%, rgb(30,30,30) 0);}
+  40%{background: conic-gradient(#6ED940 40%, rgb(30,30,30) 0);}
+  45%{background: conic-gradient(#6ED940 45%, rgb(30,30,30) 0);}
+  50%{background: conic-gradient(#6ED940 50%, rgb(30,30,30) 0);}
+  55%{background: conic-gradient(#6ED940 55%, rgb(30,30,30) 0);}
+  60%{background: conic-gradient(#6ED940 60%, rgb(30,30,30) 0);}
+  65%{background: conic-gradient(#6ED940 65%, rgb(30,30,30) 0);}
+  70%{background: conic-gradient(#6ED940 70%, rgb(30,30,30) 0);}
+  75%{background: conic-gradient(#6ED940 75%, rgb(30,30,30) 0);}
+  80%{background: conic-gradient(#6ED940 80%, rgb(30,30,30) 0);}
+  85%{background: conic-gradient(#6ED940 80%, rgb(30,30,30) 0);}
+  90%{background: conic-gradient(#6ED940 80%, rgb(30,30,30) 0);}
+  95%{background: conic-gradient(#6ED940 80%, rgb(30,30,30) 0);}
+  100%{background: conic-gradient(#6ED940 80%, rgb(30,30,30) 0);}
+}
+
+@keyframes Blue_Ring_Animation {
+  0%{background: conic-gradient(#56BFDB 0%, rgb(30,30,30) 0);}
+  5%{background: conic-gradient(#56BFDB 5%, rgb(30,30,30) 0);}
+  10%{background: conic-gradient(#56BFDB 10%, rgb(30,30,30) 0);}
+  15%{background: conic-gradient(#56BFDB 15%, rgb(30,30,30) 0);}
+  20%{background: conic-gradient(#56BFDB 20%, rgb(30,30,30) 0);}
+  25%{background: conic-gradient(#56BFDB 25%, rgb(30,30,30) 0);}
+  30%{background: conic-gradient(#56BFDB 30%, rgb(30,30,30) 0);}
+  35%{background: conic-gradient(#56BFDB 35%, rgb(30,30,30) 0);}
+  40%{background: conic-gradient(#56BFDB 40%, rgb(30,30,30) 0);}
+  45%{background: conic-gradient(#56BFDB 45%, rgb(30,30,30) 0);}
+  50%{background: conic-gradient(#56BFDB 50%, rgb(30,30,30) 0);}
+  55%{background: conic-gradient(#56BFDB 55%, rgb(30,30,30) 0);}
+  60%{background: conic-gradient(#56BFDB 60%, rgb(30,30,30) 0);}
+  65%{background: conic-gradient(#56BFDB 65%, rgb(30,30,30) 0);}
+  70%{background: conic-gradient(#56BFDB 70%, rgb(30,30,30) 0);}
+  75%{background: conic-gradient(#56BFDB 75%, rgb(30,30,30) 0);}
+  80%{background: conic-gradient(#56BFDB 75%, rgb(30,30,30) 0);}
+  85%{background: conic-gradient(#56BFDB 75%, rgb(30,30,30) 0);}
+  90%{background: conic-gradient(#56BFDB 75%, rgb(30,30,30) 0);}
+  95%{background: conic-gradient(#56BFDB 75%, rgb(30,30,30) 0);}
+  100%{background: conic-gradient(#56BFDB 75%, rgb(30,30,30) 0);}
+}
+
+.Activity_Units{
+    font-size: 7px;
+}
+
+.Activity_Labels > span{
+  color: rgb(220,220,220);
+}
+
+#Red_Ring_Start{
+  background-color: #FA124F;
+}
+
+#Green_Ring_Start{
+  background-color: #6ED940;
+}
+
+#Blue_Ring_Start{
+  background-color: #56BFDB;  
+}
+
+#Red_Ring_Movement{
+  height: calc(3 * 1.5rem + 1.5rem);
+  transform: rotate(306deg);
+}
+
+#Green_Ring_Movement{
+  height: calc(2 * 1.5rem + 1.5rem);
+  transform: rotate(288deg);
+}
   
+#Blue_Ring_Movement{
+  height: calc(1 * 1.5rem + 1.5rem);
+  transform: rotate(270deg);
+}
+
+#Red_Ring_End{
+  background-color: #FA124F;
+}
+
+#Green_Ring_End{
+  background-color: #6ED940;
+}
+
+#Blue_Ring_End{
+  background-color: #56BFDB;
+}
+
+
+.Start_Activity_Circles{
+  position: absolute;
+  --Diameter: 0.6rem;
+  background-color: black;
+  height: var(--Diameter);
+  width: var(--Diameter);
+  border-radius: 100%;
+  left: calc(50% - var(--Diameter)/2);
+}
+
+@keyframes Show_Activity_Circles {
   
 }
+
+
+
+.End_Activity_Circles{
+  position: absolute;
+  --Diameter: 0.55rem;
+  height: var(--Diameter);
+  width: var(--Diameter);
+  border-radius: 100%;
+  top: 0.007rem;
+  left: calc(50% - var(--Diameter)/2);
+  background-color: blue;
+}
+
+
+
+#Move_Label{
+  color: #FA124F;
+}
+
+#Exercise_Label{
+  color: #6ED940;
+}
+
+#Stand_Label{
+  color: #56BFDB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
