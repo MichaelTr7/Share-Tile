@@ -38,12 +38,25 @@
   box-sizing: border-box;
   border: 0.2rem solid rgb(30,30,30);
   overflow: hidden;
+  transform-origin: center;
+  transform: rotate(0deg);
+  transition: 0.3s linear;
+  opacity: 0;
 }
 
-.Activity_Movements{
-  position: absolute;
-  transform: rotate(145deg);
-  transform-origin: center;
+.Rotate_Blue_Movements {
+  transform: rotate(270deg);
+  opacity: 1;
+}
+
+.Rotate_Green_Movements{
+  transform: rotate(288deg);
+  opacity: 1;
+}
+
+.Rotate_Red_Movements{
+  transform: rotate(306deg);
+  opacity: 1;
 }
 
 #Black_Centre{
@@ -61,100 +74,119 @@
   font-family: Arial;
   margin-bottom: 0.05rem;
   margin-left: 0.8rem;
+  opacity: 0;
+  transform: translateX(4rem);
+  transition: 0.5s;
 }
 
 #Red_Ring{
   --Diameter: calc(3 * 1.5rem + 1.5rem);
   background: conic-gradient(#FA124F 0%, rgb(30,30,30) 0);
-  animation: Red_Ring_Animation 0.5s forwards;
-  animation-delay: 0.9s;
 }
 
 #Green_Ring{
   --Diameter: calc(2 * 1.5rem + 1.5rem);
   background: conic-gradient(#6ED940 0%, rgb(30,30,30) 0);
-  animation: Green_Ring_Animation 0.5s forwards;
-  animation-delay: 0.7s;
 }
 
 #Blue_Ring{
   position: absolute;
   --Diameter: calc(1 * 1.5rem + 1.5rem);
   background: conic-gradient(#56BFDB 0%, rgb(30,30,30) 0);
-  animation: Blue_Ring_Animation 0.5s forwards;
+}
+
+.Fade_In_Start_Nub {
+  opacity: 1;
+}
+
+.Fade_In_End_Nub {
+  opacity: 1;
+}
+
+.Red_Ring_Animation{
+  animation: Red_Fill_Animation 0.3s forwards;
+  animation-delay: 0.9s;
+}
+
+.Green_Ring_Animation{
+  animation: Green_Fill_Animation 0.3s forwards;
+  animation-delay: 0.7s;
+}
+
+.Blue_Ring_Animation{
+  animation: Blue_Fill_Animation 0.3s forwards;
   animation-delay: 0.5s;
 }
 
-
-@keyframes Red_Ring_Animation {
+@keyframes Red_Fill_Animation {
   0%{background: conic-gradient(#FA124F 0%, rgb(30,30,30) 0);}
-  5%{background: conic-gradient(#FA124F 5%, rgb(30,30,30) 0);}
-  10%{background: conic-gradient(#FA124F 10%, rgb(30,30,30) 0);}
-  15%{background: conic-gradient(#FA124F 15%, rgb(30,30,30) 0);}
-  20%{background: conic-gradient(#FA124F 20%, rgb(30,30,30) 0);}
-  25%{background: conic-gradient(#FA124F 25%, rgb(30,30,30) 0);}
-  30%{background: conic-gradient(#FA124F 30%, rgb(30,30,30) 0);}
-  35%{background: conic-gradient(#FA124F 35%, rgb(30,30,30) 0);}
-  40%{background: conic-gradient(#FA124F 40%, rgb(30,30,30) 0);}
-  45%{background: conic-gradient(#FA124F 45%, rgb(30,30,30) 0);}
-  50%{background: conic-gradient(#FA124F 50%, rgb(30,30,30) 0);}
-  55%{background: conic-gradient(#FA124F 55%, rgb(30,30,30) 0);}
-  60%{background: conic-gradient(#FA124F 60%, rgb(30,30,30) 0);}
-  65%{background: conic-gradient(#FA124F 65%, rgb(30,30,30) 0);}
-  70%{background: conic-gradient(#FA124F 70%, rgb(30,30,30) 0);}
-  75%{background: conic-gradient(#FA124F 75%, rgb(30,30,30) 0);}
-  80%{background: conic-gradient(#FA124F 80%, rgb(30,30,30) 0);}
-  85%{background: conic-gradient(#FA124F 85%, rgb(30,30,30) 0);}
-  90%{background: conic-gradient(#FA124F 85%, rgb(30,30,30) 0);}
-  95%{background: conic-gradient(#FA124F 85%, rgb(30,30,30) 0);}
+  5%{background: conic-gradient(#FA124F 4.25%, rgb(30,30,30) 0);}
+  10%{background: conic-gradient(#FA124F 8.5%, rgb(30,30,30) 0);}
+  15%{background: conic-gradient(#FA124F 12.75%, rgb(30,30,30) 0);}
+  20%{background: conic-gradient(#FA124F 17%, rgb(30,30,30) 0);}
+  25%{background: conic-gradient(#FA124F 21.25%, rgb(30,30,30) 0);}
+  30%{background: conic-gradient(#FA124F 25.5%, rgb(30,30,30) 0);}
+  35%{background: conic-gradient(#FA124F 29.75%, rgb(30,30,30) 0);}
+  40%{background: conic-gradient(#FA124F 34%, rgb(30,30,30) 0);}
+  45%{background: conic-gradient(#FA124F 38.25%, rgb(30,30,30) 0);}
+  50%{background: conic-gradient(#FA124F 42.5%, rgb(30,30,30) 0);}
+  55%{background: conic-gradient(#FA124F 46.75%, rgb(30,30,30) 0);}
+  60%{background: conic-gradient(#FA124F 51%, rgb(30,30,30) 0);}
+  65%{background: conic-gradient(#FA124F 55.25%, rgb(30,30,30) 0);}
+  70%{background: conic-gradient(#FA124F 59.5%, rgb(30,30,30) 0);}
+  75%{background: conic-gradient(#FA124F 63.75%, rgb(30,30,30) 0);}
+  80%{background: conic-gradient(#FA124F 68%, rgb(30,30,30) 0);}
+  85%{background: conic-gradient(#FA124F 72.25%, rgb(30,30,30) 0);}
+  90%{background: conic-gradient(#FA124F 76.5%, rgb(30,30,30) 0);}
+  95%{background: conic-gradient(#FA124F 80.75%, rgb(30,30,30) 0);}
   100%{background: conic-gradient(#FA124F 85%, rgb(30,30,30) 0);}
 }
 
-@keyframes Green_Ring_Animation {
+@keyframes Green_Fill_Animation {
   0%{background: conic-gradient(#6ED940 0%, rgb(30,30,30) 0);}
-  5%{background: conic-gradient(#6ED940 5%, rgb(30,30,30) 0);}
-  10%{background: conic-gradient(#6ED940 10%, rgb(30,30,30) 0);}
-  15%{background: conic-gradient(#6ED940 15%, rgb(30,30,30) 0);}
-  20%{background: conic-gradient(#6ED940 20%, rgb(30,30,30) 0);}
-  25%{background: conic-gradient(#6ED940 25%, rgb(30,30,30) 0);}
-  30%{background: conic-gradient(#6ED940 30%, rgb(30,30,30) 0);}
-  35%{background: conic-gradient(#6ED940 35%, rgb(30,30,30) 0);}
-  40%{background: conic-gradient(#6ED940 40%, rgb(30,30,30) 0);}
-  45%{background: conic-gradient(#6ED940 45%, rgb(30,30,30) 0);}
-  50%{background: conic-gradient(#6ED940 50%, rgb(30,30,30) 0);}
-  55%{background: conic-gradient(#6ED940 55%, rgb(30,30,30) 0);}
-  60%{background: conic-gradient(#6ED940 60%, rgb(30,30,30) 0);}
-  65%{background: conic-gradient(#6ED940 65%, rgb(30,30,30) 0);}
-  70%{background: conic-gradient(#6ED940 70%, rgb(30,30,30) 0);}
-  75%{background: conic-gradient(#6ED940 75%, rgb(30,30,30) 0);}
-  80%{background: conic-gradient(#6ED940 80%, rgb(30,30,30) 0);}
-  85%{background: conic-gradient(#6ED940 80%, rgb(30,30,30) 0);}
-  90%{background: conic-gradient(#6ED940 80%, rgb(30,30,30) 0);}
-  95%{background: conic-gradient(#6ED940 80%, rgb(30,30,30) 0);}
+  5%{background: conic-gradient(#6ED940 4%, rgb(30,30,30) 0);}
+  10%{background: conic-gradient(#6ED940 8%, rgb(30,30,30) 0);}
+  15%{background: conic-gradient(#6ED940 12%, rgb(30,30,30) 0);}
+  20%{background: conic-gradient(#6ED940 16%, rgb(30,30,30) 0);}
+  25%{background: conic-gradient(#6ED940 20%, rgb(30,30,30) 0);}
+  30%{background: conic-gradient(#6ED940 24%, rgb(30,30,30) 0);}
+  35%{background: conic-gradient(#6ED940 28%, rgb(30,30,30) 0);}
+  40%{background: conic-gradient(#6ED940 32%, rgb(30,30,30) 0);}
+  45%{background: conic-gradient(#6ED940 36%, rgb(30,30,30) 0);}
+  50%{background: conic-gradient(#6ED940 40%, rgb(30,30,30) 0);}
+  55%{background: conic-gradient(#6ED940 44%, rgb(30,30,30) 0);}
+  60%{background: conic-gradient(#6ED940 48%, rgb(30,30,30) 0);}
+  65%{background: conic-gradient(#6ED940 52%, rgb(30,30,30) 0);}
+  70%{background: conic-gradient(#6ED940 56%, rgb(30,30,30) 0);}
+  75%{background: conic-gradient(#6ED940 60%, rgb(30,30,30) 0);}
+  80%{background: conic-gradient(#6ED940 64%, rgb(30,30,30) 0);}
+  85%{background: conic-gradient(#6ED940 68%, rgb(30,30,30) 0);}
+  90%{background: conic-gradient(#6ED940 72%, rgb(30,30,30) 0);}
+  95%{background: conic-gradient(#6ED940 76%, rgb(30,30,30) 0);}
   100%{background: conic-gradient(#6ED940 80%, rgb(30,30,30) 0);}
 }
 
-@keyframes Blue_Ring_Animation {
+@keyframes Blue_Fill_Animation {
   0%{background: conic-gradient(#56BFDB 0%, rgb(30,30,30) 0);}
-  5%{background: conic-gradient(#56BFDB 5%, rgb(30,30,30) 0);}
-  10%{background: conic-gradient(#56BFDB 10%, rgb(30,30,30) 0);}
-  15%{background: conic-gradient(#56BFDB 15%, rgb(30,30,30) 0);}
-  20%{background: conic-gradient(#56BFDB 20%, rgb(30,30,30) 0);}
-  25%{background: conic-gradient(#56BFDB 25%, rgb(30,30,30) 0);}
-  30%{background: conic-gradient(#56BFDB 30%, rgb(30,30,30) 0);}
-  35%{background: conic-gradient(#56BFDB 35%, rgb(30,30,30) 0);}
-  40%{background: conic-gradient(#56BFDB 40%, rgb(30,30,30) 0);}
-  45%{background: conic-gradient(#56BFDB 45%, rgb(30,30,30) 0);}
-  50%{background: conic-gradient(#56BFDB 50%, rgb(30,30,30) 0);}
-  55%{background: conic-gradient(#56BFDB 55%, rgb(30,30,30) 0);}
-  60%{background: conic-gradient(#56BFDB 60%, rgb(30,30,30) 0);}
-  65%{background: conic-gradient(#56BFDB 65%, rgb(30,30,30) 0);}
-  70%{background: conic-gradient(#56BFDB 70%, rgb(30,30,30) 0);}
-  75%{background: conic-gradient(#56BFDB 75%, rgb(30,30,30) 0);}
-  80%{background: conic-gradient(#56BFDB 75%, rgb(30,30,30) 0);}
-  85%{background: conic-gradient(#56BFDB 75%, rgb(30,30,30) 0);}
-  90%{background: conic-gradient(#56BFDB 75%, rgb(30,30,30) 0);}
-  95%{background: conic-gradient(#56BFDB 75%, rgb(30,30,30) 0);}
+  5%{background: conic-gradient(#56BFDB 3.75%, rgb(30,30,30) 0);}
+  10%{background: conic-gradient(#56BFDB 7.5%, rgb(30,30,30) 0);}
+  15%{background: conic-gradient(#56BFDB 11.25%, rgb(30,30,30) 0);}
+  20%{background: conic-gradient(#56BFDB 15%, rgb(30,30,30) 0);}
+  25%{background: conic-gradient(#56BFDB 18.75%, rgb(30,30,30) 0);}
+  30%{background: conic-gradient(#56BFDB 22.5%, rgb(30,30,30) 0);}
+  35%{background: conic-gradient(#56BFDB 26.25%, rgb(30,30,30) 0);}
+  40%{background: conic-gradient(#56BFDB 30%, rgb(30,30,30) 0);}
+  45%{background: conic-gradient(#56BFDB 33.75%, rgb(30,30,30) 0);}
+  50%{background: conic-gradient(#56BFDB 37.5%, rgb(30,30,30) 0);}
+  55%{background: conic-gradient(#56BFDB 41.25%, rgb(30,30,30) 0);}
+  60%{background: conic-gradient(#56BFDB 45%, rgb(30,30,30) 0);}
+  65%{background: conic-gradient(#56BFDB 48.75%, rgb(30,30,30) 0);}
+  70%{background: conic-gradient(#56BFDB 52.5%, rgb(30,30,30) 0);}
+  75%{background: conic-gradient(#56BFDB 56.25%, rgb(30,30,30) 0);}
+  80%{background: conic-gradient(#56BFDB 60%, rgb(30,30,30) 0);}
+  85%{background: conic-gradient(#56BFDB 63.75%, rgb(30,30,30) 0);}
+  90%{background: conic-gradient(#56BFDB 67.5%, rgb(30,30,30) 0);}
+  95%{background: conic-gradient(#56BFDB 71.25%, rgb(30,30,30) 0);}
   100%{background: conic-gradient(#56BFDB 75%, rgb(30,30,30) 0);}
 }
 
@@ -180,17 +212,17 @@
 
 #Red_Ring_Movement{
   height: calc(3 * 1.5rem + 1.5rem);
-  transform: rotate(306deg);
+  transition-delay: 0.9s;
 }
 
 #Green_Ring_Movement{
   height: calc(2 * 1.5rem + 1.5rem);
-  transform: rotate(288deg);
+  transition-delay: 0.7s;
 }
   
 #Blue_Ring_Movement{
   height: calc(1 * 1.5rem + 1.5rem);
-  transform: rotate(270deg);
+  transition-delay: 0.5s;
 }
 
 #Red_Ring_End{
@@ -214,12 +246,24 @@
   width: var(--Diameter);
   border-radius: 100%;
   left: calc(50% - var(--Diameter)/2);
+  opacity: 0;
+  transition: 0.2s;
 }
 
-@keyframes Show_Activity_Circles {
-  
+.Show_Red_Nub{
+  opacity: 1;
+  transition-delay: 0.3s;
 }
 
+.Show_Green_Nub{
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.Show_Blue_Nub{
+  opacity: 1;
+  transition-delay: 0.1s;
+}
 
 
 .End_Activity_Circles{
@@ -233,8 +277,6 @@
   background-color: blue;
 }
 
-
-
 #Move_Label{
   color: #FA124F;
 }
@@ -247,10 +289,23 @@
   color: #56BFDB;
 }
 
+.Show_Move_Label{
+  opacity: 1;
+  transform: translateX(0rem);
+  transition-delay: 0.2s;
+}
 
+.Show_Exercise_Label{
+  opacity: 1;
+  transform: translateX(0rem);
+  transition-delay: 0.4s;
+}
 
-
-
+.Show_Stand_Label{
+  opacity: 1;
+  transform: translateX(0rem);
+  transition-delay: 0.6s;
+}
 
 
 

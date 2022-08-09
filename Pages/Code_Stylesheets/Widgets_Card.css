@@ -28,8 +28,6 @@
   z-index: 20;
   overflow: scroll;
   z-index: 20;
-  transform: translateX(0);
-  opacity: 1;
 }
 
 .Widgets_Glass_Background{
