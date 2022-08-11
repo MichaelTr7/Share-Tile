@@ -28,6 +28,8 @@
   z-index: 20;
   overflow: scroll;
   z-index: 20;
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .Widgets_Glass_Background{
@@ -55,21 +57,11 @@
   overflow: hidden;
 }
 
-#Weather_Widget{
-  position: relative;
-  grid-column: 1 / span 2;
-  background: linear-gradient(180deg, rgb(0,185,230) -30.4%, rgb(0,170,248) 105.99%);
-}
-
 #Clock_Widget{
   position: relative;
   grid-column: 2 / span 1;
   background: linear-gradient(180deg, #434343 -30.4%, #2B2B2B 105.99%);
 }
 
-#Activity_Rings_Widget{
-  position: relative;
-  grid-column: 2 / span 1;
-}
-  
+
 

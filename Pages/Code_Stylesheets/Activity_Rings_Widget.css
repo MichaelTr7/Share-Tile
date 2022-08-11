@@ -1,5 +1,7 @@
-
+  
 #Activity_Rings_Widget{
+  position: relative;
+  grid-column: 2 / span 1;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2.5fr 1fr;
@@ -120,25 +122,45 @@
 
 @keyframes Red_Fill_Animation {
   0%{background: conic-gradient(#FA124F 0%, rgb(30,30,30) 0);}
+  2.5%{background: conic-gradient(#FA124F 2.125%, rgb(30,30,30) 0);}
   5%{background: conic-gradient(#FA124F 4.25%, rgb(30,30,30) 0);}
+  7.5%{background: conic-gradient(#FA124F 6.375%, rgb(30,30,30) 0);}
   10%{background: conic-gradient(#FA124F 8.5%, rgb(30,30,30) 0);}
+  12.5%{background: conic-gradient(#FA124F 10.625%, rgb(30,30,30) 0);}
   15%{background: conic-gradient(#FA124F 12.75%, rgb(30,30,30) 0);}
+  17.5%{background: conic-gradient(#FA124F 14.875%, rgb(30,30,30) 0);}
   20%{background: conic-gradient(#FA124F 17%, rgb(30,30,30) 0);}
+  22.5%{background: conic-gradient(#FA124F 19.125%, rgb(30,30,30) 0);}
   25%{background: conic-gradient(#FA124F 21.25%, rgb(30,30,30) 0);}
+  27.5%{background: conic-gradient(#FA124F 23.375%, rgb(30,30,30) 0);}
   30%{background: conic-gradient(#FA124F 25.5%, rgb(30,30,30) 0);}
+  32.5%{background: conic-gradient(#FA124F 27.625%, rgb(30,30,30) 0);}
   35%{background: conic-gradient(#FA124F 29.75%, rgb(30,30,30) 0);}
+  37.5%{background: conic-gradient(#FA124F 31.875%, rgb(30,30,30) 0);}
   40%{background: conic-gradient(#FA124F 34%, rgb(30,30,30) 0);}
+  42.5%{background: conic-gradient(#FA124F 36.125%, rgb(30,30,30) 0);}
   45%{background: conic-gradient(#FA124F 38.25%, rgb(30,30,30) 0);}
+  47.5%{background: conic-gradient(#FA124F 40.375%, rgb(30,30,30) 0);}
   50%{background: conic-gradient(#FA124F 42.5%, rgb(30,30,30) 0);}
+  52.5%{background: conic-gradient(#FA124F 44.625%, rgb(30,30,30) 0);}
   55%{background: conic-gradient(#FA124F 46.75%, rgb(30,30,30) 0);}
+  57.5%{background: conic-gradient(#FA124F 48.875%, rgb(30,30,30) 0);}
   60%{background: conic-gradient(#FA124F 51%, rgb(30,30,30) 0);}
+  62.5%{background: conic-gradient(#FA124F 53.125%, rgb(30,30,30) 0);}
   65%{background: conic-gradient(#FA124F 55.25%, rgb(30,30,30) 0);}
+  67.5%{background: conic-gradient(#FA124F 57.375%, rgb(30,30,30) 0);}
   70%{background: conic-gradient(#FA124F 59.5%, rgb(30,30,30) 0);}
+  72.5%{background: conic-gradient(#FA124F 61.625%, rgb(30,30,30) 0);}
   75%{background: conic-gradient(#FA124F 63.75%, rgb(30,30,30) 0);}
+  77.5%{background: conic-gradient(#FA124F 65.875%, rgb(30,30,30) 0);}
   80%{background: conic-gradient(#FA124F 68%, rgb(30,30,30) 0);}
+  82.5%{background: conic-gradient(#FA124F 70.125%, rgb(30,30,30) 0);}
   85%{background: conic-gradient(#FA124F 72.25%, rgb(30,30,30) 0);}
+  87.5%{background: conic-gradient(#FA124F 74.375%, rgb(30,30,30) 0);}
   90%{background: conic-gradient(#FA124F 76.5%, rgb(30,30,30) 0);}
+  92.5%{background: conic-gradient(#FA124F 78.625%, rgb(30,30,30) 0);}
   95%{background: conic-gradient(#FA124F 80.75%, rgb(30,30,30) 0);}
+  97.5%{background: conic-gradient(#FA124F 82.875%, rgb(30,30,30) 0);}
   100%{background: conic-gradient(#FA124F 85%, rgb(30,30,30) 0);}
 }
 
