@@ -1,6 +1,7 @@
 
 #Weather_Widget{
   display: grid;
+  column-gap: 2rem;
   grid-template-rows: 1fr 2fr repeat(10,1fr); 
   grid-template-columns: repeat(6,1fr);
   position: relative;
@@ -9,11 +10,15 @@
   background: linear-gradient(180deg, rgb(0,185,230) -30.4%, rgb(0,170,248) 105.99%);
   padding: 1.1rem;
   box-sizing: border-box;
+  font-family: Arial;
+  color: white;
+  font-size: 0.7rem;
+  text-align: center;
 }
 
-
 #Weather_Widget > div{
-  /* border: 2px dashed white; */
+  /* border: 1px dashed rgba(255,255,255,0.2); */
+  /* box-sizing: border-box; */
 }
 
 #City_Label{
@@ -22,9 +27,7 @@
   color: var(--Muted_White);
   font-size: 1rem;
   align-items: flex-start;
-  /* padding-top: 0.5rem; */
-  /* padding-left: 1rem; */
-  
+  text-align: left;
 }
 
 #Current_Weather_Symbol{
@@ -37,6 +40,7 @@
   color: var(--Muted_White);
   font-size: 2.5rem;
   align-items: flex-end;
+  text-align: left;
 }
 
 #Current_Weather_Summary{
@@ -48,17 +52,87 @@
   text-align: right;
   justify-content: flex-end;
   align-items: flex-end;
-  /* padding-right: 1rem; */
+}
+
+.Seperators{
+  position: relative;
+  grid-column: 1 / span 6;
+}
+
+.Seperators > div{
+  position: absolute;
+  --Height: 2%;
+  --Width: 100%;
+  height: var(--Height);
+  width: var(--Width);
+  background-color: var(--Muted_White);
+  top: calc(50% - var(--Height)/2); 
+  left: calc(50% - var(--Width)/2);
+  border-radius: 1000rem;
+}
+
+.Time_Headers{
+  display: flex;   
+  grid-row: 4 / span 1;
+  color: var(--Muted_White);
+  font-size: 0.7rem;
+  justify-content: center;
+  align-items: center;
+  /* text-align: left; */
+}
+
+.Temperature_Labels{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Day_Of_The_Week_Headers{
+  grid-column: 1 / span 1;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: left;
+}
+
+.Daily_Weather_Icons{
+  
+}
+
+.Todays_Low,.Todays_High{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Todays_Low{
+  grid-column: 3 / span 1; 
+  color: rgba(255,255,255,0.5);
+}
+
+.Todays_High{
+  grid-column: 6 / span 1; 
 }
 
 
+.Air_Quality_Index_Bars{
+  position: absolute;
+  grid-column:  4 / span 2;
+  border: 1px dashed rgba(255,255,255,0.2);
+  height: 100%;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem; 
+  left: -2rem;
+}
 
-
-
-
-
-
-
+.Air_Quality_Index_Bars > div{
+  
+  
+  
+}
 
 
 
