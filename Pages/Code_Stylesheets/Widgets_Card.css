@@ -39,7 +39,7 @@
   backdrop-filter: blur(1000rem);
   filter: blur(500rem);
   box-shadow: 0em 0.1em 0.5em 0.01em rgba(0,0,0,0.1);
-  -webkit-mask: -webkit-gradient(linear,right 5%,left 5%,from(rgba(0,0,0, 1)),to(rgba(0,0,0,0)));
+  -webkit-mask: -webkit-gradient(linear,right 0%,left 0%,from(rgba(0,0,0, 1)),to(rgba(0,0,0,0)));
   opacity: 1;
   z-index: 19;
   transform: translateX(20em);
