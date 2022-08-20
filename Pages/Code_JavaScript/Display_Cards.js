@@ -13,31 +13,58 @@ function Display_Card(){
     console.log("Show Widgets");
     var Movements = document.getElementsByClassName("Activity_Movements");
     var Blue_Movement = Movements[2];
-    Blue_Movement.classList.add("Rotate_Blue_Movements");
     var Green_Movement = Movements[1];
-    Green_Movement.classList.add("Rotate_Green_Movements");
     var Red_Movement = Movements[0];
-    Red_Movement.classList.add("Rotate_Red_Movements");
-
     var Blue_Ring = document.getElementById("Blue_Ring");
-    Blue_Ring.classList.add("Blue_Ring_Animation");
     var Green_Ring = document.getElementById("Green_Ring");
-    Green_Ring.classList.add("Green_Ring_Animation");
     var Red_Ring = document.getElementById("Red_Ring");
-    Red_Ring.classList.add("Red_Ring_Animation");
-    
     let Start_Nubs = document.getElementsByClassName("Start_Activity_Circles");
+    let Red_Start_Nub = Start_Nubs[0];
+    let Move_Label = document.getElementById("Move_Label");
+    let Exercise_Label = document.getElementById("Exercise_Label");
+    let Stand_Label = document.getElementById("Stand_Label");
+    
+    Blue_Movement.classList.remove("Rotate_Blue_Movements");
+    Green_Movement.classList.remove("Rotate_Green_Movements");
+    Red_Movement.classList.remove("Rotate_Red_Movements");
+    Blue_Ring.classList.remove("Blue_Ring_Animation");
+    Green_Ring.classList.remove("Green_Ring_Animation");
+    Red_Ring.classList.remove("Red_Ring_Animation");    
+    Start_Nubs[0].classList.remove("Show_Red_Nub");
+    Start_Nubs[1].classList.remove("Show_Green_Nub");
+    Start_Nubs[2].classList.remove("Show_Blue_Nub");
+    Move_Label.classList.remove("Show_Move_Label");
+    Exercise_Label.classList.remove("Show_Exercise_Label");
+    Stand_Label.classList.remove("Show_Stand_Label");
+
+    void Blue_Movement.offsetWidth;
+    void Green_Movement.offsetWidth;
+    void Red_Movement.offsetWidth;
+    void Blue_Ring.offsetWidth;
+    void Green_Ring.offsetWidth;
+    void Red_Ring.offsetWidth;
+    void Start_Nubs[0].offsetWidth;
+    void Start_Nubs[1].offsetWidth;
+    void Start_Nubs[2].offsetWidth;
+    void Move_Label.offsetWidth;
+    void Exercise_Label.offsetWidth;
+    void Stand_Label.offsetWidth;
+    
+    Blue_Movement.classList.add("Rotate_Blue_Movements");
+    Green_Movement.classList.add("Rotate_Green_Movements");
+    Red_Movement.classList.add("Rotate_Red_Movements");
+    Blue_Ring.classList.add("Blue_Ring_Animation");
+    Green_Ring.classList.add("Green_Ring_Animation");
+    Red_Ring.classList.add("Red_Ring_Animation");    
     Start_Nubs[0].classList.add("Show_Red_Nub");
     Start_Nubs[1].classList.add("Show_Green_Nub");
     Start_Nubs[2].classList.add("Show_Blue_Nub");
+    Move_Label.classList.add("Show_Move_Label");
+    Exercise_Label.classList.add("Show_Exercise_Label");
+    Stand_Label.classList.add("Show_Stand_Label");
 
     
-    document.getElementById("Move_Label").classList.add("Show_Move_Label");
-    document.getElementById("Exercise_Label").classList.add("Show_Exercise_Label");
-    document.getElementById("Stand_Label").classList.add("Show_Stand_Label");
-
-    
-    
+    console.log(Start_Nubs[0]);
   }
   
   if(Button_Identifier == "About_Button"){
