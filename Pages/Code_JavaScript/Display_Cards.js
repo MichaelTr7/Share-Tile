@@ -64,7 +64,8 @@ function Display_Card(){
     Stand_Label.classList.add("Show_Stand_Label");
 
     
-    console.log(Start_Nubs[0]);
+
+    
   }
   
   if(Button_Identifier == "About_Button"){
