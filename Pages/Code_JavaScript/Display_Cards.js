@@ -63,8 +63,18 @@ function Display_Card(){
     Exercise_Label.classList.add("Show_Exercise_Label");
     Stand_Label.classList.add("Show_Stand_Label");
 
+    let Notes_Icon = document.getElementById("Notes_Title");
+    let Notes_Folder_Symbol = document.getElementById("Notes_Folder_Symbol");
     
-
+    Notes_Icon.classList.remove("Translate_Right_Animation_1");
+    void Notes_Icon.offsetWidth;
+    Notes_Icon.classList.add("Translate_Right_Animation_1");
+    
+    Notes_Folder_Symbol.classList.remove("Translate_Right_Animation_1");
+    void Notes_Folder_Symbol.offsetWidth;
+    Notes_Folder_Symbol.classList.add("Translate_Right_Animation_1");
+    
+    
     
   }
   
