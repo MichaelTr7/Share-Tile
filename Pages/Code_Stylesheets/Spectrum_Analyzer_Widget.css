@@ -99,7 +99,6 @@
   padding-left: 0.5rem;
 }
 
-
 .Power_LEDs{
   display: flex;
   position: relative;
@@ -199,6 +198,14 @@
   transition: 0.1s;
 }
 
+#Power_Nub{
+  background-image: url("../../Assets/Power_Ticker.svg");
+  background-size: 90%;
+  background-position: center;
+  transform: rotate(-28deg);
+  transition: 0.2s;
+}
+
 #Power_Knob:hover{
   filter: brightness(1.2);
 }
@@ -214,8 +221,6 @@
 #Gain_Knob{
   grid-row: 7 / span 2;
   transition: 0.1s;
-  font-size: 0.5rem;
-  color: rgb(70,70,70);
 }
 
 #Gain_Knob > div{
@@ -223,8 +228,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 0.5rem;
+  color: rgb(70,70,70);
 }
-
 
 .Pressed_Knob{
   animation: 0.2s Knob_Pressed_Keyframes ease forwards;
