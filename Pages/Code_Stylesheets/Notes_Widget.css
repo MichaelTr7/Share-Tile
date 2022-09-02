@@ -87,21 +87,7 @@
   margin-top: var(--Margin);
   margin-left: var(--Margin);
   color: rgb(65,65,65);
-}
-
-.Translate_Right_Animation_1{
-  animation: 0.3s Translate_Right_Keyframes ease forwards;
-  animation-delay: 0.2s;
-}
-
-.Translate_Right_Animation_2{
-  animation: 0.2s Translate_Right_Keyframes ease forwards;
-  animation-delay: 0.4s;
-}
-
-@keyframes Translate_Right_Keyframes {
-  from{transform: translateX(-5rem); filter: opacity(0);}
-  to{transform: translateX(0rem); filter: opacity(1);}
+  filter: opacity(0);
 }
 
 

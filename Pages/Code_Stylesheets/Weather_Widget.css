@@ -15,7 +15,6 @@
   text-align: center;
   background: linear-gradient(180deg, rgb(0,185,230) -30.4%, rgb(0,170,248) 105.99%);
   background: linear-gradient(180deg, #04071F 0%, #2F364F 100%);
-
 }
 
 #Weather_Widget > div{
@@ -30,6 +29,8 @@
   font-size: 1rem;
   align-items: flex-start;
   text-align: left;
+  transform: translateY(3rem);
+  filter: opacity(0);
 }
 
 #Current_Weather_Symbol{
@@ -44,6 +45,8 @@
   font-weight: lighter;
   align-items: flex-end;
   text-align: left;
+  transform: translateY(3rem);
+  filter: opacity(0);
 }
 
 #Current_Weather_Summary{
@@ -55,11 +58,15 @@
   text-align: right;
   justify-content: flex-end;
   align-items: flex-end;
+  transform: translateY(3rem);
+  filter: opacity(0);
 }
 
 .Seperators{
   position: relative;
   grid-column: 1 / span 6;
+  transform: translateX(-20rem);
+  filter: opacity(0);
 }
 
 .Seperators > div{
@@ -82,7 +89,8 @@
   justify-content: center;
   align-items: center;
   opacity: 0.7;
-  /* text-align: left; */
+  transform: translateY(3rem);
+  filter: opacity(0);
 }
 
 .Temperature_Labels{
@@ -90,14 +98,17 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  transform: translateY(3rem);
+  filter: opacity(0);
 }
 
 .Day_Of_The_Week_Headers{
   grid-column: 1 / span 1;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   text-align: left;
+  transform: translateY(3rem);
+  filter: opacity(0);
 }
 
 .Daily_Weather_Icons{
@@ -109,6 +120,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  transform: translateY(3rem);
+  filter: opacity(0);
 }
 
 .Todays_Low{
@@ -140,9 +153,11 @@
   border-radius: 1000rem;
   background-color: rgba(0,0,0,0.15);
   box-shadow: 0 0.02rem 0.03rem 0 rgba(0,0,0,0.1);
+  filter: opacity(0);
+  overflow: hidden;
 }
 
-.Air_Quality_Bar_Containers > div{
+.Air_Quality_Bars{
   position: absolute;
   background-color: red;
   height: 100%;
@@ -151,8 +166,9 @@
   background: rgb(196,207,101);
   background: linear-gradient(90deg, rgba(196,207,101,1) 0%, rgba(234,206,73,1) 50%, rgba(242,167,59,1) 100%);
   filter: saturate(2);
+  transform: translateX(-150%);
   /* box-shadow: 0 0.02rem 0.03rem 0 rgba(0,0,0,0.1); */
-}
+} 
 
 #Air_Quality_Bar_1{
   width: 90%;
@@ -178,3 +194,11 @@
   width: 77%;
   left: 18%;
 }
+
+
+
+
+
+
+
+

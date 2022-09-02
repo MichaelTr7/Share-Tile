@@ -91,7 +91,7 @@ window.onload = function(){
   let Play_Button = document.getElementById('Play_Button');
   Play_Button.addEventListener('click',Play_Pause_Song);
   
-  
+  Setup_Spectrum_Analyzer();
   
   
 }

@@ -107,29 +107,44 @@
   grid-row: 1 / span 2;
   height: var(--Diameter);
   width: var(--Diameter);
-  background-color: grey;
   border-radius: 100%;
   top: -0.2rem;
   left: calc(50% - var(--Diameter)/2);
   justify-content: center;
   align-items: center;
+  transition: 0.2s;
+}
+
+.Power_LEDs:hover{
+  transform: scale(1.2);
 }
 
 #Green_LED{
   --Diameter: 1rem;
   height: var(--Diameter);
   width: var(--Diameter);
-  background-color: rgba(230,60,60,1);
+  background-color: rgba(0,128,0,0.3);
   box-sizing: border-box;
-  background-color: green;
 }
 
 #Red_LED{
   --Diameter: 1rem;
   height: var(--Diameter);
   width: var(--Diameter);
-  background-color: rgba(230,60,60,1);
+  background-color: rgba(230,60,60,0.3);
   box-sizing: border-box;
+}
+
+.Turn_On_Green_LED{
+  background-color: rgba(0,128,0,1);
+  filter: brightness(2);
+  box-shadow: 0 0 1rem 0 green;
+}
+
+.Turn_On_Red_LED{
+  background-color: rgba(230,60,60,1);
+  filter: brightness(1.15);
+  box-shadow: 0 0 1rem 0 red;
 }
 
 .LED_Knubs{  
@@ -181,6 +196,15 @@
 
 #Power_Knob{
   grid-row: 4 / span 2;
+  transition: 0.1s;
+}
+
+#Power_Knob:hover{
+  filter: brightness(1.2);
+}
+
+#Gain_Knob:hover{
+  filter: brightness(1.2);
 }
 
 #Gain_Label{
@@ -189,8 +213,28 @@
 
 #Gain_Knob{
   grid-row: 7 / span 2;
+  transition: 0.1s;
+  font-size: 0.5rem;
+  color: rgb(70,70,70);
 }
 
+#Gain_Knob > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.Pressed_Knob{
+  animation: 0.2s Knob_Pressed_Keyframes ease forwards;
+}
+
+@keyframes Knob_Pressed_Keyframes {
+  0%{transform: scale(1);}
+  50%{transform: scale(1.1);}
+  100%{transform: scale(1);}
+}
 
 
 

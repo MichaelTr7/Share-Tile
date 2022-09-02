@@ -24,12 +24,13 @@
   right: 0em;
   z-index: 1;
   transform: translateX(25em);
-  transition: 0.2s ease-out;
+  transition: 0.2s ease;
   z-index: 20;
   overflow: scroll;
   z-index: 20;
-  /* transform: translateX(0);
-  opacity: 1; */
+  filter: opacity(0);
+  transform: translateX(0);
+  filter: opacity(1);
 }
 
 .Widgets_Glass_Background{
@@ -40,15 +41,15 @@
   filter: blur(500rem);
   box-shadow: 0em 0.1em 0.5em 0.01em rgba(0,0,0,0.1);
   -webkit-mask: -webkit-gradient(linear,right 0%,left 0%,from(rgba(0,0,0, 1)),to(rgba(0,0,0,0)));
-  opacity: 1;
   z-index: 19;
+  filter: opacity(0);
   transform: translateX(20em);
-  transition: 0.2s ease-out;
+  transition: 0.2s ease;
 }
 
 .Show_Widgets_Card{
   transform: translateX(0);
-  opacity: 1;
+  filter: opacity(1);
   transition: 0.2s;
 }
 
