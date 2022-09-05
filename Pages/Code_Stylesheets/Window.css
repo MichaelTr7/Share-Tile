@@ -23,6 +23,7 @@ body {
   filter: brightness(1);
   /* background: rgb(207,165,203); */
   background: rgb(0,0,0);
+  
 }
 
 body::-webkit-scrollbar { 
