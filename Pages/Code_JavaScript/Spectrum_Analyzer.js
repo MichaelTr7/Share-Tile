@@ -103,9 +103,9 @@ function Analyze_Audio(){
     Math.max(parseInt(Spectrum_Magnitudes[16])-80,0)*Multiplier,
     Math.max(parseInt(Spectrum_Magnitudes[32])-80,0)*Multiplier,    
     Math.max(parseInt(Spectrum_Magnitudes[64])-80,0)*Multiplier,    
-    Math.max(parseInt(Spectrum_Magnitudes[200])-80,0)*Multiplier,    
-    Math.max(parseInt(Spectrum_Magnitudes[256])-80,0)*Multiplier,
-    Math.max(parseInt(Spectrum_Magnitudes[512])-80,0)*Multiplier 
+    Math.max(parseInt(Spectrum_Magnitudes[100])-80,0)*Multiplier,    
+    Math.max(parseInt(Spectrum_Magnitudes[150])-80,0)*Multiplier,
+    Math.max(parseInt(Spectrum_Magnitudes[256])-80,0)*Multiplier 
   ];
   
   var Spectral_Column_1 = document.getElementById("Column_1_Spectral_Bars").children;
