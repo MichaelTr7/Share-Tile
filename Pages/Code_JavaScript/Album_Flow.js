@@ -35,8 +35,31 @@ function Play_Pause_Song(){
   let Sound_Slider = document.getElementById('Sound_Slider');
   let Volume_Percentage = parseInt(Sound_Slider.value);
   let Normalization_Factor = 1;
-  let Input_Volume = (Volume_Percentage/100)*Normalization_Factor;
-  console.log(Input_Volume);
+  let Output_Volume = (Volume_Percentage/100)*Normalization_Factor;
+  let Current_Song = (document.getElementById('Song_Title').innerHTML).split("<br>")[0];
+  let Audio_Appendix = {"Pac-Man":"Audio_Sample_1","The Transformers":"Audio_Sample_2","Super Mario Bros":"Audio_Sample_3"};
+  let Audio_File_Name = Audio_Appendix[Current_Song];
+  let Audio_File = document.getElementById(Audio_File_Name);
+  Audio_File.volume = parseFloat(Output_Volume);
+  
+  let Play_Button = document.getElementsByClassName('Play_Button')[0];
+  let State = Play_Button.dataset.state;
+  
+  if(State == "Play"){
+    // Audio_File.play();
+    Play_Button.style.backgroundImage="url('../Assets/Pause.svg')";
+  }else{
+    // Audio_File.pause();
+    Play_Button.style.backgroundImage="url('../Assets/Play.svg')";
+  }
+  
+  
+  
+
+  
+  
+  Play_Button.dataset.state = (State == "Play") ? "Pause" : "Play";
+
   
   
 }

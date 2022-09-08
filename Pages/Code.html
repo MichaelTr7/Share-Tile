@@ -35,11 +35,22 @@
     <script src="./Code_JavaScript/Album_Flow.js" type="text/javascript"></script>
     <script src="./Code_JavaScript/Spectrum_Analyzer.js" defer></script>
 
+      <audio id="Audio_Sample_1">
+        <source src="../Assets/Audio/Audio_1.mp3" type="audio/mp3">
+      </audio>
+      
+      <audio id="Audio_Sample_2">
+        <source src="../Assets/Audio/Audio_2.mp3" type="audio/mp3">
+      </audio>
+      
+      <audio id="Audio_Sample_3">
+        <source src="../Assets/Audio/Audio_3.mp3" type="audio/mp3">
+      </audio>
+
     <meta name="viewport"
           content="width=device-width, initial-scale=0.5, maximum-scale=1 user-scalable=0">
   </head>
   <body>
-
 
 <!-- *********************************************************************** -->
 <!-- BACKGROUND/WALLPAPER -->
@@ -283,7 +294,7 @@
         <div class="Main_Toggle_Heading">
           <div id="Song_Title" class="Main_Toggle_Subheadings">Pac-Man<br><span>Eat em All</span></span></div>
         </div>
-      <div id="Play_Button"></div>
+      <div id="Play_Button" class="Play_Button" data-state="Play"></div>
       <div id="Fast_Forward_Button"></div>
       </div>
 

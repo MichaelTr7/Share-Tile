@@ -308,6 +308,9 @@ input::-webkit-inner-spin-button {
 
 #Play_Button{
   background-size: 60% 50%;
+}
+
+.Play_Button{
   background-image: url('../../Assets/Play.svg');
 }
 

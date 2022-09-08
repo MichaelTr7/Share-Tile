@@ -2,7 +2,7 @@
 #Menu_Bar{
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 6em 5fr 2em 3.55em 2em 8em;
+  grid-template-columns: 6em 5fr 2em 3.8em 2em 8em;
   position: fixed;
   top: 0;
   color: rgba(0,0,0,0.4);
@@ -50,8 +50,8 @@
 
 #Battery_Button{
   background-image: url("../../Assets/Battery_Icon_2.svg");
-  background-size: 110%;
-  background-position: 65% 55%;
+  background-size: 100%;
+  background-position: 50% 55%;
   background-repeat: no-repeat;
 }
 
