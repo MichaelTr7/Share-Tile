@@ -1,4 +1,43 @@
 
+#Window_Controls{
+  display: flex;
+  position: absolute;
+  --Width: calc(32em/7);
+  width: var(--Width); 
+  padding: calc(32em/40);
+}
+
+.Window_Control_Buttons{
+  display: flex;
+  margin: 4%;
+  --Diameter: 18%;
+  width: var(--Diameter);
+  aspect-ratio: 1 / 1;
+  background-color: red;
+  border-radius: 100%;
+  border: 0.05em solid rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 50%;
+  font-weight: bold;
+  color: rgba(0,0,0,0.3);
+}
+
+#Close_About_Window_Button{
+  background-color: rgba(237,106,94,1);
+}
+
+#Minimize_About_Window_Button{
+  background-color: rgba(244,191,79,1);
+}
+
+#Maximize_About_Window_Button{
+  background-color: rgba(98,196,85,1);
+}
+
 .About_Card{
   position: absolute;
   color: black;

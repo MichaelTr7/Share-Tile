@@ -133,7 +133,7 @@
 }
 
 #Skills_Icon{
-  background-image: url("../../Assets/Skills_Icon_2.svg");
+  background-image: url("../../Assets/Gear.svg");
   -webkit-transform: translate3d(0,0,0);
   background-size: 100%;
 }
