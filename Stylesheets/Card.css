@@ -147,10 +147,10 @@
   filter: opacity(1);
   box-shadow: inset 0 calc(var(--Size)*0.005) calc(var(--Size)*0.005) calc(var(--Size)*0.003) rgba(0,0,0,0.35);
   border: calc(var(--Size)*0.014) solid #244992;
-  animation: Twist_Fade_In_Keyframes 0.8s ease-in forwards;
+  animation: Fade_In_Keyframes 0.8s ease-in forwards;
   animation-delay: calc(var(--Animation_Delay) + 1.2s);
   filter: opacity(0);
-  transform: rotate(380deg) scale(0.8);
+  /*transform: rotate(380deg) scale(0.8);*/
 }
 
 #Share_Button{
