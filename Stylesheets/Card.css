@@ -43,10 +43,10 @@
 #Bio{
   font-weight: lighter;
   color: rgba(255,255,255,0.4);
-  filter: opacity(0);
+  /* filter: opacity(0);
   transform: scale(0.7);
   animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
-  animation-delay: calc(var(--Animation_Delay) + 0.8s);
+  animation-delay: calc(var(--Animation_Delay) + 0.8s); */
 }
 
 .Containers{
@@ -82,8 +82,8 @@
   align-items: center;
   text-decoration: none;
   color: rgba(255,255,255,0.9);
-  filter: opacity(0);
-  transform: scale(0.7);
+  /* filter: opacity(0); */
+  /* transform: scale(0.7); */
   outline: none; 
   border: none;
   color: white;
@@ -100,22 +100,22 @@
 }
 
 #Link_1{
-  animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
-  animation-delay: calc(var(--Animation_Delay) + 1.2s);
+  /* animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
+  animation-delay: calc(var(--Animation_Delay) + 1.2s); */
   transform: scale(1);
   cursor: pointer;
 }
 
 #Link_2{
-  animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
-  animation-delay: calc(var(--Animation_Delay) + 1.4s);
+  /* animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
+  animation-delay: calc(var(--Animation_Delay) + 1.4s); */
   transform: scale(1);
   cursor: pointer;
 }
 
 #Link_3{
-  animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
-  animation-delay: calc(var(--Animation_Delay) + 1.6s);
+  /* animation: Simple_Fade_In_Keyframes 0.5s ease forwards;
+  animation-delay: calc(var(--Animation_Delay) + 1.6s); */
   transform: scale(1);
   cursor: pointer;
 }
@@ -147,9 +147,9 @@
   filter: opacity(1);
   box-shadow: inset 0 calc(var(--Size)*0.005) calc(var(--Size)*0.005) calc(var(--Size)*0.003) rgba(0,0,0,0.35);
   border: calc(var(--Size)*0.014) solid #244992;
-  animation: Fade_In_Keyframes 0.8s ease-in forwards;
+  /* animation: Fade_In_Keyframes 0.8s ease-in forwards;
   animation-delay: calc(var(--Animation_Delay) + 1.2s);
-  filter: opacity(0);
+  filter: opacity(0); */
   /*transform: rotate(380deg) scale(0.8);*/
 }
 
