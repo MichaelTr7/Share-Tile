@@ -1,0 +1,44 @@
+
+html, body{
+  background: #070D20;
+  margin: 0;
+}
+
+#Main_Title{
+  display: block;
+  position: relative;
+  font-family: Arial;
+  font-weight: bold;
+  --Minimum_Window_Dimension: 10vw;
+  --Minimum_Font_Size: max(var(--Minimum_Window_Dimension),40px);
+  --Maximum_Font_Size: min(var(--Minimum_Font_Size),100px);
+  font-size: var(--Maximum_Font_Size);
+  width: 100%;
+  background: linear-gradient(30deg, #B1F2D5 0%, #86BEEE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin-top: 10rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+#Container{
+  display: flex;
+  --Margin: 5rem;
+  height: 20vh;
+  width: calc(100% - (2 * var(--Margin)));
+  border: 2px dashed white;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.Gig_Links{
+  height: 500px;
+  width: 500px;
+  background-color: white;
+}
