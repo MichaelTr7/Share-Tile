@@ -1,7 +1,18 @@
 
+:root{
+  --Tile_Margin: 3vw;
+  --Maximum_Size: 24rem;
+  --Minimum_Size: 18rem;
+  --Tile_Width: calc((90vw - (4 * var(--Tile_Margin)))/3);
+  
+  
+}
+
+
 html, body{
   background: #070D20;
   margin: 0;
+  margin-bottom: 5rem;
 }
 
 #Main_Title{
@@ -19,7 +30,7 @@ html, body{
   -webkit-background-clip: text;
   color: transparent;
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 7rem;
   padding: 2rem;
   box-sizing: border-box;
   pointer-events: none;
@@ -27,18 +38,102 @@ html, body{
 }
 
 #Container{
+  --Margin: 1vw;
+  --Width: calc(100vw - (2 * var(--Margin)));
   display: flex;
-  --Margin: 5rem;
-  height: 20vh;
-  width: calc(100% - (2 * var(--Margin)));
-  border: 2px dashed white;
+  position: relative;
+  width: var(--Width);
   margin: 0 auto;
+  margin-top: 2rem;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.Gig_Links{
-  height: 500px;
-  width: 500px;
-  background-color: white;
+.Gig_Frames{
+  display: grid;
+  grid-gap: 5%;
+  grid-template-rows: 1fr 10fr 3fr;
+  grid-template-columns: 1fr;
+  height: 90%;
+  width: 90%;
+  box-sizing: border-box;
+  /* border: 1px dashed green; */
 }
+
+.Gig_Previews{
+  background-color: rgba(0,0,0,0.2); 
+  --Border_Radius_Factor: 0.03;
+  border-radius: calc(var(--Border_Radius_Factor) * var(--Tile_Width));
+  --Shadow_Height_1: 0.02;
+  --Shadow_Height_2: 0.01;
+  --Shadow_Blur_1: 0.02;
+  --Shadow_Blur_2: 0.01;
+  --Shadow_Spread_1: 0.005;
+  --Shadow_Spread_2: 0.00;
+  box-shadow: inset 0 calc(var(--Shadow_Height_1)*var(--Tile_Width)) calc(var(--Shadow_Blur_1)*var(--Tile_Width)) calc(var(--Shadow_Spread_1)*var(--Tile_Width)) rgba(0,0,0,0.3),
+  inset 0 calc(var(--Shadow_Height_2)*var(--Tile_Width)) calc(var(--Shadow_Blur_2)*var(--Tile_Width)) calc(var(--Shadow_Spread_2)*var(--Tile_Width)) rgba(0,0,0,0.3);
+
+}
+
+.Gig_Descriptions{
+  position: relative;
+  font-family: Arial;
+  text-decoration: none;
+  font-weight: bold;
+  /* padding: 0.8rem 0.5rem 0.8rem 0.5rem; */
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #B1F2D5 -50%, #86BEEE 150%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255,255,255,0.5);
+}
+
+.Gig_Previews{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+#Gig_1 .Gig_Previews{
+  background-image: url('./Assets/Icon Design.webp');
+}
+
+
+#Gig_2 .Gig_Previews{
+  background-image: url('./Assets/Web_Apps.png');
+}
+
+#Gig_3 .Gig_Previews{
+  background-image: url('./Assets/Portfolio Sites.webp');
+}
+
+
+.Button_Containers{
+  display: grid;
+  grid-gap: 4.5%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  /* border: 1px dashed grey; */
+}
+
+.Buttons_Links{
+  --Border_Radius_Factor: 0.03;
+  border-radius: calc(var(--Border_Radius_Factor) * var(--Tile_Width));
+  border: none;
+  font-size: 1rem;
+  font-family: Arial;
+  color: white;
+  background-color: #070D20;
+  color: #8492AF;
+  font-weight: bold;
+}
+
+
+
+
