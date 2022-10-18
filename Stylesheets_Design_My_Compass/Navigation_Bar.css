@@ -1,0 +1,55 @@
+
+#Navigation_Bar{
+  display: flex;
+  position: fixed;
+  top: 0;
+  height: 5rem;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #060D20 0%, rgba(217, 217, 217, 0) 100%);
+  z-index: 100;
+}
+
+#Menu_Expandable_Tray{
+  position: absolute;
+  height: 300%;
+  left: -7.5rem;
+  top: -7.5rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  background-color: #070D20;
+  filter: blur(5rem);
+  transition: 0.2s; 
+}
+
+#Menu_Expandable_Tray:hover{
+  transform: scale(5);
+  filter: blur(0rem);
+}
+
+#Menu_Button{
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: 1fr;
+  position: absolute;
+  height: 300%;
+  left: -7.5rem;
+  top: -7.5rem;  
+  aspect-ratio: 1 / 1;
+  background-color: grey;
+}
+
+#Menu_Button > span{
+  
+}
+
+
+
+
+
+
+
+
+
+
+

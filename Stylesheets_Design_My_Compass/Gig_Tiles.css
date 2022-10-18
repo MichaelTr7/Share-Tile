@@ -6,13 +6,12 @@
   --Border_Radius_Factor: 0.05;
   --Shadow_Height: 0.03;
   --Shadow_Blur: 0.5;
-  --Shadow_Spread: 0.02;
+  --Shadow_Spread: 0.1;
   --Highlight_Height: 0.001;
   --Highlight_Blur: 0.001;
   --Highlight_Spread: 0;
   --Maximum_Size: 24rem;
   --Minimum_Size: 22rem;
-  background-color: rgb(60,60,60);
   height: var(--Tile_Width);
   width: var(--Tile_Width);
   border-radius: calc(var(--Border_Radius_Factor) * var(--Tile_Width));
@@ -22,10 +21,19 @@
   min-height: var(--Minimum_Size);
   margin: var(--Tile_Margin);
   box-shadow: 0 0 calc(var(--Shadow_Blur)*var(--Tile_Width)) calc(var(--Shadow_Spread)*var(--Tile_Width)) rgba(20, 41, 81, 1),
-  0 0.5rem 2rem 0rem rgba(0,0,0,1); 
+  0 1rem 1.2rem 0.2rem rgba(0,0,0,0.8);
   text-decoration: none;
   border: calc(0.007*var(--Tile_Width)) solid rgba(255,255,255,0.05);
+  background-color: rgb(60,60,60);
   overflow: hidden;
   pointer-events: none;
   background-color: rgba(14, 22, 43, 1);
+  border-radius: 0.8rem;
 }
+
+
+
+
+
+
+
