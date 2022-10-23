@@ -13,15 +13,19 @@ function Toggle_Menu_Overlay(){
   console.log("Toggle Overlay");
 
   let Menu_Button = document.getElementById('Menu_Button');
-  // void Menu_Button.offsetWidth;
+  let Menu_Frame = document.getElementById('Menu_Frame'); 
   if(Menu_Button.classList.contains("Rotate_Menu_Button")){
     console.log("Clockwise");
     Menu_Button.classList.add('Reverse_Rotate_Menu_Button');
     Menu_Button.classList.remove('Rotate_Menu_Button');
+    Menu_Frame.classList.add('Fade_Out_Menu');
+    Menu_Frame.classList.remove('Fade_In_Menu');
   }else{
     console.log("Counter-Clockwise");
     Menu_Button.classList.add('Rotate_Menu_Button');
     Menu_Button.classList.remove('Reverse_Rotate_Menu_Button');
+    Menu_Frame.classList.add('Fade_In_Menu');
+    Menu_Frame.classList.remove('Fade_Out_Menu');
   }
 
   let Circle_Mask = document.getElementById('Circle_Mask');

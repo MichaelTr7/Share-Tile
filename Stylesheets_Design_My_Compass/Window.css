@@ -3,7 +3,7 @@
   --Tile_Margin: 3vw;
   --Maximum_Size: 24rem;
   --Minimum_Size: 18rem;
-  --Tile_Width: calc((90vw - (4 * var(--Tile_Margin)))/3);  
+  --Tile_Width: min(calc((90vw - (4 * var(--Tile_Margin)))/3),24rem);  
 }
 
 html, body{
