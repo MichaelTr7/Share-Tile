@@ -23,7 +23,6 @@
   width: 100%;
   box-sizing: border-box;
   background: linear-gradient(180deg, #060D20 0%, rgba(217, 217, 217, 0) 100%);
-  z-index: 100;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
