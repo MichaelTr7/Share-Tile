@@ -12,6 +12,14 @@ html, body{
   margin-bottom: 5rem;
 }
 
+*{
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+
 #Main_Title{
   display: block;
   position: relative;
