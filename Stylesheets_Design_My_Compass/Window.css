@@ -27,7 +27,8 @@ html, body{
   -webkit-background-clip: text;
   color: transparent;
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 7rem;
+  margin-top: 3rem;
   padding: 2rem;
   box-sizing: border-box;
   pointer-events: none;
@@ -44,7 +45,7 @@ html, body{
   position: relative;
   width: var(--Width);
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -130,7 +131,7 @@ html, body{
   box-shadow: 0 0.4rem 0.5rem 0.1rem rgba(0,0,0,0.1),
   inset 0 0.2rem 0rem 0.1rem rgba(255,255,255,0.15);
   pointer-events: all;
-  transition: 0.07s;
+  transition: 0.s;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -151,7 +152,7 @@ html, body{
 }
 
 .Buttons_Links:hover{
-  transform: scale(1.05);
+  color: white;
 }
 
 

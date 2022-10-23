@@ -1,6 +1,22 @@
 
 #Navigation_Bar{
   display: flex;
+  top: 0;
+  height: 5rem;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+
+#Shader{
+  display: flex;
   position: fixed;
   top: 0;
   height: 5rem;
@@ -8,42 +24,112 @@
   box-sizing: border-box;
   background: linear-gradient(180deg, #060D20 0%, rgba(217, 217, 217, 0) 100%);
   z-index: 100;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  align-items: center;
+  justify-content: center;  
+  z-index: 99;
 }
 
-#Menu_Expandable_Tray{
-  position: absolute;
-  height: 300%;
-  left: -7.5rem;
-  top: -7.5rem;
-  aspect-ratio: 1 / 1;
-  border-radius: 100%;
+.Menu_Expandable_Tray{
+  /* position: absolute;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 0 0 1000rem 0;
   background-color: #070D20;
-  filter: blur(5rem);
-  transition: 0.2s; 
+  background-color: white;
+  transition: 0.3s ease;
+  transform: translateX(-20rem) translateY(-20rem);
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; */
 }
 
-#Menu_Expandable_Tray:hover{
-  transform: scale(5);
-  filter: blur(0rem);
+.Expand_Overlay{
+  transform: translateX(0rem) translateY(0rem);
 }
 
-#Menu_Button{
+.Menu_Button{
+  /* position: fixed; */
+  position: relative;
   display: grid;
+  grid-gap: 0.5rem;
   grid-template-rows: repeat(3,1fr);
   grid-template-columns: 1fr;
   position: absolute;
-  height: 300%;
-  left: -7.5rem;
-  top: -7.5rem;  
-  aspect-ratio: 1 / 1;
-  background-color: grey;
+  height: 5rem; 
+  width: 5rem; 
+  box-sizing: border-box;
+  padding: 1.3rem 1.1rem 1.3rem 1.1rem;
+  pointer-events: all;
+  background-color: rgb(245,245,245);
+  border-radius: 10000rem;
+  z-index: 100;
+  margin-top: 3rem;
+  transform: rotate(0deg);
+  transition: 0.5s;
+  transform-origin: center;
 }
 
-#Menu_Button > span{
+.Rotate_Menu_Button{
+    animation: Expand 0.5s ease-in-out forwards;
+}
+
+.Reverse_Rotate_Menu_Button{
+    animation: Shrink 0.5s ease-in-out forwards;
+}
+
+@keyframes Expand{
+  0%{height: 5rem; transform: rotate(0deg);}
+  20%{height: 5rem; transform: rotate(90deg);}
+  75%{height: 5rem; transform: rotate(90deg);}
+  90%{height: calc(3.1*var(--Tile_Width)); transform: rotate(90deg);}
+  94%{height: calc(2.95*var(--Tile_Width)); transform: rotate(90deg);}
+  98%{height: calc(3.02*var(--Tile_Width)); transform: rotate(90deg);}
+  100%{height: calc(3*var(--Tile_Width)); transform: rotate(90deg);}
+}
+
+@keyframes Shrink{
+  0%{height: calc(3*var(--Tile_Width)); transform: rotate(90deg);}
+  35%{height: 5rem; transform: rotate(90deg);}
+  80%{height: 5rem; transform: rotate(90deg);}
+  100%{height: 5rem; transform: rotate(0deg);}
+}
+
+.Circle_Mask{
+  position: absolute;
+  border-radius: 100%;
+  --Diameter: 3.5rem;
+  top: calc(50% - var(--Diameter)/2);
+  left: calc(105% - var(--Diameter));
+  height: var(--Diameter);
+  width: var(--Diameter);
+  background-color: #070D20;
+  transform: rotate(0deg);
+  transition: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.Hide_Background_Mask{
+  transform: scale(0);
+  transition-delay: 0.15s;
+}
+
+.Show_Background_Mask{
+  transform: scale(1);
+  transition-delay: 0.15s;
+}
+
+#Menu_Button > label{
+  background-color: rgba(20, 41, 81, 1);
+  border-radius: 100000rem;
+}
+
+#Menu_Frame{
+  
   
 }
-
-
 
 
 
