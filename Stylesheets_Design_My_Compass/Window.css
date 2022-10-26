@@ -87,15 +87,15 @@ html, body{
 }
 
 #Gig_1 .Gig_Previews{
-  /* background-image: url('./Assets/Icon Design.webp'); */
+  background-image: url('./Assets/Icon Design.png');
 }
 
 #Gig_2 .Gig_Previews{
-  /* background-image: url('./Assets/Web_Apps.png'); */
+  background-image: url('./Assets/Web_Apps.png');
 }
 
 #Gig_3 .Gig_Previews{
-  /* background-image: url('./Assets/Portfolio Sites.webp'); */
+  background-image: url('./Assets/Portfolio Sites.png');
 }
 
 .Gig_Descriptions{
@@ -124,7 +124,7 @@ html, body{
   grid-template-columns: 1fr 1fr;
 }
 
-.Buttons_Links{
+.Button_Links{
   border: none;
   font-size: 1rem;
   font-family: Arial;
@@ -145,21 +145,21 @@ html, body{
   user-select: none;
 }
 
-.Button_Containers .Buttons_Links:nth-child(1){
+.Button_Containers .Button_Links:nth-child(1){
   --Border_Radius_Factor: 0.03;
   border-radius: 0.8rem;
   background-color: rgba(248, 144, 19, 1);
   color: white;
 }
 
-.Button_Containers .Buttons_Links:nth-child(2){
+.Button_Containers .Button_Links:nth-child(2){
   --Border_Radius_Factor: 1000;
   border-radius: calc(var(--Border_Radius_Factor) * var(--Tile_Width));
   background-color: rgba(24, 191, 116, 1);
   color: white;
 }
 
-.Buttons_Links:hover{
+.Button_Links:hover{
   color: white;
 }
 

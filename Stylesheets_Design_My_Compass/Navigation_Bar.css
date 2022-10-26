@@ -137,12 +137,14 @@
 }
 
 #Menu_Frame{
+  position: absolute;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(6,1fr);
   grid-gap: 0.2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
+  padding: 0.5rem;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -170,6 +172,8 @@
   --Minimum_Font_Size: max(var(--Minimum_Window_Dimension),0.2rem);
   --Maximum_Font_Size: min(var(--Minimum_Font_Size),1.2rem);
   font-size: var(--Maximum_Font_Size);
+  /* background-color: red; */
+  border-radius: 1000rem;
 }
 
 
