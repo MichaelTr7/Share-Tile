@@ -26,32 +26,11 @@
   border: calc(0.007*var(--Tile_Width)) solid rgba(255,255,255,0.05);
   background-color: rgb(60,60,60);
   overflow: hidden;
-  pointer-events: none;
+  /* pointer-events: none; */
   background-color: rgba(14, 22, 43, 1);
   border-radius: 0.8rem;
 }
 
-@media only screen and (max-width:665px) {
-  .Gig_Tiles{
-    max-width: 100000rem;
-    max-height: 100000rem;
-    height: 70vw;
-    width: 70vw;
-    min-width: 0;
-    min-height: 0;
-  }
-}
-
-@media only screen and (max-width:375px) {
-  .Gig_Tiles{
-    max-width: 100000rem;
-    max-height: 100000rem;
-    height: 90vw;
-    width: 90vw;
-    min-width: 0;
-    min-height: 0;
-  }
-}
 
 
 

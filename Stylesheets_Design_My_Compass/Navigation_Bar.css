@@ -1,7 +1,8 @@
 
 #Navigation_Bar{
+  position: relative;
   display: flex;
-  top: 0;
+  top: 2rem;
   height: 5rem;
   width: 100%;
   box-sizing: border-box;
@@ -12,6 +13,12 @@
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
+  background-color: red;
+  height: 1rem;
+  width: 1rem;
+  left: calc(50% - 0.5rem);
+  margin-bottom: 8rem;
+  background-color: red;
 }
 
 
@@ -39,7 +46,6 @@
   --Moon_Height: 5.2rem;
 }
 
-
 .Menu_Button{
   position: relative;
   display: grid;
@@ -51,7 +57,7 @@
   width: var(--Moon_Height); 
   box-sizing: border-box;
   padding: 1.3rem 1.1rem 1.3rem 1.1rem;
-  pointer-events: all;
+  /* pointer-events: all; */
   background-color: rgb(225,225,225);
   border-radius: 10000rem;
   z-index: 100;
@@ -77,11 +83,11 @@
   90%{width: calc(3.1*var(--Tile_Width)); transform: rotate(0deg) scale(1);}
   94%{width: calc(2.95*var(--Tile_Width)); transform: rotate(0deg) scale(1);}
   98%{width: calc(3.02*var(--Tile_Width)); transform: rotate(0deg) scale(1);}
-  100%{width: calc(3*var(--Tile_Width)); transform: rotate(0deg) scale(1);}
+  100%{width: calc(3.2*var(--Tile_Width)); transform: rotate(0deg) scale(1);}
 }
 
 @keyframes Shrink{
-  0%{width: calc(3*var(--Tile_Width)); transform: rotate(0deg);}
+  0%{width: calc(3.2*var(--Tile_Width)); transform: rotate(0deg);}
   35%{width: var(--Moon_Height); transform: rotate(0deg);}
   80%{width: var(--Moon_Height); transform: rotate(0deg);}
   100%{width: var(--Moon_Height); transform: rotate(-97deg) scale(1.5);}
@@ -90,7 +96,7 @@
 .Circle_Mask{
   position: absolute;
   border-radius: 100%;
-  --Diameter: 3.5rem;
+  --Diameter: calc(0.65*var(--Moon_Height));
   left: calc(50% - var(--Diameter)/2);
   top: calc(105% - var(--Diameter));
   height: var(--Diameter);
