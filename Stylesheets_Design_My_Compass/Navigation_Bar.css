@@ -1,4 +1,8 @@
 
+#Hover_Highlight{
+    
+}
+
 #Navigation_Bar{
   position: relative;
   display: flex;
@@ -19,8 +23,24 @@
   left: calc(50% - 0.5rem);
   margin-bottom: 8rem;
   background-color: red;
+  transform: translateY(20vh);
+  filter: opacity(0);
+  animation: Fade_In_Dynamic_Menu 2s forwards;
+  animation-delay: 2s;
 }
 
+:root{
+  --Moon_Height: 5.2rem;
+  --Minimum_Window_Dimension: 10vw;
+  --Minimum_Font_Size: max(var(--Minimum_Window_Dimension),40px);
+  --Maximum_Font_Size: min(var(--Minimum_Font_Size),100px);
+}
+
+@keyframes Fade_In_Dynamic_Menu {
+  0%{transform: translateY(calc(var(--Maximum_Font_Size))); filter: opacity(0);}
+  50%{transform: translateY(calc(var(--Maximum_Font_Size))); filter: opacity(0);}
+  100%{transform: translateY(0); filter: opacity(1);}
+}
 
 #Shader{
   display: flex;
@@ -42,10 +62,6 @@
   transform: translateX(0rem) translateY(0rem);
 }
 
-:root{
-  --Moon_Height: 5.2rem;
-}
-
 .Menu_Button{
   position: relative;
   display: grid;
@@ -57,7 +73,6 @@
   width: var(--Moon_Height); 
   box-sizing: border-box;
   padding: 1.3rem 1.1rem 1.3rem 1.1rem;
-  /* pointer-events: all; */
   background-color: rgb(225,225,225);
   border-radius: 10000rem;
   z-index: 100;
@@ -104,7 +119,7 @@
   background-color: #070D20;
   transform: rotate(0deg);
   transition: 0.2s;
-  transition-delay: 0.2s;
+  transition-delay: 0.2s; 
 }
 
 .Hide_Background_Mask{
@@ -148,8 +163,6 @@
   grid-template-rows: 1fr;
   grid-template-columns: repeat(6,1fr);
   grid-gap: 0.2rem;
-  /* padding-left: 1rem;
-  padding-right: 1rem; */
   padding: 0.5rem;
   position: absolute;
   height: 100%;
@@ -168,7 +181,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* background-color: red; */
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -178,10 +190,8 @@
   --Minimum_Font_Size: max(var(--Minimum_Window_Dimension),0.2rem);
   --Maximum_Font_Size: min(var(--Minimum_Font_Size),1.2rem);
   font-size: var(--Maximum_Font_Size);
-  /* background-color: red; */
   border-radius: 1000rem;
 }
-
 
 
 

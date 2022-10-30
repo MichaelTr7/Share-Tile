@@ -24,20 +24,14 @@ html, body{
   top: -50vh;
   height: 200vh;
   width: 100vw;
-  /* background-color: red; */
   z-index: 0;
 }
 
-
 #Main_Title{
-  display: block;
+  display: flex;
   position: relative;
   font-family: Arial;
   font-weight: bold;
-  --Minimum_Window_Dimension: 10vw;
-  --Minimum_Font_Size: max(var(--Minimum_Window_Dimension),40px);
-  --Maximum_Font_Size: min(var(--Minimum_Font_Size),100px);
-  font-size: var(--Maximum_Font_Size);
   width: 100%;
   background: linear-gradient(30deg, #B1F2D5 0%, #86BEEE 100%);
   background-clip: text;
@@ -48,11 +42,58 @@ html, body{
   margin-top: 3rem;
   padding: 2rem;
   box-sizing: border-box;
-  /* pointer-events: none; */
   text-decoration: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  position: relative;
+  height: calc(3.1*var(--Maximum_Font_Size));  
+  --Minimum_Window_Dimension: 10vw;
+  --Minimum_Font_Size: max(var(--Minimum_Window_Dimension),40px);
+  --Maximum_Font_Size: min(var(--Minimum_Font_Size),100px);
+  font-size: var(--Maximum_Font_Size);  
+  justify-content: center;
+  align-items: center;
+}
+
+#Main_Title > span{
+  display: none;
+}
+
+#Main_Title::after{
+  content: "";
+  animation: Text_Changer 2s ease forwards;
+  white-space: pre-wrap;
+  animation-delay: 1s;
+}
+
+@keyframes Text_Changer {
+  0%{content: "| \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \a \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0";}
+  4%{content: "D| \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \a \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0";}
+  8%{content: "De| \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \a \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0";}
+  12%{content: "Des| \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \a \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0";}
+  16%{content: "Desi| \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \a \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0";}
+  20%{content: "Desig| \00a0 \00a0 \00a0 \00a0 \00a0 \a \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0";}
+  24%{content: "Design| \00a0 \00a0 \00a0 \00a0 \a \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0";}
+  28%{content: "Design | \00a0 \00a0 \00a0 \a \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0";}
+  32%{content: "Design M| \00a0 \00a0 \a \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0";}
+  36%{content: "Design My| \00a0 \a \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0";}
+  40%{content: "Design My \a C|";}
+  44%{content: "Design My \a Co|";}
+  48%{content: "Design My \a Com|";}
+  52%{content: "Design My \a Comp|";}
+  56%{content: "Design My \a Compa|";}
+  60%{content: "Design My \a Compas|";}
+  64%{content: "Design My \a Compas|";}
+  68%{content: "Design My \a Compass|";}
+  72%{content: "Design My \a Compass |";}
+  76%{content: "Design My \a Compass |";}
+  80%{content: "Design My \a Compass {|";}
+  84%{content: "Design My \a Compass {}|";}
+  88%{content: "Design My \a Compass {}";}
+  92%{content: "Design My \a Compass {}";}
+  96%{content: "Design My \a Compass {}";}
+  100%{content: "Design My \a Compass {}";}
 }
 
 #Container{
@@ -147,8 +188,7 @@ html, body{
   text-shadow: var(--Text_Shadow_X) var(--Text_Shadow_Y) var(--Text_Shadow_Blur) rgba(0,0,0,0.2);
   box-shadow: 0 0.4rem 0.5rem 0.1rem rgba(0,0,0,0.1),
   inset 0 0.2rem 0rem 0.1rem rgba(255,255,255,0.15);
-  /* pointer-events: all; */
-  transition: 0.s;
+  transition: 0.2s;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;

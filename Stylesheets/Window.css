@@ -26,14 +26,10 @@ body{
   height: calc(100vh + 20px);
   width: var(--Width);
   left: calc(50% - var(--Width)/2);
-  /* background-color: #244992; */
-  /* background-image: linear-gradient(180deg, #244992 0%, #00E1E1 97.4%); */
   background-repeat: no-repeat;
   background-size: 200vw 100vh;
   background-position: center;
   margin: 0;
-  /* background-image: url('../Assets/Group 7.svg'); */
-
 }
 
 #Background_2{
