@@ -9,7 +9,33 @@ function Setup_Dynamic_Menu(){
   for(Index=0; Index < Body_Elements.length; Index++){
     Body_Elements[Index].addEventListener("click",Clicked_Elsewhere)
   }
+  let Page_Links = document.getElementsByClassName('Menu_Links')
+  for(Index=0; Index < Page_Links.length; Index++){
+    Page_Links[Index].addEventListener('mouseover',Link_Hovered);
+  }
+  let Dynamic_Menu_Bar = document.getElementById('Navigation_Bar');
+  Dynamic_Menu_Bar.addEventListener('mouseenter',Set_Highlight);
+  Dynamic_Menu_Bar.addEventListener('mouseleave',Hide_Highlight);  
 }
+
+function Set_Highlight(){
+  let Highlight_Patch = document.getElementById('Hover_Highlight');
+  Highlight_Patch.style.filter = "opacity(1)";
+}
+
+function Hide_Highlight(){
+  let Highlight_Patch = document.getElementById('Hover_Highlight');
+  Highlight_Patch.style.filter = "opacity(0)";
+}
+
+function Link_Hovered(){
+  let Menu_List = document.getElementsByClassName('Menu_Links');
+  let Index = (this.dataset.index);
+  let Percentage_Offset = String(Index*(100/6)) + "%";
+  let Highlight = document.getElementById('Hover_Highlight');
+  Highlight.style.left = Percentage_Offset ;
+}
+
 
 function Toggle_Dynamic_Menu(){
   if(Dynamic_Animation_In_Progress == false){
@@ -51,10 +77,9 @@ function Collapse_Dynamic_Menu(){
 }
 
 function Clicked_Elsewhere(){
-  console.log(this.id);
   if(this.id !== "Navigation_Bar"){
     Collapse_Dynamic_Menu();
-  }
-  
-  
+  }  
 }
+
+
