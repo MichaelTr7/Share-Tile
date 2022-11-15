@@ -2,22 +2,26 @@
 .Example_Containers{
   height: 45rem;
   width: 100%;
-  /* border: 1px dashed white; */
+  border: 1px dashed white;
+  box-sizing: border-box;
 }
 
 #Example_Container_1{
+  position: relative;
+
   margin-top: 10rem;
   
 }
 
 #Logo_And_Icon_Design_Hero_Image{
-  position: relative;
-  --Height: 30rem;
+  position: absolute;
+  --Height: calc(var(--Width) * 1.3);
+  --Width: min(80vw,30rem);  
   height: var(--Height);
   top: calc(50% - var(--Height)/2);
-  width: calc(var(--Height) / 1.3);
+  left: calc(50% - var(--Width)/2);
+  width: var(--Width);
   background-color: white;
-  margin: 0 auto;
   background-image: url("../Stylesheets_Design_My_Compass/Assets/Icon_Showcase.png");
   background-size: cover;
   border-radius: 0.4rem;
