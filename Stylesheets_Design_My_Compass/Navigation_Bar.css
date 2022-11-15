@@ -201,6 +201,7 @@
   font-size: var(--Maximum_Font_Size);
   border-radius: 1000rem;
   z-index: 5;
+  pointer-events: none;
 }
 
 

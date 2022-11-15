@@ -60,6 +60,10 @@ function Toggle_Dynamic_Menu(){
   }  
   setTimeout(function(){Dynamic_Animation_In_Progress = false;}, Dynamic_Animation_Time_Buffer);
 }
+let Navigation_Buttons = document.getElementsByClassName('Menu_Links');
+for(Index=0; Index < Navigation_Buttons.length; Index++){
+  Navigation_Buttons[Index].style.pointerEvents = "all";
+}
 }
 
 function Collapse_Dynamic_Menu(){
@@ -73,6 +77,10 @@ function Collapse_Dynamic_Menu(){
   Menu_Frame.classList.remove('Fade_In_Menu');
   Circle_Mask.classList.add('Show_Background_Mask');
   Circle_Mask.classList.remove('Hide_Background_Mask');
+  }
+  let Navigation_Buttons = document.getElementsByClassName('Menu_Links');
+  for(Index=0; Index < Navigation_Buttons.length; Index++){
+    Navigation_Buttons[Index].style.pointerEvents = "none";
   }
 }
 
