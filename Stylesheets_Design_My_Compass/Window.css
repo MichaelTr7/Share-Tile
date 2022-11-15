@@ -19,6 +19,15 @@ html, body{
   cursor: default;
 }
 
+#Stagnant_Panel{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #070D20;
+  z-index: -50;
+}
+
+
 #Background_Body{
   position: fixed;
   top: -50vh;
