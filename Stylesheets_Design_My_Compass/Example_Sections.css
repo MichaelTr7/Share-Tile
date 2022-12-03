@@ -12,7 +12,6 @@
 
 #Logo_And_Icon_Design_Hero_Image{
   margin-top: 3rem;
-  margin-bottom: 5rem;
   position: relative;
   --Height: calc(var(--Width) * 1.3);
   --Width: min(80vw,30rem);  
@@ -61,7 +60,7 @@
 }
 
 #Desktop_App_Development_Hero_Image_1{
-  margin-top: 2rem;
+  margin-top: 0rem;
   margin-bottom: 2rem;
   position: relative;
   --Height: calc(var(--Width)/(1200/728));
@@ -94,15 +93,27 @@
   background: linear-gradient(90deg, #070D20 0%, rgba(7, 13, 32, 0) 30%, rgba(7, 13, 32, 0) 70%, #070D20 100%);
 }
 
-#App_Development_Slogan{
-  margin-top: 2rem;
+#App_Development_Slogan,#Logo_And_Icon_Design_Slogan,#App_Development_Sub_Header,#Portfolio_Websites_Slogan{
+  margin-top: 1rem;
+  color: rgb(255,255,255,0.3);
   font-size: calc(0.3*var(--Maximum_Font_Size));  
 }
 
+#App_Development_Slogan{
+  margin-top: -2rem;
+  color: rgb(255,255,255,0.3);
+}
+
+#App_Development_Sub_Header{
+  color: rgb(255,255,255,0.3);
+}
+
+#Logo_Design_Title,#App_Development_Title,#Portfolio_Websites_Title{
+  margin-top: 10rem;
+}
 
 #Desktop_App_Development_Hero_Image_2{
-  margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-top: 3rem;
   position: relative;
   --Height: calc(var(--Width)/(1200/728) * 0.72);
   --Width: min(90vw,calc(40rem * (1200/728))); 
