@@ -48,20 +48,17 @@ function Navigate_To_Page(){
 
 function Go_To_Page(){
   console.log("Go to Page: ");
-  console.log(this.dataset.index);
+  let Page_Index = parseInt(this.dataset.index);
   let Page_Links = [
     "",
+    "https://www.fiverr.com/designmycompass",
+    "https://instagram.com/designmycompass",
     "",
-    "",
-    "",
-    "",
-    ""
+    "https://github.com/MichaelTr7",
+    "https://michaeltr7.github.io/Portfolio/"
   ];
   
-  
-  
-  
-  
-  
-  
+  Target_Page = String(Page_Links[Page_Index]);
+  window.location.href = Target_Page;
 }
+
