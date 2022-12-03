@@ -156,9 +156,42 @@
   filter: saturate(2);
 }
 
+#Portfolio_Websites_Hero_Image{
+  margin-top: 3rem;
+  margin-bottom: 0;
+  position: relative;
+  --Height: calc(var(--Width) * (9090 / 4433) * 0.7);
+  --Width: min(80vw,30rem);  
+  height: var(--Height);
+  width: var(--Width);
+  top: calc(50% - var(--Height)/2);
+  left: calc(50% - var(--Width)/2);
+  background-image: url("../Stylesheets_Design_My_Compass/Assets/Iphone_Container.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  border-radius: 5rem 5rem 0 0;
+  box-shadow: 0 0 calc(var(--Shadow_Blur)*var(--Tile_Width)) calc(var(--Shadow_Spread)*var(--Tile_Width)) rgba(20, 41, 81, 1),
+  0 1rem 1.2rem 0.2rem rgba(0,0,0,0.8);
+  --Border_Radius_Factor: 0.05;
+  --Shadow_Height: 0.03;
+  --Shadow_Blur: 0.5;
+  --Shadow_Spread: 0.3;
+  --Highlight_Height: 0.001;
+  --Highlight_Blur: 0.001;
+  --Highlight_Spread: 0;
+  --Maximum_Size: 24rem;
+  --Minimum_Size: 22rem;
+}
 
-
-
+#Vertical_Shader_Iphone{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #070D20 0%, rgba(7, 13, 32, 0) 0%, rgba(7, 13, 32, 0) 80%, #070D20 100%);
+}
 
 
 
