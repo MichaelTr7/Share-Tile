@@ -166,10 +166,6 @@
   width: var(--Width);
   top: calc(50% - var(--Height)/2);
   left: calc(50% - var(--Width)/2);
-  background-image: url("../Stylesheets_Design_My_Compass/Assets/Iphone_Container.png");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
   border-radius: 5rem 5rem 0 0;
   box-shadow: 0 0 calc(var(--Shadow_Blur)*var(--Tile_Width)) calc(var(--Shadow_Spread)*var(--Tile_Width)) rgba(20, 41, 81, 1),
   0 1rem 1.2rem 0.2rem rgba(0,0,0,0.8);
@@ -182,9 +178,27 @@
   --Highlight_Spread: 0;
   --Maximum_Size: 24rem;
   --Minimum_Size: 22rem;
+  overflow: hidden;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(20, 41, 81, 1);
 }
 
-#Vertical_Shader_Iphone{
+#iphone_Container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("../Stylesheets_Design_My_Compass/Assets/Iphone_Container.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+
+
+#Vertical_Shader_iphone{
   position: absolute;
   top: 0;
   left: 0;
@@ -193,7 +207,13 @@
   background: linear-gradient(180deg, #070D20 0%, rgba(7, 13, 32, 0) 0%, rgba(7, 13, 32, 0) 80%, #070D20 100%);
 }
 
-
+#iphone_iframe{
+  position: absolute;
+  top: 0;
+  height: 110%;
+  width: 90%;
+  border-radius: 5rem 5rem 0 0;
+}
 
 
 

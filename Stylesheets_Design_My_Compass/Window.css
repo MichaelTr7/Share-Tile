@@ -65,14 +65,14 @@ html, body{
 }
 
 #Main_Title > span{
-  display: none;
+  /* display: none; */
 }
 
 #Main_Title::after{
-  content: "";
-  animation: Text_Changer 2s ease forwards;
+  /* content: ""; */
+  /* animation: Text_Changer 2s ease forwards;
   white-space: pre-wrap;
-  animation-delay: 1s;
+  animation-delay: 1s; */
 }
 
 @keyframes Text_Changer {

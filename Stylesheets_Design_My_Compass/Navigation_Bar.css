@@ -31,10 +31,10 @@
   left: calc(50% - 0.5rem);
   margin-bottom: 8rem;
   background-color: red;
-  transform: translateY(20vh);
-  filter: opacity(0);
-  animation: Fade_In_Dynamic_Menu 2s forwards;
-  animation-delay: 2s;
+  /* transform: translateY(20vh); */
+  filter: opacity(1);
+  /* animation: Fade_In_Dynamic_Menu 2s forwards; */
+  /* animation-delay: 2s; */
   
 }
 
