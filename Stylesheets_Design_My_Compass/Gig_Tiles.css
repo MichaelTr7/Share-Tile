@@ -36,25 +36,28 @@
   }
 }
 
-@media screen and (orientation:portrait){
-.Gig_Tiles{
-  max-height: 80vw;
-  max-width: 80vw;
-  box-shadow: none;
-  font-size: 3vw;
-  border-radius: 3vw;
-}
 
-.Button_Links{
-  font-size: 3vw;
-}
-   
-.Button_Containers .Button_Links:nth-child(1){
-  --Border_Radius_Factor: 0.03;
-  border-radius: 3vw;
-  background-color: rgba(248, 144, 19, 1);
-  color: white;
-}         
+@media only screen and (max-width: 600px) {
+  @media screen and (orientation:portrait){
+  .Gig_Tiles{
+    max-height: 80vw;
+    max-width: 80vw;
+    box-shadow: none;
+    font-size: 3vw;
+    border-radius: 3vw;
+  }
+
+  .Button_Links{
+    font-size: 3vw;
+  }
+     
+  .Button_Containers .Button_Links:nth-child(1){
+    --Border_Radius_Factor: 0.03;
+    border-radius: 3vw;
+    background-color: rgba(248, 144, 19, 1);
+    color: white;
+  }         
+  }
 }
 
 #Gig_3{
