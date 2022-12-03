@@ -30,6 +30,9 @@
   border-radius: 0.8rem;
 }
 
-
+#Gig_3{
+  position: relative;
+  z-index: 50;
+}
 
 
