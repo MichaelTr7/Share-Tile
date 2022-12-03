@@ -16,7 +16,20 @@ function Page_Navigator_Setup(){
 
 function Scroll_To_Section(){
   console.log("Scroll to Section: ");
-  
+  let Section_Index = parseInt(String(this.id).split("_")[1]);
+  let Snap_Elements = [
+    document.getElementById('Logo_Design_Title'),
+    document.getElementById('App_Development_Title'),
+    document.getElementById('Portfolio_Websites_Title')
+  ];
+  let Target_Element = Snap_Elements[Section_Index];
+  let Target_Y = Target_Element.getBoundingClientRect().top + window.scrollY - 2*Target_Element.getBoundingClientRect().height;
+  window.scroll({
+  top: Target_Y,
+  behavior: 'smooth'
+  });
+  // console.log(Target_Element); 
+  // Target_Element.scrollIntoView();  
 }
 
 function Navigate_To_Page(){
