@@ -30,6 +30,13 @@
   border-radius: 0.8rem;
 }
 
+@media only screen and (max-device-width: 640px) {
+.Gig_Tiles{
+  height: 90vw;
+  width: 90vw;
+}
+}
+
 #Gig_3{
   position: relative;
   z-index: 50;
