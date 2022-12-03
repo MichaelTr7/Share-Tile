@@ -38,8 +38,8 @@
 
 @media screen and (orientation:portrait){
 .Gig_Tiles{
-  max-height: none;
-  max-width: none;
+  max-height: 80vw;
+  max-width: 80vw;
   box-shadow: none;
   font-size: 3vw;
   border-radius: 3vw;
