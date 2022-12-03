@@ -30,14 +30,14 @@
   border-radius: 0.8rem;
 }
 
-@media screen and (orientation:landscape){
-  .Gig_Tiles{
-    box-shadow: none;
-  }
-}
-
-
 @media only screen and (max-width: 600px) {
+  
+  @media screen and (orientation:landscape){
+    .Gig_Tiles{
+      box-shadow: none;
+    }
+  }
+  
   @media screen and (orientation:portrait){
   .Gig_Tiles{
     max-height: 80vw;
