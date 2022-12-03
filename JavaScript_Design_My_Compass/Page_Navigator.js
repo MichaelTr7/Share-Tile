@@ -23,7 +23,7 @@ function Scroll_To_Section(){
     document.getElementById('Portfolio_Websites_Title')
   ];
   let Target_Element = Snap_Elements[Section_Index];
-  let Target_Y = Target_Element.getBoundingClientRect().top + window.scrollY - 2*Target_Element.getBoundingClientRect().height;
+  let Target_Y = Target_Element.getBoundingClientRect().top + window.scrollY - 1.5*Target_Element.getBoundingClientRect().height;
   window.scroll({
   top: Target_Y,
   behavior: 'smooth'
@@ -53,12 +53,34 @@ function Go_To_Page(){
     "",
     "https://www.fiverr.com/designmycompass",
     "https://instagram.com/designmycompass",
-    "",
+    "https://michaeltr7.github.io/Icon-Converter/",
     "https://github.com/MichaelTr7",
     "https://michaeltr7.github.io/Portfolio/"
   ];
   
-  Target_Page = String(Page_Links[Page_Index]);
-  window.location.href = Target_Page;
+  if(Page_Index != 0){
+    Target_Page = String(Page_Links[Page_Index]);
+    window.location.href = Target_Page;
+  }else{
+    setTimeout(function () {
+      Clicked_Elsewhere();
+    }, 100);
+  }
 }
+
+
+function Setup_Button_Animations(){
+  let Buttons = document.getElementsByTagName('button');
+  for(Index=0; Index < Buttons.length; Index++){
+    Buttons[Index].addEventListener("mousedown",Button_Pressed);
+  }
+}
+
+function Button_Pressed(){
+    this.classList.remove("Button_Pressed");
+    void this.offsetWidth;
+    this.classList.add("Button_Pressed");
+}
+
+
 
