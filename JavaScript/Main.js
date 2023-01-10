@@ -16,7 +16,7 @@ window.onload = function(){
 function Pressed(event){
   
   Links = {
-    "Instagram":"https://www.instagram.com/drawingmycompass/",
+    "Instagram":"https://www.instagram.com/sketching.with.stardust/",
     "DeviantArt":"https://www.deviantart.com/drawingmycompass",
     "Community Spotify Playlist":"https://open.spotify.com/playlist/2O7KX1PTT41Dp2RKeT71Y5?si=2JBRerKnQb2MrA5JVKddOw"
   };
