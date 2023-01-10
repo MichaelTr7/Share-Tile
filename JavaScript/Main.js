@@ -18,7 +18,7 @@ function Pressed(event){
   Links = {
     "Instagram":"https://www.instagram.com/drawingmycompass/",
     "DeviantArt":"https://www.deviantart.com/drawingmycompass",
-    "Community Spotify Playlist":"https://open.spotify.com/playlist/1sHTvHLJuF3mtRILaiSmki?si=6abbb4a832f34eb2"
+    "Community Spotify Playlist":"https://open.spotify.com/playlist/2O7KX1PTT41Dp2RKeT71Y5?si=2JBRerKnQb2MrA5JVKddOw"
   };
   Target_Link = Links[String(this.innerHTML)];
 
