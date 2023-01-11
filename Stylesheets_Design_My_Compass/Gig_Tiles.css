@@ -28,6 +28,7 @@
   overflow: hidden;
   background-color: rgba(14, 22, 43, 1);
   border-radius: 0.8rem;
+  
 }
 
 @media only screen and (max-width: 600px) {

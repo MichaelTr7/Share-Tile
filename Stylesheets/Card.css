@@ -11,7 +11,8 @@
   top: var(--Margin);
   --Constraining_Dimension: min(100vw,100vh);
   --Minimum_Length: max(var(--Constraining_Dimension),var(--Absolute_Minimum_Size));
-  --Size: min(calc(var(--Minimum_Length) - 2 * var(--Margin)),var(--Absolute_Maximum_Size));
+  --Adjustable_Size: min(calc(var(--Minimum_Length) - 2 * var(--Margin)),var(--Absolute_Maximum_Size));
+  --Size: min(var(--Adjustable_Size),40rem);
   height: var(--Size);
   width: var(--Size);
   min-height: var(--Absolute_Minimum_Size)
@@ -31,6 +32,7 @@
   animation: Fade_In_Keyframes 0.5s ease forwards;
   animation-delay: calc(var(--Animation_Delay) + 0.2s);
   overflow: hidden;
+
 }
 
 #Username_Handle{
